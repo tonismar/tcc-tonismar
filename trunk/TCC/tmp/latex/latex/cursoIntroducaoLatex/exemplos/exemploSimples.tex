@@ -1,0 +1,47 @@
+% linhas começando com porcentagem são comentários
+% O exemplo foi obtido em http://wiki.cecm.usp.br/wiki/LATEX 
+% e levemente alterado e acrescido de comentários
+
+% document class define o tipo de documento, que neste caso é um artigo
+\documentclass [12pt]{article}
+
+% usepackage serve para incluir pacotes, 
+% os abaixo são fundamentais para permitir o uso de acentos
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+
+% essa linha inclui um pacote que permite adicionar figuras
+\usepackage[dvips]{graphicx}
+
+% daqui para baixo começa o documento!
+\begin{document}
+
+\author {Nome do Autor}
+
+\title {Título do Trabalho}
+\maketitle
+
+% note que para criar uma seção basta colocar o comando section
+\section{Primeira Seção}
+
+Primeiro paragrafo da seção 1.
+
+Para mudar de paragrafo você tem que pular uma linha.
+Simplesmente dar enter não inicia novo parágrafo.
+
+A seguir um exemplo de formatação, a criação de itens:
+
+\begin{itemize}
+
+\item primeiro item
+\item segundo item
+\item terceiro item
+
+\end{itemize}
+
+  
+\section{Segunda Seção}
+
+É só escrever o texto que o latex se vira para formatar.
+
+\end{document}

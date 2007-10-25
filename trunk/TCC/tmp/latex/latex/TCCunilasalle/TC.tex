@@ -1,0 +1,64 @@
+\documentclass[oneside]{unilasalle}
+
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[latin1]{inputenc}
+\usepackage{latexsym}
+\usepackage{psfrag}
+\usepackage{amssymb}
+\usepackage{subfig}
+
+\usepackage{url}
+\usepackage{listings}
+\lstset{
+  basicstyle  = \footnotesize\ttfamily,
+  stringstyle = \ttfamily,
+  numberstyle = \scriptsize\ttfamily
+}
+
+
+
+
+%%%%%%
+
+%
+% Informacoes gerais => tirado do exemplo-tc.tex do Vinicius Mingot
+%
+\title{Monitoramento de Recursos em Ambientes de Grade}
+
+\author{Lemos}{Daniel da Trindade}
+
+\advisor[Profa.~DSc.]{Mangan}{Patrícia Kayser Vargas}
+
+% a data deve ser a da defesa; se não especificada, são gerados
+% mês e ano correntes
+%\date{novembro}{2006}
+
+% o nome do curso pode ser redefinido
+\course{Ciência da Computação}
+
+%
+% palavras-chave
+% iniciar todas com letras minúsculas, exceto no caso de abreviaturas
+%
+\keyword{computação em grade}
+\keyword{monitoramento}
+\keyword{{\it Web services}}
+
+
+%%%%%%
+
+\begin{document}
+%	\include{comando-abbr}		% pkvm %
+	\include{capa-exemplo1}		% pkvm %
+	\include{resumo}		% pkvm %
+	\include{capa-exemplo2}		% pkvm %
+
+	\include{Introducao} 		% Inclusão da Introdução
+	\include{MonitoramentoGrade}	% Inclusão do Capitulo de Monitoramento
+	\include{Modelo}		% Inclusão do Capitulo de Modelo
+	\include{DadosExperimentais}	% Inclusão do Capitulo de Dados Experimentais
+	\include{Conclusao}		% Inclusão do Capítulo de Conclusão
+	\include{Anexo}			% Inclusão do Capítulo de Anexos
+	\include{bibliografia}		% Inclusão da bibliografia
+\end{document} 
