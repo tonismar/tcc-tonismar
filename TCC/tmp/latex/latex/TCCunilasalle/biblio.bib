@@ -1,0 +1,117 @@
+%
+% Neste arquivo procuramos colocar um exemplo de cada um dos tipos de citação mais comuns
+%
+
+% livro 
+@book{jain91,
+  author    = {Raj Jain},
+  title     = {The art of computer systems performance analysis},
+  publisher = {John Wiley \& Sons},
+  address   = {USA},
+  pages     = {685},
+  year      = {1991}
+ }
+
+% um capítulo de livro, útil principalmente quando autor do capítulo não é o mesmo do 
+% organizador (editor) do livro
+@incollection{fosterGridChapterBook98,
+  author    = {Foster, Ian and Kesselman, Carl},
+  title     = {{C}omputational Grids},
+  editor    = {Foster, Ian and Kesselman, Carl},
+  booktitle = {{T}he {G}rid: Blueprint for a New Computing Infrastructure},
+  edition   = {1},
+  year      = {1998},
+  pages     = {15--52},
+  address   = {San Francisco, California, USA},
+  ISBN      = {1-55860-475-8},
+  publisher = {Morgan Kaufmann}
+}
+
+
+% artigos publicados em congresso
+@inproceedings{easygrid2005,
+  author = {Nascimento, Aline de P.  and Sena, Alexandre da C.  and Silva, Jacques
+            A.  and Vianna, Daniela Q.  C.  and Boeres, Cristina and 
+            Rebello, Vinod E. F. },
+  title  = {Managing the Execution of Large Scale {MPI} Applications on Computational Grids},
+  booktitle = {Proceedings of the 17th International Symposium on 
+               Computer Architecture on High Performance Computing (SBAC-PAD '05)},
+  year   = {2005},
+  isbn = {0-7695-2446-X},
+  pages = {69--76},
+  publisher = {IEEE Computer Society},
+  address = {Washington, DC, USA}
+}
+
+% artigos publicados em revistas
+@article{condor2005,
+  author    = {Thain, Douglas and Tannenbaum, Todd and
+               Livny, Miron},
+  journal   = {Concurrency and Computation: Practice and Experience},
+  title     = {Distributed computing in practice: the {C}ondor experience},
+  volume    = {17},
+  number    = {2--4},
+  pages     = {323--356},
+  month     = {February -- April},
+  year      = {2005}
+}
+
+% usa-se para TCC, Dissertações e Mestrado
+@phdthesis{teseAdenauer,
+  author     = {Yamin, Adenauer C\^orrea},
+  title      = {Arquitetura para um Ambiente de Grade Computacional 
+                Direcionado \`as Aplica\c{c}\~oes Distribu\'{\i}das, 
+                M\'oveis e Conscientes do Contexto da Computa\c{c}\~ao 
+                Pervasiva},
+  school     = {II/UFRGS},
+  address    = {Porto Alegre, RS, Brasil},
+  type       = {Tese de Doutorado},
+  pages      = {195},
+  year       = {2004}
+}
+
+
+% relatórios técnicos
+@techreport{kayserTRqualify2004,
+  author    = {Vargas, Patr{\'\i}cia Kayser and Dutra, In{\^e}s de Castro
+               and Geyer, Cl{\'a}udio F.R.},
+  title     = {{A}pplication Partitioning and Hierarchical Application
+              Management in Grid Environments},
+  institution = {COPPE/Sistemas - UFRJ},
+  type      = {Relat{\'o}rio T{\'e}cnico},
+  number    = {ES-661/04},
+  pages     = {42},
+  year      = {2004}
+}
+
+
+
+% uma das formas de representar uma homepage
+@manual{GANGLIA2006, 
+  key    = {Ganglia},
+  title  = {{G}anglia {M}onitoring {S}ystem},
+  note   = {\url{http://ganglia.info/}},
+  year   = {2006},
+  annote = {Acesso em: 18 set. 2006}
+}
+
+
+% para todo o resto que não pode ser classificado nas categorias 
+% anteriores, principalmente material não publicado (email, drafts, etc)
+@misc{pessoalRede,
+  author = {Luiz Gustavo Vercoza},
+  title  = {Dados da Monitoração da Rede do {Banrisul}},
+  note   = {Comunicação Pessoal},
+  month  = {october},
+  year   = {2006} 
+}
+
+% misc também pode ser usado para páginas Web, ou para publicações
+% que não se encaixam nos outros tipos, como o artigo abaixo
+@misc{globusToolkit,
+  author    = {Sandholm, T. and Gawor, J.},
+  title     = {{{Globus Toolkit} 3 Core -- A Grid Service Container Framework}},
+  month     = {May},
+  year      = {2003},
+  note      = {White paper. Available at \url{http://www-unix.globus.org/toolkit/3.0beta/ogsa/docs/gt3_core.pdf}}
+}

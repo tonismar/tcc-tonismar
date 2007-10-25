@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+
+% usepackage serve para incluir pacotes, 
+% os abaixo são fundamentais para permitir o uso de acentos
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+% essa linha inclui um pacote que permite adicionar figuras
+\usepackage[dvips]{graphicx}
+
+\title{Exemplo Latex}
+\author{Mozart Lemos de Siqueira}
+\date{}
+
+\begin{document}
+%\pagestyle{empty}    %sem numeração de pg
+\maketitle
+%***************************************************************Introducao
+\section{Introdução}
+
+%*************************************************************************
+\section{Estado da Arte}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\textwidth]{leite.eps}
+\caption{Exemplo de Figura}
+\label{fig:ex}
+\end{figure}
+
+%*************************************************************************
+\section{Metodo Proposto}
+Na figura \ref{fig:ex} podemos analisar um exemplo de inserção!
+
+%*************************************************************************
+\section{Reseultado}
+Exemplo de inclusão de referência e bibliografia \cite{Son2000}!
+%*************************************************************************
+\section{Conclusão}
+
+%*************************************************************************
+%\bibliographystyle{sbc}
+\bibliographystyle{plain}
+
+\bibliography{biblio-ex}
+
+
+\end{document}

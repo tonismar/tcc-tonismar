@@ -1,0 +1,43 @@
+\appendix
+\addcontentsline{toc}{chapter}{Apêndices}
+\chapter {Documento XML do Sensor Completo}
+\label{anexo:xml_completo}
+
+\begin{scriptsize}
+\begin {verbatim}
+  <?xml version="1.0" encoding="utf-8" ?> 
+ <Computador xmlns:BMS="http://n061/bms/link">
+ ...
+</Computador>
+
+\end{verbatim}
+\end{scriptsize}
+
+
+
+
+%=============================
+\chapter{GRID-ADL ABNF}
+\label{appendix:gridADL}
+
+
+%% listing - decrease fonte size%%
+%\lstset{
+%  basicstyle  = \scriptsize\ttfamily,
+%}
+%%
+\begin{lstlisting}
+;
+; The input_file non-terminal is the starting point of this grammar
+<input_file> = [ <graph_definition> ]
+               [ <application_requirements> ]
+               <set_of_task_definition>
+               [ <transient_file_definition> ]
+...
+\end{lstlisting}
+
+%% listing - return to previous value %%
+%\lstset{
+%  basicstyle  = \footnotesize\ttfamily,
+%}
+%%

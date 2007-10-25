@@ -1,0 +1,100 @@
+%------------------------------------------------------------------------------------------------
+% \imagemfloat{arquivo}{tamanho}{legenda}{label}
+%------------------------------------------------------------------------------------------------
+\newcommand{\imagemfloat}[4]{
+    \begin{figure}[htb]
+          \begin{center}\resizebox*{!}{#2cm}{\includegraphics{#1}\par}
+          \end{center}
+          \caption{#3}
+          \label{#4}
+    \end{figure}
+}
+\newcommand{\figura}[4]{
+    \begin{figure}[H]
+    \begin{center}\includegraphics[scale=#2]{imagens/#1}\end{center}
+    \caption{\label{#3}#4}
+    \end{figure}   
+}
+%------------------------------------------------------------------------------------------------
+% \simb[entrada na lista de símbolos]{símbolo}:
+%   Escreve o simbolo no texto e uma entrada na Lista de Símbolos.
+%   Se o parâmetro opcional e omitido, usa-se o parâmetro obrigatório.
+%------------------------------------------------------------------------------------------------
+\newcommand{\simb}[2][]{%
+  \ifthenelse{\equal{#1}{}}
+    {\addcontentsline{los}{simbolo}{\ensuremath{#2}}}
+    {\addcontentsline{los}{simbolo}{#1}}
+  \ensuremath{#2}
+}
+
+\makeatletter
+%------------------------------------------------------------------------------------------------
+% \listadesimbolos: comando que imprime a lista de simbolos
+%------------------------------------------------------------------------------------------------
+\newcommand{\listadesimbolos}{
+  \pretextualchapter{Lista de Símbolos}
+  {\setlength{\parindent}{0cm}
+   \@starttoc{los}}}
+
+\newcommand\listabbrname{Lista de S\'imbolos e Abreviaturas}
+% => obtido do padrao do II-UFRGS (utug-l)
+\newenvironment{listofabbrv}[1]{
+        \chapter*{\listabbrvname}
+        \begin{list}{\textbf{??}}{
+                \settowidth{\labelwidth}{#1}
+                \setlength{\labelsep}{1em}
+                \setlength{\itemindent}{0mm}
+                \setlength{\leftmargin}{\labelwidth}
+                \addtolength{\leftmargin}{\labelsep}
+                \setlength{\rightmargin}{0mm}
+                \setlength{\itemsep}{.1\baselineskip}
+                \renewcommand{\makelabel}[1]{\makebox[\labelwidth][l]{##1}}
+        }
+}{
+        \end{list}
+}
+
+%------------------------------------------------------------------------------------------------
+% como a entrada será impressa
+\newcommand\l@simbolo[2]{\par #1, p.\thinspace#2}
+%------------------------------------------------------------------------------------------------
+% Substituto para folha de rosto.
+%\begin{titlepage}
+%  \vfill
+%  \begin{center}
+%    {\large Ricardo Farias Bidart Piccoli} \\[5cm]
+%    {\Huge Um algoritmo para quantização de imagens coloridas baseado em preservação
+%de contraste}\\[1cm]
+%     \hspace{.45\textwidth}
+%      \begin{minipage}{.5\textwidth}
+%           \begin{espacosimples}
+%                Trabalho de conclusão apresentado in order to... duh
+%           \end{espacosimples}
+%      \end{minipage}
+%  \vfill
+%  Junho de 2006
+%  \end{center}
+%\end{titlepage}
+
+\makeatother
+
+\providecommand{\tabularnewline}{\\}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algoritmo}
+
+ \newenvironment{lyxcode}
+   {\begin{list}{}{
+     \setlength{\rightmargin}{\leftmargin}
+     \setlength{\listparindent}{0pt}% needed for AMS classes
+     \raggedright
+     \setlength{\itemsep}{0pt}
+     \setlength{\parsep}{0pt}
+   %  \normalfont\ttfamily
+}%
+    \item[]}
+   {\end{list}}
+
+\renewcommand{\ABNTchapterfont}{\bfseries\sffamily\fontseries{sbc}\selectfont}
+\renewcommand{\ABNTsectionfont}{\bfseries\sffamily}
+% \fontfamily{cmss}\fontseries{sbc}\selectfont.

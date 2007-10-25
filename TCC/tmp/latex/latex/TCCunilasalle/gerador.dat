@@ -1,0 +1,7 @@
+latex tc.tex
+bibtex tc 
+latex tc.tex
+latex tc.tex
+del *.aux,*.log,*.bbl,*.blg,*.lot,*.toc,*.lob,*.lof
+
+dvipdft tc.dvi
