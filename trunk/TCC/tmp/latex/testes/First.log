@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  23 OCT 2007 23:14
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  25 OCT 2007 12:17
 entering extended mode
 **First.tex
 (./First.tex
@@ -483,7 +483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 Here is how much of TeX's memory you used:
  4023 strings out of 94501
  52301 string characters out of 1175810
- 107032 words of memory out of 1000000
+ 106032 words of memory out of 1000000
  7127 multiletter control sequences out of 10000+50000
  7705 words of font info for 20 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
