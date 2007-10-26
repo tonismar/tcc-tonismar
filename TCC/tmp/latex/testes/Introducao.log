@@ -1,0 +1,522 @@
+This is MetaPost, Version 0.641 (Web2C 7.5.4) (mem=mpost 2007.10.23)  25 OCT 2007 23:38
+**Introducao.tex
+(Introducao.tex
+! A primary expression can't begin with `{'.
+<inserted text> 
+                0
+<to be read again> 
+                   {
+l.1 \section*{
+              Introdução}
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+>> 0
+! Isolated expression.
+<to be read again> 
+                   {
+l.1 \section*{
+              Introdução}
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   {
+l.1 \section*{
+              Introdução}
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+! Text line contains an invalid character.
+l.1 \section*{Introdu�
+                      �ão}
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.1 \section*{Introduç
+                       ão}
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.1 \section*{Introduç�
+                        �o}
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.1 \section*{Introduçã
+                         o}
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...do exponencialmente. Muitas dessas redes s�
+                                                  �o distribuídas de forma ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...o exponencialmente. Muitas dessas redes sã
+                                                  o distribuídas de forma g...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...almente. Muitas dessas redes são distribu�
+                                                  �das de forma geograficame...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...lmente. Muitas dessas redes são distribuí
+                                                  das de forma geograficamen...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...rutura de software e hardware para gerenci�
+                                                  �-las e conectá-las. Dent...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...utura de software e hardware para gerenciá
+                                                  -las e conectá-las. Dentr...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...are e hardware para gerenciá-las e conect�
+                                                  �-las. Dentre as diversas ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...re e hardware para gerenciá-las e conectá
+                                                  -las. Dentre as diversas s...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...as e conectá-las. Dentre as diversas solu�
+                                                  �ões existe a grade compu...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...s e conectá-las. Dentre as diversas soluç
+                                                  ões existe a grade comput...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ... e conectá-las. Dentre as diversas soluç�
+                                                  �es existe a grade computa...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.4 ...e conectá-las. Dentre as diversas soluçõ
+                                                  es existe a grade computac...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.6 Segundo Dantas [aput 1], pode-se dizer, tamb�
+                                                 �m, que representa uma form...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.6 Segundo Dantas [aput 1], pode-se dizer, també
+                                                  m, que representa uma form...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.6 ...e representa uma forma estendida dos servi�
+                                                  �os web permitindo que rec...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.6 ... representa uma forma estendida dos serviç
+                                                  os web permitindo que recu...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ... como uma plataforma computacional heterog�
+                                                  �nia distribuída geografi...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...como uma plataforma computacional heterogê
+                                                  nia distribuída geografic...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...aforma computacional heterogênia distribu�
+                                                  �da geograficamente fornec...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...forma computacional heterogênia distribuí
+                                                  da geograficamente fornece...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...tribuída geograficamente fornecendo servi�
+                                                  �os e recursos às organiz...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...ribuída geograficamente fornecendo serviç
+                                                  os e recursos às organiza...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...ficamente fornecendo serviços e recursos �
+                                                  �s organizações particip...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...icamente fornecendo serviços e recursos à
+                                                  s organizações participa...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...rnecendo serviços e recursos às organiza�
+                                                  �ões participantes da pla...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...necendo serviços e recursos às organizaç
+                                                  ões participantes da plat...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...ecendo serviços e recursos às organizaç�
+                                                  �es participantes da plata...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.8 ...cendo serviços e recursos às organizaçõ
+                                                  es participantes da plataf...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... Global Grid Forum (GGF) uma comunidade f�
+                                                  �rum com milhares de indiv...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...Global Grid Forum (GGF) uma comunidade fó
+                                                  rum com milhares de indiv�...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...a comunidade fórum com milhares de indiv�
+                                                  �duos representando mais d...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... comunidade fórum com milhares de indiví
+                                                  duos representando mais de...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...íduos representando mais de 400 organiza�
+                                                  �ões em mais de 50 paíse...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...�duos representando mais de 400 organizaç
+                                                  ões em mais de 50 países...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...duos representando mais de 400 organizaç�
+                                                  �es em mais de 50 países ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...uos representando mais de 400 organizaçõ
+                                                  es em mais de 50 países c...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...is de 400 organizações em mais de 50 pa�
+                                                  �ses criou e documentou es...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...s de 400 organizações em mais de 50 paí
+                                                  ses criou e documentou esp...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... 50 países criou e documentou especifica�
+                                                  �ões técnicas e experiê...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...50 países criou e documentou especificaç
+                                                  ões técnicas e experiên...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...0 países criou e documentou especificaç�
+                                                  �es técnicas e experiênc...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... países criou e documentou especificaçõ
+                                                  es técnicas e experiênci...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ses criou e documentou especificações t�
+                                                  �cnicas e experiências de...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...es criou e documentou especificações té
+                                                  cnicas e experiências de ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...entou especificações técnicas e experi�
+                                                  �ncias de usuários. O GGF...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ntou especificações técnicas e experiê
+                                                  ncias de usuários. O GGF ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...cações técnicas e experiências de usu�
+                                                  �rios. O GGF definiu grade...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ações técnicas e experiências de usuá
+                                                  rios. O GGF definiu grades...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...mbiente persistente o qual abilita aplica�
+                                                  �ões para integrar intrum...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...biente persistente o qual abilita aplicaç
+                                                  ões para integrar intrume...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...iente persistente o qual abilita aplicaç�
+                                                  �es para integrar intrumen...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ente persistente o qual abilita aplicaçõ
+                                                  es para integrar intrument...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...egrar intrumentos, disponibilizar informa�
+                                                  �ões em locações difusa...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...grar intrumentos, disponibilizar informaç
+                                                  ões em locações difusas...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...rar intrumentos, disponibilizar informaç�
+                                                  �es em locações difusas....
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ar intrumentos, disponibilizar informaçõ
+                                                  es em locações difusas. ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...tos, disponibilizar informações em loca�
+                                                  �ões difusas. Desde lá n...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...os, disponibilizar informações em locaç
+                                                  ões difusas. Desde lá n�...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...s, disponibilizar informações em locaç�
+                                                  �es difusas. Desde lá nã...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ..., disponibilizar informações em locaçõ
+                                                  es difusas. Desde lá não...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ormações em locações difusas. Desde l�
+                                                  � não é a única e preci...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...rmações em locações difusas. Desde lá
+                                                   não é a única e precis...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...ções em locações difusas. Desde lá n�
+                                                  �o é a única e precisa d...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...�ões em locações difusas. Desde lá nã
+                                                  o é a única e precisa de...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...es em locações difusas. Desde lá não �
+                                                  � a única e precisa defin...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...s em locações difusas. Desde lá não é
+                                                   a única e precisa defini...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... locações difusas. Desde lá não é a �
+                                                  �nica e precisa definiçã...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...locações difusas. Desde lá não é a ú
+                                                  nica e precisa definição...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...sde lá não é a única e precisa defini�
+                                                  �ão para o conceito de gr...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...de lá não é a única e precisa definiç
+                                                  ão para o conceito de gra...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...e lá não é a única e precisa definiç�
+                                                  �o para o conceito de grad...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... lá não é a única e precisa definiçã
+                                                  o para o conceito de grade...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ... grade propondo um \emph{checklist} de tr�
+                                                  �s pontos.
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+! Text line contains an invalid character.
+l.10 ...grade propondo um \emph{checklist} de trê
+                                                  s pontos.
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+)
+! File ended while scanning to the end of the statement.
+<inserted text> 
+                ;
+<*> Introducao.tex
+                  
+A previous error seems to have propagated,
+causing me to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> Introducao.tex
+                  
+*** (job aborted, no legal end found)
+
+

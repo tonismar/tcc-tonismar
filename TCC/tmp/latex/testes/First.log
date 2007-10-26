@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  25 OCT 2007 12:17
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  26 OCT 2007 00:25
 entering extended mode
 **First.tex
 (./First.tex
@@ -417,7 +417,7 @@ File: listings.cfg 2004/09/05 1.3 listings configuration
 ))
 Package: listings 2004/10/17 1.3b (Carsten Heinz)
  (./First.aux
-(./Introducao.aux) (./capa-artigo.aux))
+(./capa-artigo.aux) (./Introducao.aux) (./Bibliografia.aux))
 \openout1 = `First.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -457,36 +457,61 @@ LaTeX Info: Redefining \selectfont on input line 125.
 )
 Package caption Info: listings package v1.2 (or newer) detected on input line 3
 1.
-\openout2 = `Introducao.aux'.
-
- (./Introducao.tex) [1
-
-
-]
 \openout2 = `capa-artigo.aux'.
 
-
-(./capa-artigo.tex
+ (./capa-artigo.tex
 File: logoUnilasalle.eps Graphic file (type eps)
- <logoUnilasalle.eps> [2
+
+<logoUnilasalle.eps> [1
+
+
+])
+\openout2 = `Introducao.aux'.
+
+ (./Introducao.tex
+
+Package natbib Warning: Citation `Mangan2006' on page 0 undefined on input line
+ 6.
+
+) [0
+
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 4--4
+\openout2 = `Bibliografia.aux'.
 
+ (./Bibliografia.tex (./First.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\T1/cmr/m/n/12 Ian Fos-ter, Ste-ven Tu-ecke, C. K. (1988).  The ana-
  []
 
-[0
 
-] [1] [2]) AED: lastpage setting LastPage (./First.aux (./Introducao.aux)
-(./capa-artigo.aux)) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+\T1/cmr/m/n/12 tomy of the grid ena-bling sca-la-ble vir-tual or-ga-ni-za-ti-on
+s.
+ []
+
+)) [1
+
+
+
+] AED: lastpage setting LastPage
+
+Package natbib Warning: There were undefined citations.
+
+(./First.aux (./capa-artigo.aux) (./Introducao.aux) (./Bibliografia.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)) ) 
 Here is how much of TeX's memory you used:
- 4023 strings out of 94501
- 52301 string characters out of 1175810
- 106032 words of memory out of 1000000
- 7127 multiletter control sequences out of 10000+50000
+ 4037 strings out of 94501
+ 52490 string characters out of 1175810
+ 106526 words of memory out of 1000000
+ 7131 multiletter control sequences out of 10000+50000
  7705 words of font info for 20 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
- 39i,6n,42p,607b,221s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 39i,4n,42p,610b,221s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on First.dvi (5 pages, 4340 bytes).
+Output written on First.dvi (3 pages, 3052 bytes).
