@@ -1,0 +1,7 @@
+#!/bin/sh
+
+latex $1.tex
+
+dvipdf $1.dvi
+
+evince $1.pdf &> /dev/null
