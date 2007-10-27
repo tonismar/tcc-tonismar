@@ -1,0 +1,18 @@
+#!/bin/sh
+
+latex $1.tex
+
+bibtex $1.aux
+
+makeindex $1.idx
+
+latex $1.tex
+
+latex $1.tex
+
+# gera arquivo postscript
+#dvips -o $1.ps $1.dvi
+
+dvipdft $1.dvi
+
+evince $1.pdf &> /dev/null
