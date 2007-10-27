@@ -1,6 +1,17 @@
 This file was created with JabRef 2.2.
 Encoding: UTF-8
 
+@ARTICLE{Thomas1996,
+  author = {Thomas L. Casavant and Jon G. Kuhl},
+  title = {A Taxonomy of Scheduling in General-Purpose Distributed Computing
+	Systems},
+  year = {1996},
+  pages = {37},
+  note = {http://www.eng.uiowa.edu/~tomc/papers/taxo.ps.gz},
+  owner = {tonismar},
+  timestamp = {2007.10.27}
+}
+
 @ARTICLE{Cirne2002,
   author = {Walfredo Cirne},
   title = {Grids Computacionais: Arquiteturas, Tecnologias e Aplicações},
@@ -11,30 +22,25 @@ Encoding: UTF-8
   timestamp = {2007.10.26}
 }
 
+@ARTICLE{Karl1998,
+  author = {Karl Czajkowski and Ian Foster and Nicholas Karonis and Carl Kesselman
+	and Stuart Martin and Warren Smith and Steven Tuecke},
+  title = {A Resource Management Architecture for Metacomputing Systems},
+  year = {1998},
+  pages = {19},
+  note = {ftp://ftp.globus.org/pub/globus/papers/gram97.pdf},
+  owner = {tonismar},
+  timestamp = {2007.10.27}
+}
+
 @ARTICLE{Kesselman2001,
-  author = {Ian Foster
-	
-	Steven Tuecke
-	
-	Carl Kesselman},
+  author = {Ian Foster and Steven Tuecke and Carl Kesselman},
   title = {The Anatomy of the Grid Enabling Scalable Virtual Organizations},
   year = {2001},
   pages = {25},
   note = {http://www.globus.org/alliance/publications/papers/anatomy.pdf},
   owner = {tonismar},
   timestamp = {2007.10.23}
-}
-
-@MISC{M.2002,
-  author = {M. Roehrig, Wolfgang Ziegler, Philipp Wieder},
-  title = {Grid Scheduling Dictionary of Terms and Keywords},
-  month = {November},
-  year = {2002},
-  note = {http://www.ggf.org/documents/GFD.11.pdf},
-  owner = {tonismar},
-  pdf = {GFD-I.11},
-  timestamp = {2007.10.27},
-  url = {http://www.ggf.org/documents/GFD.11.pdf}
 }
 
 @ARTICLE{Mangan2006,
@@ -47,15 +53,16 @@ Encoding: UTF-8
   timestamp = {2007.10.23}
 }
 
-@ARTICLE{Thomas1996,
-  author = {Thomas L. Casavant, Jon G. Kuhl},
-  title = {A Taxonomy of Scheduling in General-Purpose Distributed Computing
-	Systems},
-  year = {1996},
-  pages = {37},
-  note = {http://www.eng.uiowa.edu/~tomc/papers/taxo.ps.gz},
+@MISC{M.2002,
+  author = {M. Roehrig and Wolfgang Ziegler and Philipp Wieder},
+  title = {Grid Scheduling Dictionary of Terms and Keywords},
+  month = {November},
+  year = {2002},
+  note = {http://www.ggf.org/documents/GFD.11.pdf},
   owner = {tonismar},
-  timestamp = {2007.10.27}
+  pdf = {GFD-I.11},
+  timestamp = {2007.10.27},
+  url = {http://www.ggf.org/documents/GFD.11.pdf}
 }
 
 @comment{jabref-meta: selector_publisher:}
