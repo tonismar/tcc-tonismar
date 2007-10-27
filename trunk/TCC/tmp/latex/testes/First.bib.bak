@@ -6,7 +6,6 @@ Encoding: UTF-8
   title = {Grids Computacionais: Arquiteturas, Tecnologias e Aplicações},
   year = {2002},
   pages = {46},
-  number = {3},
   note = {http://walfredo.dsc.ufcg.edu.br/papers/Grids%20Computacionais-%20WSCAD.pdf},
   owner = {tonismar},
   timestamp = {2007.10.26}
@@ -21,10 +20,21 @@ Encoding: UTF-8
   title = {The Anatomy of the Grid Enabling Scalable Virtual Organizations},
   year = {2001},
   pages = {25},
-  number = {1},
   note = {http://www.globus.org/alliance/publications/papers/anatomy.pdf},
   owner = {tonismar},
   timestamp = {2007.10.23}
+}
+
+@MISC{M.2002,
+  author = {M. Roehrig, Wolfgang Ziegler, Philipp Wieder},
+  title = {Grid Scheduling Dictionary of Terms and Keywords},
+  month = {November},
+  year = {2002},
+  note = {http://www.ggf.org/documents/GFD.11.pdf},
+  owner = {tonismar},
+  pdf = {GFD-I.11},
+  timestamp = {2007.10.27},
+  url = {http://www.ggf.org/documents/GFD.11.pdf}
 }
 
 @ARTICLE{Mangan2006,
@@ -33,9 +43,19 @@ Encoding: UTF-8
 	de Computação em Grade},
   year = {2006},
   pages = {150},
-  number = {2},
   owner = {tonismar},
   timestamp = {2007.10.23}
+}
+
+@ARTICLE{Thomas1996,
+  author = {Thomas L. Casavant, Jon G. Kuhl},
+  title = {A Taxonomy of Scheduling in General-Purpose Distributed Computing
+	Systems},
+  year = {1996},
+  pages = {37},
+  note = {http://www.eng.uiowa.edu/~tomc/papers/taxo.ps.gz},
+  owner = {tonismar},
+  timestamp = {2007.10.27}
 }
 
 @comment{jabref-meta: selector_publisher:}
