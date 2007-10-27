@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  26 OCT 2007 00:25
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  27 OCT 2007 01:01
 entering extended mode
 **First.tex
 (./First.tex
@@ -416,22 +416,32 @@ File: lstmisc.sty 2004/09/07 1.3 (Carsten Heinz)
 File: listings.cfg 2004/09/05 1.3 listings configuration
 ))
 Package: listings 2004/10/17 1.3b (Carsten Heinz)
- (./First.aux
-(./capa-artigo.aux) (./Introducao.aux) (./Bibliografia.aux))
+
+
+! LaTeX Error: Option clash for package graphicx.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 
+     
+? 
+(./First.aux (./capa-artigo.aux) (./Introducao.aux) (./Bibliografia.aux))
 \openout1 = `First.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 (/usr/share/texmf-tetex/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
@@ -456,7 +466,7 @@ LaTeX Info: Redefining \selectfont on input line 125.
 \JustifyingParindent=\skip71
 )
 Package caption Info: listings package v1.2 (or newer) detected on input line 3
-1.
+3.
 \openout2 = `capa-artigo.aux'.
 
  (./capa-artigo.tex
@@ -468,50 +478,38 @@ File: logoUnilasalle.eps Graphic file (type eps)
 ])
 \openout2 = `Introducao.aux'.
 
- (./Introducao.tex
-
-Package natbib Warning: Citation `Mangan2006' on page 0 undefined on input line
- 6.
-
-) [0
+ (./Introducao.tex) [0
 
 
 
 ]
 \openout2 = `Bibliografia.aux'.
 
- (./Bibliografia.tex (./First.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-[]\T1/cmr/m/n/12 Ian Fos-ter, Ste-ven Tu-ecke, C. K. (1988).  The ana-
+ (./Bibliografia.tex
+(./First.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+[]\T1/cmr/m/n/12 Kesselman, I. F. S. T. C. (2001).  The ana-tomy of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-\T1/cmr/m/n/12 tomy of the grid ena-bling sca-la-ble vir-tual or-ga-ni-za-ti-on
-s.
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\T1/cmr/m/n/12 the grid ena-bling sca-la-ble vir-tual or-ga-ni-za-ti-ons.  page
+ 25.
  []
 
 )) [1
 
 
 
-] AED: lastpage setting LastPage
-
-Package natbib Warning: There were undefined citations.
-
-(./First.aux (./capa-artigo.aux) (./Introducao.aux) (./Bibliografia.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)) ) 
+] AED: lastpage setting LastPage (./First.aux (./capa-artigo.aux)
+(./Introducao.aux) (./Bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 4037 strings out of 94501
- 52490 string characters out of 1175810
- 106526 words of memory out of 1000000
- 7131 multiletter control sequences out of 10000+50000
+ 4038 strings out of 94501
+ 52508 string characters out of 1175810
+ 107574 words of memory out of 1000000
+ 7132 multiletter control sequences out of 10000+50000
  7705 words of font info for 20 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
- 39i,4n,42p,610b,221s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 39i,4n,42p,633b,221s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on First.dvi (3 pages, 3052 bytes).
+Output written on First.dvi (3 pages, 4108 bytes).

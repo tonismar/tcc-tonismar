@@ -5,46 +5,48 @@ A level-1 auxiliary file: Introducao.aux
 A level-1 auxiliary file: Bibliografia.aux
 The style file: apalike.bst
 Database file #1: First.bib
+Warning--empty journal in Cirne2002
+Warning--empty journal in Kesselman2001
 Warning--empty journal in Mangan2006
-You've used 2 entries,
+You've used 3 entries,
             1935 wiz_defined-function locations,
-            486 strings with 4047 characters,
-and the built_in function-call counts, 710 in all, are:
-= -- 68
-> -- 14
-< -- 4
-+ -- 6
-- -- 4
-* -- 40
-:= -- 121
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 2
-cite$ -- 3
-duplicate$ -- 40
-empty$ -- 52
-format.name$ -- 6
-if$ -- 148
+            493 strings with 4233 characters,
+and the built_in function-call counts, 1061 in all, are:
+= -- 103
+> -- 21
+< -- 6
++ -- 8
+- -- 6
+* -- 60
+:= -- 180
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 18
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 59
+empty$ -- 77
+format.name$ -- 9
+if$ -- 221
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 14
+missing$ -- 3
+newline$ -- 20
+num.names$ -- 9
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 18
 quote$ -- 0
-skip$ -- 36
+skip$ -- 52
 stack$ -- 0
-substring$ -- 36
-swap$ -- 13
-text.length$ -- 2
+substring$ -- 52
+swap$ -- 17
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 1
-while$ -- 6
+type$ -- 18
+warning$ -- 3
+while$ -- 9
 width$ -- 0
-write$ -- 27
-(There was 1 warning)
+write$ -- 42
+(There were 3 warnings)
