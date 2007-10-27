@@ -1,6 +1,5 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: ArtigoTC.aux
-A level-1 auxiliary file: Capa.aux
 A level-1 auxiliary file: Introducao.aux
 A level-1 auxiliary file: Bibliografia.aux
 The style file: ieeetr.bst
@@ -9,45 +8,46 @@ Warning--empty journal in Mangan2006
 Warning--empty journal in Kesselman2001
 Warning--empty journal in Cirne2002
 Warning--empty journal in Thomas1996
-You've used 5 entries,
+Warning--empty journal in Karl1998
+You've used 6 entries,
             1876 wiz_defined-function locations,
-            513 strings with 4365 characters,
-and the built_in function-call counts, 945 in all, are:
-= -- 93
-> -- 20
+            519 strings with 4628 characters,
+and the built_in function-call counts, 1303 in all, are:
+= -- 117
+> -- 61
 < -- 0
-+ -- 10
-- -- 5
-* -- 44
-:= -- 141
-add.period$ -- 9
-call.type$ -- 5
-change.case$ -- 5
++ -- 23
+- -- 17
+* -- 78
+:= -- 202
+add.period$ -- 11
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 58
-empty$ -- 100
-format.name$ -- 5
-if$ -- 238
+cite$ -- 11
+duplicate$ -- 71
+empty$ -- 120
+format.name$ -- 17
+if$ -- 318
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 4
-newline$ -- 22
-num.names$ -- 5
-pop$ -- 28
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 26
+num.names$ -- 6
+pop$ -- 33
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 34
+skip$ -- 42
 stack$ -- 0
-substring$ -- 18
-swap$ -- 18
+substring$ -- 22
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 9
-width$ -- 6
-write$ -- 49
-(There were 4 warnings)
+warning$ -- 5
+while$ -- 11
+width$ -- 7
+write$ -- 59
+(There were 5 warnings)
