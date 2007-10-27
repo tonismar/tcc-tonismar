@@ -1,41 +1,24 @@
-%documento principal que vai chamar os outros arquivos
-\documentclass [12pt]{article}
-%\documentclass[oneside]{unilasalle}
+\documentclass[12pt]{article}
 
-%\usepackage[T1]{fontenc}
-\usepackage{float}
-\usepackage[brazilian]{babel}
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
 \usepackage[utf8]{inputenc}
-\usepackage{latexsym}
-\usepackage{psfrag}
-\usepackage{amssymb}
-\usepackage{subfig}
 
-\usepackage{url}
-\usepackage{listings}
-\lstset{
-  basicstyle  = \footnotesize\ttfamily,
-  stringstyle = \ttfamily,
-  numberstyle = \scriptsize\ttfamily
-}
-
-\author {Tonismar Régis Bernardo}
+\sloppy
 
 \title {Integração do Sistema AppMan de Gerenciamento de Aplicações para Ambiente de Grade com diferentes Sistemas de Gerenciamento de Recursos}
 
+\author {Tonismar Régis Bernardo\inst{1},Patrícia Kayser Vargas Mangan\inst{1}}
 
-%\advisor[Profa.~DSc.]{Mangan}{Patrícia Kayser Vargas}
+\address{
+	Curso de Ciência da Computação - Centro Universitário La Salle (UNILASALLE).\\ Av. Victor Barreto, 2288, Centro, Canoas - RS - Brasil
+	\email{tonismar.at.gmail.com}
+}
 
-%\course{Ciência da Computação}
+\begin{document}
+\maketitle
 
-%\keyword{Computação em Grade}
-%\keyword{Monitoramento}
-%\keyword{Escalonamento}
-%\keyword{Gerenciamento}
+	\input{Introducao}
+	\input{Bibliografia}
 
-\begin{document}\label{start}
-	\maketitle
-	%\include{Capa}
-	\include{Introducao}
-	\include{Bibliografia}
-\label{end}\end{document}
+\end{document}

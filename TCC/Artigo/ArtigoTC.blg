@@ -1,7 +1,5 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: ArtigoTC.aux
-A level-1 auxiliary file: Introducao.aux
-A level-1 auxiliary file: Bibliografia.aux
 The style file: ieeetr.bst
 Database file #1: biblio.bib
 Warning--empty journal in Mangan2006
@@ -11,7 +9,7 @@ Warning--empty journal in Thomas1996
 Warning--empty journal in Karl1998
 You've used 6 entries,
             1876 wiz_defined-function locations,
-            519 strings with 4628 characters,
+            517 strings with 4598 characters,
 and the built_in function-call counts, 1303 in all, are:
 = -- 117
 > -- 61
