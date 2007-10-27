@@ -1,10 +1,17 @@
 \begin{thebibliography}{}
 
-\bibitem[Ian~Foster, 1988]{Foster}
-Ian~Foster, Steven~Tuecke, C.~K. (1988).
+\bibitem[Cirne, 2002]{Cirne2002}
+Cirne, W. (2002).
+\newblock Grids computacionais: Arquiteturas, tecnologias e aplicações.
+\newblock page~46.
+\newblock
+  http://walfredo.dsc.ufcg.edu.br/papers/Grids%20Computacionais-%20WSCAD.pdf.
+
+\bibitem[Kesselman, 2001]{Kesselman2001}
+Kesselman, I. F. S. T.~C. (2001).
 \newblock The anatomy of the grid enabling scalable virtual organizations.
-\newblock {\em http://www.globus.org/alliance/publications/papers/anatomy.pdf},
-  page~25.
+\newblock page~25.
+\newblock http://www.globus.org/alliance/publications/papers/anatomy.pdf.
 
 \bibitem[Mangan, 2006]{Mangan2006}
 Mangan, P. K.~V. (2006).
