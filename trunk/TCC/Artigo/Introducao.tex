@@ -7,7 +7,7 @@ Segundo Dantas \cite[apud]{Mangan2006}, pode-se dizer, também, que representa u
 
 Defini-se grades como uma plataforma computacional heterogênia distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma.
 
-\cite[apud]{Mangan2006} O Global Grid Forum (GGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou especificações técnicas e experiências de usuários. O GGF definiu grades computacionais como um ambiente persistente o qual abilita aplicações para integrar intrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} Define um sistema em grade propondo um \emph{checklist} de três pontos.
+\cite[apud]{Mangan2006} O Global Grid Forum (GGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou especificações técnicas e experiências de usuários. O GGF definiu grades computacionais como um ambiente persistente o qual abilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} Define um sistema em grade propondo um \emph{checklist} de três pontos.
 
 \begin{enumerate}
 	\item coordenar recursos os quais não são direcionados para um controle central.
@@ -43,7 +43,7 @@ O gerenciamento de recursos de um sistema centralizado possui informação compl
 
 Sistemas computacionais, na sua grande parte, falham ao tratar dois problemas \cite{Mangan2006}: (1) gerenciamento e controle de um grande número de tarefas; (2) o balanceamento da carga da máquina de submissão e do tráfego da rede.
 
-Uma distribuição dinâmica de dados e tarefas em uma hierarquia de gerenciadores poderia ajudar o gerenciamento de aplicações. Um modelo denominado GRAND (\emph{Grid Robust Application Deployment}) baseado na submissão e controle particionados e hieráquicos foi proposto em \cite{Mangan2006}
+Uma distribuição dinâmica de dados e tarefas em uma hierarquia de gerenciadores poderia ajudar o gerenciamento de aplicações. Um modelo denominado GRAND (\emph{Grid Robust Application Deployment}) baseado na submissão e controle particionados e hierárquicos foi proposto em \cite{Mangan2006}
 
 Pelo fato de que, na atualidade, ambientes grades envolvem principalmente instituições de ensino em aplicações usualmente classificadas como aplicações científicas, o escopo do GRAND é limitado as seguintes itens. 1- heterogeneidade, lembrando que isto afeta diretamente a política de escalonamento por necessitar de saber as características distintas de hardware e software; 2- grande número de submissão de tarefas, referindo-se a aplicações que geram centenas ou milhares de processos; 3- ausência de comunicação por troca de mensagens, pelo fato da necessidade de inúmeros aspectos nas fases de agrupamento e mapeamento serem considerados; 4- interdependência de tarefas, devido ao compartilhamento de arquivos; 5- manipulação de grande número de arquivos pelas tarefas; 6- o uso de arquivos grandes, através técnicas como \emph{staging} e \emph{caching}, minimizando a perda de desempenho em função da latência de transmissão; 7- segurança, assume-se que exista uma conexão segura entre os nós da grade; 8- descoberta dinâmica de recursos; 9- gerenciador de recursos local em cada nó; 10- uma tarefa é executada em um RMS até sua finalização;
 
@@ -55,4 +55,6 @@ No modelo GRAND são tratados três aspectos do gerenciamento de dados: transfer
 \caption{Principais componentes do modelo hierárquico de gerenciamento de tarefas}
 \end{figure}
 
-Baseado no modelo GRAND criou-se o protótipo AppMan (\emph{Application Manager})
+Baseado no modelo GRAND criou-se o protótipo AppMan (\emph{Application Manager}). Implementado em Java visando portabilidade. O AppMan usa o serviço provido pelo EXEHDA middleware \cite{Nino2006} que libera monitoramento e execução remota. As características básicas do GRAND foram implementadas no AppMan, inclusive a submissão de tarefas e o retorno para o usuário. Em cada nó da grade é necessário estar sendo executada uma instância do ISAM/EXEHDA e do AppMan. Qualquer máquina pode submeter ou executar tarefas. A tarefa do AppMan é garantir o escalonamento das tarefas assim como a autorização e autenticação das tarefas executadas. Ele consiste num gerenciador que dispara e controla cada aplicação nos nós com base nas informações recebidas do pelo gerenciador de submissão. O gerenciador de submissão, além de enviar informações, cria e monitora os gerenciadores de tarefas. Os gerenciadores de tarefas são responsáveis pela comunicação com o escalonador de um determinado domínio garantindo a execução remota e a ordem das tarefas de acordo com a dependência de dados \cite{Mangan2006}.
+
+Por definição o modelo GRAND permite que qualquer sistema de gerenciamento de recurso seja usado no nós, porém o protótipo AppMan não contempla essa característica, funcionando apenas com seu próprio gerenciador.
