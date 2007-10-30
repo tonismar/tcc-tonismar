@@ -7,18 +7,14 @@ P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
 \bibitem{Kesselman2001}
 I.~Foster, S.~Tuecke, and C.~Kesselman, ``The anatomy of the grid enabling
   scalable virtual organizations,'' p.~25, 2001.
-\newblock http://www.globus.org/alliance/publications/papers/anatomy.pdf.
 
 \bibitem{Cirne2002}
 W.~Cirne, ``Grids computacionais: Arquiteturas, tecnologias e aplicações,''
   p.~46, 2002.
-\newblock
-  http://walfredo.dsc.ufcg.edu.br/papers/Grids%20Computacionais-%20WSCAD.pdf.
 
 \bibitem{Thomas1996}
 T.~L. Casavant and J.~G. Kuhl, ``A taxonomy of scheduling in general-purpose
   distributed computing systems,'' p.~37, 1996.
-\newblock http://www.eng.uiowa.edu/~tomc/papers/taxo.ps.gz.
 
 \bibitem{M.2002}
 M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
@@ -29,6 +25,9 @@ M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
 K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
   S.~Tuecke, ``A resource management architecture for metacomputing systems,''
   p.~19, 1998.
-\newblock ftp://ftp.globus.org/pub/globus/papers/gram97.pdf.
+
+\bibitem{Nino2006}
+C.~P. Nino, ``Consciência do contexto e da mobilidade do aprendiz em um
+  ambiente de educação pervasiva,'' p.~77, 2006.
 
 \end{thebibliography}
