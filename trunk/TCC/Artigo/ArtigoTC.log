@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  29 OCT 2007 23:03
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  4 NOV 2007 22:36
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -406,15 +406,16 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 55.
- [3]) (./Bibliografia.tex
-(./ArtigoTC.bbl)) [4] (./ArtigoTC.aux) ) 
+ [3]) (./Metodologia.tex)
+(./Estado da Arte.tex [4]) (./Bibliografia.tex (./ArtigoTC.bbl [5])) [6]
+(./ArtigoTC.aux) ) 
 Here is how much of TeX's memory you used:
- 1733 strings out of 94501
- 21784 string characters out of 1175810
+ 1749 strings out of 94501
+ 21996 string characters out of 1175810
  76575 words of memory out of 1000000
- 4892 multiletter control sequences out of 10000+50000
+ 4902 multiletter control sequences out of 10000+50000
  12473 words of font info for 35 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1235b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (4 pages, 16504 bytes).
+Output written on ArtigoTC.dvi (6 pages, 23140 bytes).
