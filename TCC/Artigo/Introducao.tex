@@ -3,11 +3,11 @@
 
 Atualmente o uso de redes de computadores tem aumentado exponencialmente. Muitas dessas redes são distribuídas de forma geograficamente separadas precisando de uma complexa infra-estrutura de software e hardware para gerenciá-las e conectá-las. Dentre as diversas soluções existentes a grade computacional (\emph{grid computing}) possui característica que viabiliza essa conexão.
 
-Segundo Dantas \cite[apud]{Mangan2006}, pode-se dizer, também, que representa uma forma estendida dos serviços web permitindo que recursos computacionais possam ser compartilhados.
+Segundo \cite[apud \cite{Kesselman2001}]{Mangan2006}, pode-se dizer, também, que representa uma forma estendida dos serviços web permitindo que recursos computacionais possam ser compartilhados.
 
-Defini-se grades como uma plataforma computacional heterogênia distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma.
+Define-se grades como uma plataforma computacional heterogênia distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma.
 
-\cite[apud]{Mangan2006} O Global Grid Forum (GGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou especificações técnicas e experiências de usuários. O GGF definiu grades computacionais como um ambiente persistente o qual abilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} Define um sistema em grade propondo um \emph{checklist} de três pontos.
+\cite[apud]{Mangan2006} O Global Grid Forum (GGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou especificações técnicas e experiências de usuários. O GGF definiu grades computacionais como um ambiente persistente o qual abilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} define um sistema em grade propondo um \emph{checklist} de três pontos.
 
 \begin{enumerate}
 	\item coordenar recursos os quais não são direcionados para um controle central.
@@ -58,3 +58,7 @@ No modelo GRAND são tratados três aspectos do gerenciamento de dados: transfer
 Baseado no modelo GRAND criou-se o protótipo AppMan (\emph{Application Manager}). Implementado em Java visando portabilidade. O AppMan usa o serviço provido pelo EXEHDA middleware \cite{Nino2006} que libera monitoramento e execução remota. As características básicas do GRAND foram implementadas no AppMan, inclusive a submissão de tarefas e o retorno para o usuário. Em cada nó da grade é necessário estar sendo executada uma instância do ISAM/EXEHDA e do AppMan. Qualquer máquina pode submeter ou executar tarefas. A tarefa do AppMan é garantir o escalonamento das tarefas assim como a autorização e autenticação das tarefas executadas. Ele consiste num gerenciador que dispara e controla cada aplicação nos nós com base nas informações recebidas do pelo gerenciador de submissão. O gerenciador de submissão, além de enviar informações, cria e monitora os gerenciadores de tarefas. Os gerenciadores de tarefas são responsáveis pela comunicação com o escalonador de um determinado domínio garantindo a execução remota e a ordem das tarefas de acordo com a dependência de dados \cite{Mangan2006}.
 
 Por definição o modelo GRAND permite que qualquer sistema de gerenciamento de recurso seja usado no nós, porém o protótipo AppMan não contempla essa característica, funcionando apenas com seu próprio gerenciador.
+
+Uma interface de aplicação (\emph{Application Program Interface} API) denominada DRMAA (\emph{Distruited Resource Management Application API}) foi desenvolvida para facilitar a integração de diferentes RMSs \cite{Rajic2004}. Sendo assim, este artigo sugere verificar se a DRMAA atende as necessidades do AppMan bem com sua utilização com o AppMan na integração com demais RMSs.
+
+O texto que segue apresenta-se organizado em 5 seções. Na seção 2 é apresentado a metodologia de pesquisa utilizada até o momento bem como suas características. O estado da arte encontra-se na seção 3 relacionado ao estudo da especificação DRMAA. A seção 4 é sugerido o modelo de solução. Por fim, a conclusão do estudo encontra-se na seção 5.

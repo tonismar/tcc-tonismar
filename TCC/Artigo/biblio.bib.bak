@@ -1,6 +1,26 @@
 This file was created with JabRef 2.2.
 Encoding: UTF-8
 
+@ARTICLE{Andrade,
+  author = {Nazareno Andrade and Lauro Costa and Guilherme Germóglio and Walfredo
+	Cirne},
+  title = {Peer-to-peer grid computing with the OurGrid Community},
+  pages = {8},
+  owner = {tonismar},
+  timestamp = {2007.11.04},
+  url = {http://dragao.lsd.ufcg.edu.br/twiki-public/pub/OurGrid/OurPublications/salao2005.pdf}
+}
+
+@TECHREPORT{Araujo2007,
+  author = {Eliane Cristina de Araújo},
+  title = {Laboratórios do mundo uni-vos!!! O projeto OurGrid},
+  institution = {Universidade de Campina Grande - Laboratório de Sistema Distribuído},
+  year = {2007},
+  owner = {tonismar},
+  timestamp = {2007.11.04},
+  url = {http://www.ourgrid.org/twiki-public/pub/OG/OurPresentations/sinec.ppt}
+}
+
 @ARTICLE{Thomas1996,
   author = {Thomas L. Casavant and Jon G. Kuhl},
   title = {A Taxonomy of Scheduling in General-Purpose Distributed Computing
@@ -43,6 +63,43 @@ Encoding: UTF-8
   url = {http://www.globus.org/alliance/publications/papers/anatomy.pdf}
 }
 
+@TECHREPORT{Haas2004,
+  author = {Andreas Haas},
+  title = {DRMAA State of C binding/implementation DRMAA implementation compliance
+	test},
+  institution = {Sun Microsystems},
+  year = {2004},
+  month = {Março},
+  owner = {tonismar},
+  timestamp = {2007.11.03},
+  url = {https://forge.gridforum.org/sf/go/doc5550?nav=1}
+}
+
+@MISC{Jr.2002,
+  author = {Marcelo Augusto Cardozo Jr.},
+  title = {Uma Contribuição à Comunicação e a Coordenação no EXEHDA},
+  month = {Outubro},
+  year = {2002},
+  owner = {tonismar},
+  timestamp = {2007.11.04},
+  url = {http://www.ufpel.tche.br/prg/sisbi/bibct/acervo/info/2002/mono_marcelo.pdf}
+}
+
+@TECHREPORT{Llorente2005,
+  author = {Ignacio Martín Llorente},
+  title = {DRMAA for GridWay},
+  institution = {Grupo de Arquitetura de Sistema Distribuídos e Segurança and Departamento
+	de Arquitetura de Computadores and Universidade Complutense de Madri
+	and Laboratório de Computação Avançada and Simulação e Aplicação
+	Telemáticas and Centro de Astrobiologia CSIC/INTA associado a NASA
+	Instituto de Astrobiologia},
+  year = {2005},
+  month = {Março},
+  owner = {tonismar},
+  timestamp = {2007.11.03},
+  url = {https://forge.gridforum.org/sf/docman/do/downloadDocument/projects.drmaa-wg/docman.root.ggf_13_drmaa_tutorial/doc5551}
+}
+
 @ARTICLE{Mangan2006,
   author = {Patrícia Kayser Vargas Mangan},
   title = {GRAND: Um Modelo de Gerenciamento Hierárquico de Aplicações em Ambiente
@@ -51,6 +108,30 @@ Encoding: UTF-8
   pages = {150},
   owner = {tonismar},
   timestamp = {2007.10.23}
+}
+
+@ARTICLE{Nino2006,
+  author = {Cássia Pereira Nino},
+  title = {Consciência do Contexto e da Mobilidade do Aprendiz em um Ambiente
+	de Educação Pervasiva},
+  year = {2006},
+  pages = {77},
+  owner = {tonismar},
+  timestamp = {2007.10.29},
+  url = {http://saloon.inf.ufrgs.br/twiki-data/Projetos/ISAM/GlobalEdu/MonografiaCassia.pdf}
+}
+
+@ARTICLE{Rajic2004,
+  author = {Hrabir Rajic and Roger Brobst and Waiman Chan and Fritz Ferstl and
+	Jeff Gardine and Andreas Hass ans Bill Nitzber and John Tollefsrud},
+  title = {Open Grid Forum Documents, Distributed Resource Management Application
+	API Specification 1.0 (DRMAA)},
+  year = {2004},
+  pages = {29},
+  month = {Junho},
+  owner = {tonismar},
+  timestamp = {2007.11.03},
+  url = {http://www.ogf.org/documents/GFD.22.pdf}
 }
 
 @MISC{M.2002,
@@ -65,6 +146,28 @@ Encoding: UTF-8
   url = {http://www.ggf.org/documents/GFD.11.pdf}
 }
 
+@ARTICLE{Santos,
+  author = {Lucas Alberto Souza Santos and Marcelo Trindade Rebonatto and Patrícia
+	Kayser Vargas and Cláudio F. R. Geyer},
+  title = {Uma Proposta de Escalonamento Colaborativo de Aplicações em um Ambiente
+	de Computação em Grade},
+  pages = {8},
+  owner = {tonismar},
+  timestamp = {2007.11.04},
+  url = {http://www.cos.ufrj.br/grand/pdfs/WSCAD2005-Lucas.pdf}
+}
+
+@ARTICLE{Silva,
+  author = {Hélio Antônio Mirana da Silva and Tórgan Flores de Siqueira and Leonardo
+	Rech Dalpiaz and Ingrid Jansh-Pôrto and Taisy Silva Weber},
+  title = {Implementação de um Mecanismo de Recuperação por Retorno para o Ambiente
+	de Computação OurGrid},
+  pages = {12},
+  owner = {tonismar},
+  timestamp = {2007.11.04},
+  url = {http://www.lbd.dcc.ufmg.br:8080/colecoes/wtf/2006/st5_2.pdf}
+}
+
 @BOOK{Tanenbaum1995,
   title = {Distributed Operating System},
   publisher = {Prentice Hall; US Ed edition (August 25, 1994)},
@@ -73,6 +176,15 @@ Encoding: UTF-8
   pages = {648},
   owner = {tonismar},
   timestamp = {2007.10.28}
+}
+
+@TECHREPORT{Templeton,
+  author = {Daniel Templeton and Senior Staff Engineer and Sun Microsystems GmbH},
+  title = {GGF12: DRMAA Tutorial C and Java Language Bindings},
+  institution = {Sun Microsystems},
+  owner = {tonismar},
+  timestamp = {2007.11.03},
+  url = {https://forge.gridforum.org/sf/go/doc5552?nav=1}
 }
 
 @ARTICLE{Vargas2005,
