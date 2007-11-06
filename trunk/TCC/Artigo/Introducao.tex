@@ -3,11 +3,11 @@
 
 Atualmente o uso de redes de computadores tem aumentado exponencialmente. Muitas dessas redes são distribuídas de forma geograficamente separadas precisando de uma complexa infra-estrutura de software e hardware para gerenciá-las e conectá-las. Dentre as diversas soluções existentes a grade computacional (\emph{grid computing}) possui característica que viabiliza essa conexão.
 
-Segundo \cite[apud \cite{Kesselman2001}]{Mangan2006}, pode-se dizer, também, que representa uma forma estendida dos serviços web permitindo que recursos computacionais possam ser compartilhados.
+Segundo Foster \cite{Kesselman2001}, pode-se dizer, também, que representa uma forma estendida dos serviços web permitindo que recursos computacionais possam ser compartilhados.
 
 Define-se grades como uma plataforma computacional heterogênia distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma.
 
-\cite[apud]{Mangan2006} O Global Grid Forum (GGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou especificações técnicas e experiências de usuários. O GGF definiu grades computacionais como um ambiente persistente o qual abilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} define um sistema em grade propondo um \emph{checklist} de três pontos.
+O Open Grid Forum (OGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou \cite{M.2002} especificações técnicas e experiências de usuários. O OGF definiu grades computacionais como um ambiente persistente o qual habilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} define um sistema em grade propondo um \emph{checklist} de três pontos.
 
 \begin{enumerate}
 	\item coordenar recursos os quais não são direcionados para um controle central.
@@ -15,7 +15,7 @@ Define-se grades como uma plataforma computacional heterogênia distribuída geo
 	\item oferecer QoS (qualidade de serviço) não triviais tais como: autenticação, escalonamento de tarefas, disponibilidade.
 \end{enumerate}
 
-Uma definição formal do que um sistema em grade pode prover foi definido em \cite[apud]{Mangan2006}. Focando na sua semântica, mostrando que grades não são apenas uma modificação de um sistema distribuído convencional. Podem apresentar recursos heterogênicos como sensores e detectores e não apenas nós computacionais. Abaixo uma lista de aspectos que evidenciam uma grade computacional \cite{Cirne2002}:
+Uma definição formal do que um sistema em grade pode prover foi definido em \cite{Foster2002}. Focando na sua semântica, mostrando que grades não são apenas uma modificação de um sistema distribuído convencional. Podem apresentar recursos heterogênicos como sensores e detectores e não apenas nós computacionais. Abaixo uma lista de aspectos que evidenciam uma grade computacional \cite{Cirne2002}:
 
 \begin{itemize}
 	\item heterogeneidade
@@ -29,7 +29,7 @@ A grade deve estar preparada para lidar com todo o dinamismo e variabilidade, pr
 
 Devido à grande escala, ampla distribuição e existência de múltiplos domínios administrativos, a construção de um escalonador de recursos para grades é praticamente inviável, até porque, convencer os administradores dos recursos que compõem a grade abrirem mão do controle dos seus recursos não é uma tarefa nada fácil. Escalonadores têm como características receber solicitações de vários usuários, arbitrando, portanto, entre os usuários, o uso dos recursos controlados.  
 
-\cite{Thomas1996} considera escalonar como um problema de gerenciamento de recursos. Basicamente um mecanismo ou uma política usada para, eficientemente e efetivamente, gerenciar o acesso e uso de um determinado recurso. Porém, de acordo com o GGF's \cite{M.2002}, escalonamento é o processo de ordenar tarefas sobre os recursos computacionais e ordenar a comunicação entre as tarefas, assim sendo, ambas aplicações e sistemas devem ser escalonadas. 
+Casavant \cite{Thomas1996} considera escalonar como um problema de gerenciamento de recursos. Basicamente um mecanismo ou uma política usada para, eficientemente e efetivamente, gerenciar o acesso e uso de um determinado recurso. Porém, de acordo com o OGF's \cite{M.2002}, escalonamento é o processo de ordenar tarefas sobre os recursos computacionais e ordenar a comunicação entre as tarefas, assim sendo, ambas aplicações e sistemas devem ser escalonadas. 
 
 O gerenciamento de recursos de um sistema centralizado possui informação completa e atualizada do status dos recursos gerenciados. Este difere do sistema distribuído, o qual não tem conhecimento global de recursos dificultando assim, o gerenciamento. O ambiente em grade introduz cinco desafios para o problema de gerenciamento de recursos em ambientes distribuídos \cite{Karl1998}:
 
