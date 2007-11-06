@@ -1,12 +1,17 @@
 \begin{thebibliography}{10}
 
-\bibitem{Mangan2006}
-P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
-  aplicações em ambiente de computação em grade,'' p.~150, 2006.
-
 \bibitem{Kesselman2001}
 I.~Foster, S.~Tuecke, and C.~Kesselman, ``The anatomy of the grid enabling
   scalable virtual organizations,'' p.~25, 2001.
+
+\bibitem{M.2002}
+M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
+  and keywords,'' November 2002.
+
+\bibitem{Foster2002}
+I.~Foster, C.~Kesselman, J.~M. Nick, and S.~Tuecke, ``The physiology of the
+  grid: An open grid services architecture for distributed systems
+  integration,'' p.~31, Junho 2002.
 
 \bibitem{Cirne2002}
 W.~Cirne, ``Grids computacionais: Arquiteturas, tecnologias e aplicações,''
@@ -16,15 +21,14 @@ W.~Cirne, ``Grids computacionais: Arquiteturas, tecnologias e aplicações,''
 T.~L. Casavant and J.~G. Kuhl, ``A taxonomy of scheduling in general-purpose
   distributed computing systems,'' p.~37, 1996.
 
-\bibitem{M.2002}
-M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
-  and keywords,'' November 2002.
-\newblock http://www.ggf.org/documents/GFD.11.pdf.
-
 \bibitem{Karl1998}
 K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
   S.~Tuecke, ``A resource management architecture for metacomputing systems,''
   p.~19, 1998.
+
+\bibitem{Mangan2006}
+P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
+  aplicações em ambiente de computação em grade,'' p.~150, 2006.
 
 \bibitem{Nino2006}
 C.~P. Nino, ``Consciência do contexto e da mobilidade do aprendiz em um
@@ -64,5 +68,9 @@ L.~A.~S. Santos, M.~T. Rebonatto, P.~K. Vargas, and C.~F.~R. Geyer, ``Uma
 \bibitem{Jr.2002}
 M.~A.~C. Jr., ``Uma contribuição à comunicação e a coordenação no
   exehda,'' Outubro 2002.
+
+\bibitem{Foster1998}
+I.~Foster and C.~Kesselman, ``The globus project: A status report,'' p.~15,
+  1998.
 
 \end{thebibliography}
