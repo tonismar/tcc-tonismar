@@ -2,59 +2,63 @@ This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: ArtigoTC.aux
 The style file: ieeetr.bst
 Database file #1: biblio.bib
+Warning--entry type for "condor2007" isn't style-file defined
+--line 4 of file biblio.bib
+A bad cross reference---entry "condor2007"
+refers to entry "High Throughput Computing (CONDOR), An Overview of the Condor System", which doesn't exist
+Warning--I didn't find a database entry for "High Throughput Computing (CONDOR), An Overview of the Condor System"
+Warning--can't use both author and editor fields in Dantas2005
+Warning--empty publisher in Dantas2005
+Warning--empty journal in Bayucan2007
+Warning--empty journal in Mangan2006
+Warning--empty journal in Vargas2003
+Warning--empty journal in Rajic2004
+Warning--empty year in Templeton
 Warning--empty journal in Kesselman2001
 Warning--empty journal in Foster2002
 Warning--empty journal in Cirne2002
 Warning--empty journal in Thomas1996
 Warning--empty journal in Karl1998
-Warning--empty journal in Mangan2006
 Warning--empty journal in Nino2006
-Warning--empty journal in Rajic2004
-Warning--empty year in Templeton
-Warning--empty journal in Silva
-Warning--empty year in Silva
-Warning--empty journal in Santos
-Warning--empty year in Santos
-Warning--empty journal in Foster1998
 You've used 16 entries,
             1876 wiz_defined-function locations,
-            565 strings with 6211 characters,
-and the built_in function-call counts, 3086 in all, are:
-= -- 250
-> -- 164
+            568 strings with 6313 characters,
+and the built_in function-call counts, 3053 in all, are:
+= -- 251
+> -- 160
 < -- 0
-+ -- 62
-- -- 46
-* -- 213
-:= -- 489
-add.period$ -- 16
++ -- 61
+- -- 45
+* -- 204
+:= -- 483
+add.period$ -- 17
 call.type$ -- 16
-change.case$ -- 19
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 167
+cite$ -- 29
+duplicate$ -- 165
 empty$ -- 289
-format.name$ -- 46
-if$ -- 731
+format.name$ -- 45
+if$ -- 725
 int.to.chr$ -- 0
 int.to.str$ -- 16
-missing$ -- 11
-newline$ -- 51
+missing$ -- 12
+newline$ -- 53
 num.names$ -- 16
-pop$ -- 87
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 91
 stack$ -- 0
-substring$ -- 44
+substring$ -- 42
 swap$ -- 44
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
-while$ -- 27
+warning$ -- 13
+while$ -- 26
 width$ -- 18
-write$ -- 128
-(There were 14 warnings)
+write$ -- 131
+(There was 1 error message)

@@ -1,5 +1,15 @@
-This file was created with JabRef 2.2.
-Encoding: UTF-8
+% This file was created with JabRef 2.3b3.
+% Encoding: UTF-8
+
+@OTHER{condor2007,
+  author = {http://www.cs.wisc.edu/condor/overview},
+  citeseerurl = {http://www.cs.wisc.edu/condor/overview},
+  comment = {acessado em Agosto de 2007},
+  crossref = {High Throughput Computing (CONDOR), An Overview of the Condor System},
+  owner = {tonismar},
+  timestamp = {2007.11.07},
+  title = {High Throughput Computing (CONDOR), An Overview of the Condor System}
+}
 
 @ARTICLE{Andrade,
   author = {Nazareno Andrade and Lauro Costa and Guilherme Germóglio and Walfredo
@@ -19,6 +29,18 @@ Encoding: UTF-8
   owner = {tonismar},
   timestamp = {2007.11.04},
   url = {http://www.ourgrid.org/twiki-public/pub/OG/OurPresentations/sinec.ppt}
+}
+
+@ARTICLE{Bayucan2007,
+  author = {Albeaus Bayucan and Robert L. Henderson and Casimir Lesiak and Bhroam
+	Mann and Tom Proett and Dave Tweten},
+  title = {Numerical Aerospace Simulation Systems Division NASA Ames Research
+	Center},
+  year = {2007},
+  pages = {281},
+  owner = {tonismar},
+  timestamp = {2007.11.07},
+  url = {http://www.nas.nasa.gov/Software/PBS/pbsdocs/ers.ps}
 }
 
 @ARTICLE{Thomas1996,
@@ -51,6 +73,17 @@ Encoding: UTF-8
   owner = {tonismar},
   timestamp = {2007.10.27},
   url = {ftp://ftp.globus.org/pub/globus/papers/gram97.pdf}
+}
+
+@BOOK{Dantas2005,
+  title = {Computação Distribuída de Alto Desempenho: Redes, Clusters e Grids
+	Computacionais},
+  year = {2005},
+  editor = {Axcel Books},
+  author = {Mario Antônio R. Dantas},
+  pages = {278},
+  owner = {tonismar},
+  timestamp = {2007.11.07}
 }
 
 @ARTICLE{Foster1998,
@@ -172,8 +205,8 @@ Encoding: UTF-8
   title = {Grid Scheduling Dictionary of Terms and Keywords},
   month = {November},
   year = {2002},
+  file = {GFD-I.11:GFD-I.11:PDF},
   owner = {tonismar},
-  pdf = {GFD-I.11},
   timestamp = {2007.10.27},
   url = {http://www.ggf.org/documents/GFD.11.pdf}
 }
@@ -219,6 +252,19 @@ Encoding: UTF-8
   url = {https://forge.gridforum.org/sf/go/doc5552?nav=1}
 }
 
+@ARTICLE{Vargas2003,
+  author = {Patrícia Kayser Vargas and Inês de Castro Dutra and Cláudio F. R.
+	Geyer},
+  title = {Hierarchical Resource Management and Application Control in Grid
+	Environments},
+  year = {2003},
+  pages = {8},
+  note = {Relatório Técnico ES-608/03, COPPE/Sistemas UFRJ},
+  owner = {tonismar},
+  timestamp = {2007.11.07},
+  url = {http://www.cos.ufrj.br/grand/pdfs/es60803.pdf}
+}
+
 @ARTICLE{Vargas2005,
   author = {Patrícia Kayser Vargas and Inês de Castro Dutra and Vinícius Dalto
 	do Nascimento and Lucas A. S. Santos and Luciano C. da Silva and
@@ -231,13 +277,15 @@ Encoding: UTF-8
   url = {http://www.cos.ufrj.br/~kayser/grand/pdfs/MGC2005-vargas2.pdf}
 }
 
-@comment{jabref-meta: selector_publisher:}
+@comment{jabref-meta: selector_note:}
+
+@comment{jabref-meta: selector_Title:}
 
 @comment{jabref-meta: selector_author:}
-
-@comment{jabref-meta: selector_note:}
 
 @comment{jabref-meta: selector_journal:}
 
 @comment{jabref-meta: selector_keywords:}
+
+@comment{jabref-meta: selector_publisher:}
 
