@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.10.23)  6 NOV 2007 00:52
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  8 NOV 2007 00:33
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -382,40 +382,41 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (./Introducao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [1
 
+])
+(./Metodologia.tex) (./Arte.tex
 Underfull \hbox (badness 2119) in paragraph at lines 8--9
 \OT1/ptm/m/n/12 ge-ografi-ca-mente fornecendo servi[]os e re-cur-sos []as organ
 iza[][]oes par-tic-i-pantes da
  []
 
+[2]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 21.
-(/usr/share/texmf-tetex/tex/latex/psnfss/omsptm.fd
+ (/usr/share/texmf-tetex/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
- [1
-
-] [2]
+ [3]
 File: grand.eps Graphic file (type eps)
  <grand.eps>
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 57.
 
 (/usr/share/texmf-tetex/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 55.
- [3]) (./Metodologia.tex)
-(./Estado da Arte.tex [4]) (./Bibliografia.tex (./ArtigoTC.bbl [5])) [6]
-(./ArtigoTC.aux) ) 
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 57.
+ [4]) (./Bibliografia.tex
+(./ArtigoTC.bbl [5])) [6] (./ArtigoTC.aux) ) 
 Here is how much of TeX's memory you used:
- 1751 strings out of 94501
- 22020 string characters out of 1175810
- 76575 words of memory out of 1000000
- 4904 multiletter control sequences out of 10000+50000
+ 1754 strings out of 94501
+ 22059 string characters out of 1175811
+ 77575 words of memory out of 1000000
+ 4907 multiletter control sequences out of 10000+50000
  12473 words of font info for 35 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
- 30i,10n,28p,1235b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 30i,10n,28p,1794b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (6 pages, 23556 bytes).
+Output written on ArtigoTC.dvi (6 pages, 27556 bytes).

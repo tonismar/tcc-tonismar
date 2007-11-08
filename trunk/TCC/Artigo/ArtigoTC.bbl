@@ -1,5 +1,49 @@
 \begin{thebibliography}{10}
 
+\bibitem{Dantas2005}
+M.~A.~R. Dantas, {\em Computação Distribuída de Alto Desempenho: Redes,
+  Clusters e Grids Computacionais}.
+\newblock 2005.
+
+\bibitem{condor2007}
+C.~http://www.cs.wisc.edu/condor/overview, ``High throughput computing
+  (condor), an overview of the condor system.''
+
+\bibitem{Bayucan2007}
+A.~Bayucan, R.~L. Henderson, C.~Lesiak, B.~Mann, T.~Proett, and D.~Tweten,
+  ``Numerical aerospace simulation systems division nasa ames research
+  center,'' p.~281, 2007.
+
+\bibitem{Mangan2006}
+P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
+  aplicações em ambiente de computação em grade,'' p.~150, 2006.
+
+\bibitem{Vargas2003}
+P.~K. Vargas, I.~de~Castro~Dutra, and C.~F.~R. Geyer, ``Hierarchical resource
+  management and application control in grid environments,'' p.~8, 2003.
+\newblock Relatório Técnico ES-608/03, COPPE/Sistemas UFRJ.
+
+\bibitem{Rajic2004}
+H.~Rajic, R.~Brobst, W.~Chan, F.~Ferstl, J.~Gardine, A.~H. ans Bill~Nitzber,
+  and J.~Tollefsrud, ``Open grid forum documents, distributed resource
+  management application api specification 1.0 (drmaa),'' p.~29, Junho 2004.
+
+\bibitem{Templeton}
+D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
+  java language bindings,'' tech. rep., Sun Microsystems.
+
+\bibitem{Llorente2005}
+I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
+  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
+  Computadores and Universidade Complutense de Madri and Laboratório de
+  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
+  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
+  Março 2005.
+
+\bibitem{Haas2004}
+A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
+  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
+
 \bibitem{Kesselman2001}
 I.~Foster, S.~Tuecke, and C.~Kesselman, ``The anatomy of the grid enabling
   scalable virtual organizations,'' p.~25, 2001.
@@ -26,51 +70,8 @@ K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
   S.~Tuecke, ``A resource management architecture for metacomputing systems,''
   p.~19, 1998.
 
-\bibitem{Mangan2006}
-P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
-  aplicações em ambiente de computação em grade,'' p.~150, 2006.
-
 \bibitem{Nino2006}
 C.~P. Nino, ``Consciência do contexto e da mobilidade do aprendiz em um
   ambiente de educação pervasiva,'' p.~77, 2006.
-
-\bibitem{Rajic2004}
-H.~Rajic, R.~Brobst, W.~Chan, F.~Ferstl, J.~Gardine, A.~H. ans Bill~Nitzber,
-  and J.~Tollefsrud, ``Open grid forum documents, distributed resource
-  management application api specification 1.0 (drmaa),'' p.~29, Junho 2004.
-
-\bibitem{Templeton}
-D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
-  java language bindings,'' tech. rep., Sun Microsystems.
-
-\bibitem{Llorente2005}
-I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
-  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
-  Computadores and Universidade Complutense de Madri and Laboratório de
-  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
-  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
-  Março 2005.
-
-\bibitem{Haas2004}
-A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
-  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
-
-\bibitem{Silva}
-H.~A.~M. da~Silva, T.~F. de~Siqueira, L.~R. Dalpiaz, I.~Jansh-Pôrto, and T.~S.
-  Weber, ``Implementação de um mecanismo de recuperação por retorno para o
-  ambiente de computação ourgrid,'' p.~12.
-
-\bibitem{Santos}
-L.~A.~S. Santos, M.~T. Rebonatto, P.~K. Vargas, and C.~F.~R. Geyer, ``Uma
-  proposta de escalonamento colaborativo de aplicações em um ambiente de
-  computação em grade,'' p.~8.
-
-\bibitem{Jr.2002}
-M.~A.~C. Jr., ``Uma contribuição à comunicação e a coordenação no
-  exehda,'' Outubro 2002.
-
-\bibitem{Foster1998}
-I.~Foster and C.~Kesselman, ``The globus project: A status report,'' p.~15,
-  1998.
 
 \end{thebibliography}
