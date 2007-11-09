@@ -28,29 +28,13 @@ H.~Rajic, R.~Brobst, W.~Chan, F.~Ferstl, J.~Gardine, A.~H. ans Bill~Nitzber,
   and J.~Tollefsrud, ``Open grid forum documents, distributed resource
   management application api specification 1.0 (drmaa),'' p.~29, Junho 2004.
 
-\bibitem{Templeton}
-D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
-  java language bindings,'' tech. rep., Sun Microsystems.
-
-\bibitem{Llorente2005}
-I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
-  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
-  Computadores and Universidade Complutense de Madri and Laboratório de
-  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
-  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
-  Março 2005.
-
-\bibitem{Haas2004}
-A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
-  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
+\bibitem{M.2002}
+M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
+  and keywords,'' November 2002.
 
 \bibitem{Kesselman2001}
 I.~Foster, S.~Tuecke, and C.~Kesselman, ``The anatomy of the grid enabling
   scalable virtual organizations,'' p.~25, 2001.
-
-\bibitem{M.2002}
-M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
-  and keywords,'' November 2002.
 
 \bibitem{Foster2002}
 I.~Foster, C.~Kesselman, J.~M. Nick, and S.~Tuecke, ``The physiology of the
@@ -73,5 +57,21 @@ K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
 \bibitem{Nino2006}
 C.~P. Nino, ``Consciência do contexto e da mobilidade do aprendiz em um
   ambiente de educação pervasiva,'' p.~77, 2006.
+
+\bibitem{Templeton}
+D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
+  java language bindings,'' tech. rep., Sun Microsystems.
+
+\bibitem{Llorente2005}
+I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
+  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
+  Computadores and Universidade Complutense de Madri and Laboratório de
+  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
+  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
+  Março 2005.
+
+\bibitem{Haas2004}
+A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
+  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
 
 \end{thebibliography}
