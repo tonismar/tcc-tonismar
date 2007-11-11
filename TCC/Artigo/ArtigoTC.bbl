@@ -58,6 +58,26 @@ K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
 C.~P. Nino, ``Consciência do contexto e da mobilidade do aprendiz em um
   ambiente de educação pervasiva,'' p.~77, 2006.
 
+\bibitem{Santos}
+L.~A.~S. Santos, M.~T. Rebonatto, P.~K. Vargas, and C.~F.~R. Geyer, ``Uma
+  proposta de escalonamento colaborativo de aplicações em um ambiente de
+  computação em grade,'' p.~8.
+
+\bibitem{Foster1998}
+I.~Foster and C.~Kesselman, ``The globus project: A status report,'' p.~15,
+  1998.
+
+\bibitem{isam}
+``Apresentação do isam.''
+
+\bibitem{Bayucan1998}
+A.~Bayucan, R.~L. Henderson, C.~Lesiak, B.~Man, T.~Proett, and D.~Tweten,
+  ``Portable batch system - external reference specification,'' p.~281, Agosto
+  1998.
+
+\bibitem{Globus}
+http://www.globus.org/alliance/publications/papers.php, ``The globus aliance.''
+
 \bibitem{Templeton}
 D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
   java language bindings,'' tech. rep., Sun Microsystems.

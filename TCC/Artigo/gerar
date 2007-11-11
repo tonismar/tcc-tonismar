@@ -1,18 +1,20 @@
 #!/bin/sh
 
-latex $1.tex
+arq=`echo $1 | sed s/"\.tex"//g`
 
-bibtex $1.aux
+latex $arq.tex
 
-makeindex $1.idx
+bibtex $arq.aux
 
-latex $1.tex
+makeindex $arq.idx
 
-latex $1.tex
+latex $arq.tex
+
+latex $arq.tex
 
 # gera arquivo postscript
-#dvips -o $1.ps $1.dvi
+#dvips -o $arq.ps $arq.dvi
 
-dvipdft $1.dvi
+dvipdft $arq.dvi
 
-evince $1.pdf & > /dev/null
+exec evince $arq.pdf & > /dev/null

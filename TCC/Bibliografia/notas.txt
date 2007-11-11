@@ -14,5 +14,6 @@ Este capítulo apresenta alguns experimentos computacionais para avaliar como o 
 RESUMO DO QUE É ISAM:
 O projeto ISAM (Infra-estrutura de Suporte às Aplicações Móveis) como mostra a figura (inserir figura) procura fornecer uma infra-estrutura para construção e execução de aplicações pervasivas. O ambiente pervasivo é composto por três abstrações básicas; EXEHDAcell que é a área de atuação da EXEHDAbase, EXEHDAbase onde todos os serviços providos pelo ambiente ISAM estão concentrados e EXEHDAnode representando todos dispositivos que estão executando aplicações no ambiente.
 
-RESUMO DO OURGRID:
+
+O PBS é uma nova suite de ferramentas de software que realiza o crescimento necessário para uma flexível, conectado, ambiente de processamento batch multi-plataforma. O típico sistema de enfileiramento batch escalona tarefas para execução usando uma conjunto de controle de filas.
 
