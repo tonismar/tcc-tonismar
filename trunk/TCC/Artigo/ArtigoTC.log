@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  11 NOV 2007 12:52
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  12 NOV 2007 00:24
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -399,36 +399,41 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
  [1
 
 ])
-(./Arte.tex
+(./Metodologia.tex) (./Arte.tex [2]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 17.
- (/usr/share/texmf-tetex/tex/latex/psnfss/omsptm.fd
+
+(/usr/share/texmf-tetex/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
- [2] [3]
+ [3]
 File: img/grand.eps Graphic file (type eps)
-
-<img/grand.eps>
+ <img/grand.eps>
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 54.
- (/usr/share/texmf-tetex/tex/latex/psnfss/ot1phv.fd
+
+(/usr/share/texmf-tetex/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
- [4])
-(./Metodologia.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5])
-(./Bibliografia.tex (./ArtigoTC.bbl [6])) [7] (./ArtigoTC.aux) ) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5]) (./Modelo.tex [6]
+File: img/AppMan.eps Graphic file (type eps)
+ <img/AppMan.eps>
+File: img/AppManRMS.eps Graphic file (type eps)
+ <img/AppManRMS.eps>)
+(./Bibliografia.tex (./ArtigoTC.bbl [7] [8])) [9] (./ArtigoTC.aux) ) 
 Here is how much of TeX's memory you used:
- 2087 strings out of 94501
- 25940 string characters out of 1175811
- 86626 words of memory out of 1000000
- 5228 multiletter control sequences out of 10000+50000
- 12473 words of font info for 35 fonts, out of 500000 for 2000
+ 2107 strings out of 94501
+ 26188 string characters out of 1175811
+ 87626 words of memory out of 1000000
+ 5243 multiletter control sequences out of 10000+50000
+ 12980 words of font info for 36 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (7 pages, 31380 bytes).
+Output written on ArtigoTC.dvi (9 pages, 40076 bytes).
