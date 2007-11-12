@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  12 NOV 2007 00:24
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  12 NOV 2007 01:24
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -320,7 +320,11 @@ File: babel.def 2004/11/20 v3.8d Babel common definitions
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-)) (./ArtigoTC.aux)
+)) (./ArtigoTC.aux
+
+LaTeX Warning: Label `AppManRMS' multiply defined.
+
+)
 \openout1 = `ArtigoTC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -336,8 +340,7 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
-
-(/usr/share/texmf-tetex/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texmf-tetex/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -------------------- Geometry parameters
@@ -425,15 +428,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/AppMan.eps Graphic file (type eps)
  <img/AppMan.eps>
 File: img/AppManRMS.eps Graphic file (type eps)
- <img/AppManRMS.eps>)
-(./Bibliografia.tex (./ArtigoTC.bbl [7] [8])) [9] (./ArtigoTC.aux) ) 
+ <img/AppManRMS.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/SubmissionManager.eps Graphic file (type eps)
+<img/SubmissionManager.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Bibliografia.tex (./ArtigoTC.bbl [7] [8] [9])) [10] (./ArtigoTC.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2107 strings out of 94501
- 26188 string characters out of 1175811
+ 2109 strings out of 94501
+ 26234 string characters out of 1175811
  87626 words of memory out of 1000000
- 5243 multiletter control sequences out of 10000+50000
+ 5244 multiletter control sequences out of 10000+50000
  12980 words of font info for 36 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (9 pages, 40076 bytes).
+Output written on ArtigoTC.dvi (10 pages, 40356 bytes).
