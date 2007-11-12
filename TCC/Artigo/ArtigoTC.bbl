@@ -28,6 +28,22 @@ H.~Rajic, R.~Brobst, W.~Chan, F.~Ferstl, J.~Gardine, A.~H. ans Bill~Nitzber,
   and J.~Tollefsrud, ``Open grid forum documents, distributed resource
   management application api specification 1.0 (drmaa),'' p.~29, Junho 2004.
 
+\bibitem{Templeton}
+D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf13: Drmaa tutorial c and
+  java language bindings,'' tech. rep., Sun Microsystems.
+
+\bibitem{Llorente2005}
+I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
+  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
+  Computadores and Universidade Complutense de Madri and Laboratório de
+  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
+  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
+  Março 2005.
+
+\bibitem{Haas2004}
+A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
+  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
+
 \bibitem{M.2002}
 M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
   and keywords,'' November 2002.
@@ -78,20 +94,38 @@ A.~Bayucan, R.~L. Henderson, C.~Lesiak, B.~Man, T.~Proett, and D.~Tweten,
 \bibitem{Globus}
 http://www.globus.org/alliance/publications/papers.php, ``The globus aliance.''
 
-\bibitem{Templeton}
-D.~Templeton, S.~S. Engineer, and S.~M. GmbH, ``Ggf12: Drmaa tutorial c and
-  java language bindings,'' tech. rep., Sun Microsystems.
+\bibitem{Andrade2002}
+N.~Andrade, ``Acesso em grids computacionais: estado da arte e prespectivas,''
+  p.~16, 2002.
 
-\bibitem{Llorente2005}
-I.~M. Llorente, ``Drmaa for gridway,'' tech. rep., Grupo de Arquitetura de
-  Sistema Distribuídos e Segurança and Departamento de Arquitetura de
-  Computadores and Universidade Complutense de Madri and Laboratório de
-  Computação Avançada and Simulação e Aplicação Telemáticas and Centro
-  de Astrobiologia CSIC/INTA associado a NASA Instituto de Astrobiologia,
-  Março 2005.
+\bibitem{Leon2006}
+J.~E.~M. León, ``Análisis comparativo gt 2.4 - gt 4.0,'' {\em Semana de
+  Cómputo Científico - Supercómputo, Visualización y Realidad Virtual},
+  p.~60, 2006.
 
-\bibitem{Haas2004}
-A.~Haas, ``Drmaa state of c binding/implementation drmaa implementation
-  compliance test,'' tech. rep., Sun Microsystems, Março 2004.
+\bibitem{Rajic2002}
+H.~Rajic, R.~Brobst, C.~D. Systems, W.~Chan, F.~Ferstl, J.~Gardiner, A.~Haas,
+  B.~Nitzberg, and J.~Tollefsrud, ``Distributed resource management application
+  api specification,'' p.~20, 2002.
+
+\bibitem{Templeton2006}
+D.~Templeton and A.~Haas, ``N1™ grid engine drmaa 1.0 implementation –
+  experience report (gfd-105),'' tech. rep., Sun Microsystems, Inc., Maio 2006.
+
+\bibitem{Herrera2007}
+J.~Herrera, E.~Huedo, R.~S. Montero, and I.~M. Llorente, ``Gridway drmaa 1.0
+  implementation – experience report (gfd-104),'' tech. rep., Universidad
+  Complutense de Madrid, Fevereiro 2007.
+
+\bibitem{Troeger2007}
+P.~Tröger and B.~Gietzel, ``Condor drmaa 1.0 implementation - experience
+  report (gfd-103),'' tech. rep., Hasso-Plattner-Institute and University of
+  Wisconsin-Madison, Fevereiro 2007.
+
+\bibitem{Ciesnik2007}
+L.~Ciesnik, P.~Domagalski, K.~Kurowski, and P.~Lichocki, ``Pbs/torque drmaa 1.0
+  implementation - experience report (gfd-117),'' tech. rep., Poznan
+  Supercomputing and Networking Center and Poland FedStage Systems Inc.,
+  Setembro 2007.
 
 \end{thebibliography}
