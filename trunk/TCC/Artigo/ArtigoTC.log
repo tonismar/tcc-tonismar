@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  12 NOV 2007 23:28
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  14 NOV 2007 00:29
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -421,25 +421,30 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5]) (./Modelo.tex [6]
+[4] [5]
+
+LaTeX Warning: Citation `site do isam' on page 6 undefined on input line 70.
+
+) (./Modelo.tex [6]
 File: img/AppMan.eps Graphic file (type eps)
- <img/AppMan.eps>
+ <img/AppMan.eps> [7]
 File: img/TaskManager.eps Graphic file (type eps)
- <img/TaskManager.eps> [7]
+ <img/TaskManager.eps>
 File: img/AppManRMS.eps Graphic file (type eps)
 
-<img/AppManRMS.eps>
+<img/AppManRMS.eps>) (./Conclusao.tex) (./Bibliografia.tex (./ArtigoTC.bbl
+[8] [9])) [10] (./ArtigoTC.aux)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: There were undefined references.
 
-) (./Bibliografia.tex (./ArtigoTC.bbl [8] [9])) [10] (./ArtigoTC.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 2110 strings out of 94501
- 26235 string characters out of 1175811
+ 2117 strings out of 94501
+ 26321 string characters out of 1175811
  87626 words of memory out of 1000000
- 5245 multiletter control sequences out of 10000+50000
+ 5249 multiletter control sequences out of 10000+50000
  12980 words of font info for 36 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (10 pages, 42864 bytes).
+Output written on ArtigoTC.dvi (10 pages, 43484 bytes).
