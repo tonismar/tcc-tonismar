@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: ArtigoTC.aux
+White space in argument---line 54 of file ArtigoTC.aux
+ : \citation{site
+ :                do isam}
+I'm skipping whatever remains of this command
 The style file: ieeetr.bst
 Database file #1: biblio.bib
 Warning--entry type for "condor2007" isn't style-file defined
@@ -33,45 +37,45 @@ Warning--empty journal in Foster1998
 Warning--empty journal in Bayucan1998
 Warning--empty journal in Andrade2002
 Warning--empty journal in Rajic2002
-You've used 28 entries,
+You've used 29 entries,
             1876 wiz_defined-function locations,
-            628 strings with 8231 characters,
-and the built_in function-call counts, 5205 in all, are:
-= -- 424
-> -- 288
+            633 strings with 8450 characters,
+and the built_in function-call counts, 5336 in all, are:
+= -- 435
+> -- 292
 < -- 0
-+ -- 109
-- -- 81
-* -- 354
-:= -- 828
-add.period$ -- 27
-call.type$ -- 28
-change.case$ -- 34
++ -- 111
+- -- 82
+* -- 361
+:= -- 850
+add.period$ -- 28
+call.type$ -- 29
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 274
-empty$ -- 491
-format.name$ -- 81
-if$ -- 1231
+cite$ -- 48
+duplicate$ -- 283
+empty$ -- 508
+format.name$ -- 82
+if$ -- 1262
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 18
-newline$ -- 89
-num.names$ -- 27
-pop$ -- 135
+int.to.str$ -- 29
+missing$ -- 19
+newline$ -- 92
+num.names$ -- 28
+pop$ -- 139
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 157
+skip$ -- 158
 stack$ -- 0
 substring$ -- 66
-swap$ -- 69
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 19
-while$ -- 43
-width$ -- 30
-write$ -- 226
-(There were 2 error messages)
+while$ -- 44
+width$ -- 31
+write$ -- 234
+(There were 3 error messages)
