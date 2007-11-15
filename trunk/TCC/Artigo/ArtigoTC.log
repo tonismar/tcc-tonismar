@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  14 NOV 2007 00:29
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  15 NOV 2007 02:36
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -393,13 +393,16 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 21.
 
 (/usr/share/texmf-tetex/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./Introducao.tex
+) (./Resumo.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
+)
+(./Introducao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
  [1
 
-])
-(./Metodologia.tex) (./Arte.tex [2]
+]) (./Metodologia.tex [2]) (./Arte.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 17.
 
 (/usr/share/texmf-tetex/tex/latex/psnfss/omsptm.fd
@@ -407,7 +410,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
- [3]
+ [3] [4]
 File: img/grand.eps Graphic file (type eps)
  <img/grand.eps>
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 54.
@@ -417,11 +420,7 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5]
+ [5]
 
 LaTeX Warning: Citation `site do isam' on page 6 undefined on input line 70.
 
@@ -429,22 +428,22 @@ LaTeX Warning: Citation `site do isam' on page 6 undefined on input line 70.
 File: img/AppMan.eps Graphic file (type eps)
  <img/AppMan.eps> [7]
 File: img/TaskManager.eps Graphic file (type eps)
- <img/TaskManager.eps>
+ <img/TaskManager.eps> [8]
 File: img/AppManRMS.eps Graphic file (type eps)
 
 <img/AppManRMS.eps>) (./Conclusao.tex) (./Bibliografia.tex (./ArtigoTC.bbl
-[8] [9])) [10] (./ArtigoTC.aux)
+[9] [10])) [11] (./ArtigoTC.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2117 strings out of 94501
- 26321 string characters out of 1175811
+ 2123 strings out of 94501
+ 26387 string characters out of 1175811
  87626 words of memory out of 1000000
- 5249 multiletter control sequences out of 10000+50000
- 12980 words of font info for 36 fonts, out of 500000 for 2000
+ 5251 multiletter control sequences out of 10000+50000
+ 13513 words of font info for 37 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (10 pages, 43484 bytes).
+Output written on ArtigoTC.dvi (11 pages, 46892 bytes).
