@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  16 NOV 2007 17:30
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  16 NOV 2007 18:21
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -432,19 +432,22 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 File: img/AppMan.eps Graphic file (type eps)
 
 <img/AppMan.eps> [7]
-File: img/TaskManager.eps Graphic file (type eps)
- <img/TaskManager.eps> [8]
+File: img/UML.eps Graphic file (type eps)
+ <img/UML.eps>
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [8]
 File: img/AppManRMS.eps Graphic file (type eps)
- <img/AppManRMS.eps>)
-(./Conclusao.tex) (./Bibliografia.tex (./ArtigoTC.bbl [9] [10])) [11]
-(./ArtigoTC.aux) ) 
+
+<img/AppManRMS.eps>) (./Conclusao.tex [9]) (./Bibliografia.tex (./ArtigoTC.bbl
+[10])) [11] (./ArtigoTC.aux) ) 
 Here is how much of TeX's memory you used:
  2135 strings out of 94501
- 26607 string characters out of 1175811
+ 26591 string characters out of 1175811
  88119 words of memory out of 1000000
  5260 multiletter control sequences out of 10000+50000
  13513 words of font info for 37 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
- 30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 30i,10n,28p,1799b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (11 pages, 46636 bytes).
+Output written on ArtigoTC.dvi (11 pages, 46952 bytes).

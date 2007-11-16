@@ -19,13 +19,13 @@ Uma especificação {\it Distributed Resource Management Application} \cite{Raji
 
 Vários relatórios técnicos N1™ Grid Engine \cite{Templeton2006}, GridWay \cite{Herrera2007}, Condor \cite{Troeger2007} e PBS \cite{Ciesnik2007} existentes da implementação DRMAA, concluem positivamente. Além disso demonstraram uma pequena necessidade de inteferência no código dos RMSs citados.
 
-Em um primeiro estudo da documentação do AppMan pode-se notar duas principais classes, {\it TaskManager} (Figura 3) e {\it SubmissionManager}. A classe {\it SubmissionManager} implementa os métodos da {\it Interface SubmissionManagerRemote} a qual possui os métodos que recuperam informações das tarefas executadas remotamente e o metódo da geração do grafo da aplicação. A classe {\it TaskManager } implementa a interface {\it TaskManagerRemote} contendo os métodos tais como os que adicionam tarefas na lista de execução remota.
+Em um primeiro estudo da documentação do AppMan pode-se notar duas principais classes, {\it TaskManager} e {\it SubmissionManager}. A classe {\it SubmissionManager} implementa os métodos da {\it Interface SubmissionManagerRemote} a qual possui os métodos que recuperam informações das tarefas executadas remotamente e o metódo da geração do grafo da aplicação. A classe {\it TaskManager } implementa a interface {\it TaskManagerRemote} contendo os métodos tais como os que adicionam tarefas na lista de execução remota.  A Figura 3 mostra o diagrama simplificado de classes do AppMan. Nesta figura estão circuladas as duas classes que foram identificadas até o momento como sendo necessário algum tipo de adaptação para a implementação do presente trabalho.
 
 \begin{figure}[h]
 \center
-\includegraphics[scale=.4]{img/TaskManager.eps}
+\includegraphics[scale=.16]{img/UML.eps}
 \label{TaskManager}
-\caption{Classe TaskManager}
+\caption{Diagrama UML simplificado}
 \end{figure}
 
 Baseado no que foi analisado até o momento da confecção deste artigo, notou-se a necessidade de alteração na {\it Interface TaskManagerRemote} onde necessitará ser adicionado métodos que implementarão as especificações da DRMAA. Essa seria a melhor forma de implementação com a mínima interferência no código atual. Principalmente por existirem trabalhos nessa área \cite{Nobres2007}.
