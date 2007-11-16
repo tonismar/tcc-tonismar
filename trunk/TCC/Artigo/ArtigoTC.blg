@@ -1,23 +1,19 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: ArtigoTC.aux
-White space in argument---line 53 of file ArtigoTC.aux
- : \citation{site
- :                do isam}
-I'm skipping whatever remains of this command
 The style file: ieeetr.bst
 Database file #1: biblio.bib
-Warning--entry type for "condor2007" isn't style-file defined
---line 4 of file biblio.bib
 Warning--entry type for "isam" isn't style-file defined
+--line 4 of file biblio.bib
+Warning--entry type for "condor2007" isn't style-file defined
 --line 14 of file biblio.bib
 Warning--entry type for "Globus" isn't style-file defined
---line 23 of file biblio.bib
+--line 24 of file biblio.bib
 A bad cross reference---entry "condor2007"
 refers to entry "High Throughput Computing (CONDOR), An Overview of the Condor System", which doesn't exist
 A bad cross reference---entry "isam"
 refers to entry "Apresentação do ISAM", which doesn't exist
-Warning--I didn't find a database entry for "High Throughput Computing (CONDOR), An Overview of the Condor System"
 Warning--I didn't find a database entry for "Apresentação do ISAM"
+Warning--I didn't find a database entry for "High Throughput Computing (CONDOR), An Overview of the Condor System"
 Warning--can't use both author and editor fields in Dantas2005
 Warning--empty publisher in Dantas2005
 Warning--empty journal in Bayucan2007
@@ -39,15 +35,15 @@ Warning--empty journal in Andrade2002
 Warning--empty journal in Rajic2002
 You've used 29 entries,
             1876 wiz_defined-function locations,
-            633 strings with 8450 characters,
-and the built_in function-call counts, 5336 in all, are:
-= -- 435
-> -- 292
+            634 strings with 8488 characters,
+and the built_in function-call counts, 5356 in all, are:
+= -- 436
+> -- 295
 < -- 0
-+ -- 111
-- -- 82
-* -- 361
-:= -- 850
++ -- 112
+- -- 83
+* -- 362
+:= -- 858
 add.period$ -- 28
 call.type$ -- 29
 change.case$ -- 35
@@ -55,14 +51,14 @@ chr.to.int$ -- 0
 cite$ -- 48
 duplicate$ -- 283
 empty$ -- 508
-format.name$ -- 82
-if$ -- 1262
+format.name$ -- 83
+if$ -- 1264
 int.to.chr$ -- 0
 int.to.str$ -- 29
 missing$ -- 19
 newline$ -- 92
-num.names$ -- 28
-pop$ -- 139
+num.names$ -- 29
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
@@ -75,7 +71,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 19
-while$ -- 44
+while$ -- 45
 width$ -- 31
-write$ -- 234
-(There were 3 error messages)
+write$ -- 235
+(There were 2 error messages)
