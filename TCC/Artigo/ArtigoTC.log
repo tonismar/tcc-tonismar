@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  15 NOV 2007 02:36
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.11.7)  16 NOV 2007 17:30
 entering extended mode
 **ArtigoTC.tex
 (./ArtigoTC.tex
@@ -310,14 +310,22 @@ Now handling font encoding U ...
 (/usr/share/texmf-tetex/tex/generic/babel/babel.sty
 Package: babel 2004/11/20 v3.8d The Babel package
 
-(/usr/share/texmf-tetex/tex/generic/babel/portuges.ldf
-Language: portuges 2004/02/19 v1.2p Portuguese support from the babel system
+(/usr/share/texmf-tetex/tex/generic/babel/english.ldf
+Language: english 2004/06/14 v3.3o English support from the babel system
 
 (/usr/share/texmf-tetex/tex/generic/babel/babel.def
 File: babel.def 2004/11/20 v3.8d Babel common definitions
 \babel@savecnt=\count91
 \U@D=\dimen119
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texmf-tetex/tex/generic/babel/portuges.ldf
+Language: portuges 2004/02/19 v1.2p Portuguese support from the babel system
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 )) (./ArtigoTC.aux)
@@ -395,7 +403,7 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 21.
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (./Resumo.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
 )
 (./Introducao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
@@ -420,30 +428,23 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
- [5]
-
-LaTeX Warning: Citation `site do isam' on page 6 undefined on input line 70.
-
-) (./Modelo.tex [6]
+ [5]) (./Modelo.tex [6]
 File: img/AppMan.eps Graphic file (type eps)
- <img/AppMan.eps> [7]
+
+<img/AppMan.eps> [7]
 File: img/TaskManager.eps Graphic file (type eps)
  <img/TaskManager.eps> [8]
 File: img/AppManRMS.eps Graphic file (type eps)
-
-<img/AppManRMS.eps>) (./Conclusao.tex) (./Bibliografia.tex (./ArtigoTC.bbl
-[9] [10])) [11] (./ArtigoTC.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ <img/AppManRMS.eps>)
+(./Conclusao.tex) (./Bibliografia.tex (./ArtigoTC.bbl [9] [10])) [11]
+(./ArtigoTC.aux) ) 
 Here is how much of TeX's memory you used:
- 2123 strings out of 94501
- 26387 string characters out of 1175811
- 87626 words of memory out of 1000000
- 5251 multiletter control sequences out of 10000+50000
+ 2135 strings out of 94501
+ 26607 string characters out of 1175811
+ 88119 words of memory out of 1000000
+ 5260 multiletter control sequences out of 10000+50000
  13513 words of font info for 37 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 8191
  30i,10n,28p,1803b,308s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on ArtigoTC.dvi (11 pages, 46892 bytes).
+Output written on ArtigoTC.dvi (11 pages, 46636 bytes).
