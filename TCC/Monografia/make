@@ -1,0 +1,15 @@
+#!/bin/sh
+
+latex Monografia.tex
+
+bibtex Monografia.aux
+
+makeindex Monografia.ind
+
+latex Monografia.tex
+
+latex Monografia.tex
+
+dvipdft Monografia.dvi
+
+evince Monografia.pdf & > /dev/null
