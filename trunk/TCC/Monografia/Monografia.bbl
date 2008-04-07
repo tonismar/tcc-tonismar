@@ -1,0 +1,40 @@
+\begin{thebibliography}{}
+
+\bibitem[Bayucan et~al., 2007]{Bayucan2007}
+Bayucan, A., Henderson, R.~L., Lesiak, C., Mann, B., Proett, T., and Tweten, D.
+  (2007).
+\newblock Numerical aerospace simulation systems division nasa ames research
+  center.
+\newblock page 281.
+
+\bibitem[Dantas, 2005]{Dantas2005}
+Dantas, M. A.~R. (2005).
+\newblock {\em Computação Distribuída de Alto Desempenho: Redes, Clusters e
+  Grids Computacionais}.
+
+\bibitem[High Throughput Computing~(CONDOR), 2007]{condor2007}
+High Throughput Computing~(CONDOR), A. O. o. t. C.~S. (2007).
+\newblock High throughput computing (condor), an overview of the condor system.
+\newblock acessado em Agosto de 2007.
+
+\bibitem[Mangan, 2006]{Mangan2006}
+Mangan, P. K.~V. (2006).
+\newblock Grand: Um modelo de gerenciamento hierárquico de aplicações em
+  ambiente de computação em grade.
+\newblock page 150.
+
+\bibitem[Rajic et~al., 2004]{Rajic2004}
+Rajic, H., Brobst, R., Chan, W., Ferstl, F., Gardine, J., ans Bill~Nitzber,
+  A.~H., and Tollefsrud, J. (2004).
+\newblock Open grid forum documents, distributed resource management
+  application api specification 1.0 (drmaa).
+\newblock page~29.
+
+\bibitem[Vargas et~al., 2003]{Vargas2003}
+Vargas, P.~K., de~Castro~Dutra, I., and Geyer, C. F.~R. (2003).
+\newblock Hierarchical resource management and application control in grid
+  environments.
+\newblock page~8.
+\newblock Relatório Técnico ES-608/03, COPPE/Sistemas UFRJ.
+
+\end{thebibliography}

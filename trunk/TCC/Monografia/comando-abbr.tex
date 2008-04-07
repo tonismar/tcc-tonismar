@@ -1,0 +1,56 @@
+%------------------------------------------------------------------------------------------------
+% \simb[entrada na lista de símbolos]{símbolo}:
+%   Escreve o simbolo no texto e uma entrada na Lista de Símbolos.
+%   Se o parâmetro opcional e omitido, usa-se o parâmetro obrigatório.
+%------------------------------------------------------------------------------------------------
+\newcommand{\simb}[2][]{%
+  \ifthenelse{\equal{#1}{}}
+    {\addcontentsline{los}{simbolo}{\ensuremath{#2}}}
+    {\addcontentsline{los}{simbolo}{#1}}
+  \ensuremath{#2}
+}
+
+\makeatletter
+%------------------------------------------------------------------------------------------------
+% \listadesimbolos: comando que imprime a lista de simbolos
+%------------------------------------------------------------------------------------------------
+\newcommand{\listadesimbolos}{
+  \pretextualchapter{Lista de Símbolos}
+  {\setlength{\parindent}{0cm}
+   \@starttoc{los}}}
+
+\newcommand\listabbrname{Lista de S\'imbolos e Abreviaturas}
+\newcommand\listofabbreviations{%
+    \chapter*{\listabbrname
+      \@mkboth{\MakeUppercase\listabbrname\space\draftdate}%
+              {\MakeUppercase\listabbrname\space\draftdate}}%
+     % \addcontentsline{toc}{chapter}{\MakeUppercase\listabbrname}%
+    \@starttoc{lob}%
+    }
+\newcommand\abbrev[2]{%
+                                        \def\({$}%
+                                        \def\){$}%
+      \addcontentsline{lob}{section}{%
+                                                                \rm%
+                        \protect\parbox[t]{.2\textwidth}{\bf #1}%
+                   \hspace{0.025\textwidth}%
+                   \protect\parbox[t]{.6\textwidth}{#2}%
+        \vspace{2mm}\hspace{.1\textwidth}}%
+      }
+
+%------------------------------------------------------------------------------------------------
+% como a entrada será impressa
+\newcommand\l@simbolo[2]{\par #1, p.\thinspace#2}
+
+%------------------------------------------------------------------------------------------------
+%\newcommand{\ABNTabstractname}{Abstract}
+%\renewenvironment{abstract}%
+%  {%
+%   \if@openright\cleardoublepage\else\clearpage\fi%
+%   \ifthenelse{\boolean{ABNThypertoc}}{\renewcommand{\chaptertype}{abstract.}}{}
+%   \pretextualchapter{\ABNTabstractname}%
+%   \ifthenelse{\boolean{ABNThypertoc}}{\renewcommand{\chaptertype}{}}{}
+%   \begin{espacosimples}%
+%  }%
+%  {\end{espacosimples}\newpage}%abstract
+
