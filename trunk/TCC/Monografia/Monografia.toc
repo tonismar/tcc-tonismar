@@ -1,7 +1,9 @@
 \select@language {brazilian}
-\contentsline {chapter}{Lista de S\'imbolos e Abreviaturas}{4}
-\contentsline {chapter}{Lista de Figuras}{5}
-\contentsline {chapter}{Lista de Tabelas}{6}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{7}
-\contentsline {chapter}{\numberline {2}Gerenciamento de Aplica\IeC {\c c}\IeC {\~o}es em Grade}{9}
-\contentsline {chapter}{Refer{\^e}ncias}{10}
+\contentsline {chapter}{Lista de S\'imbolos e Abreviaturas}{3}
+\contentsline {chapter}{Lista de Figuras}{4}
+\contentsline {chapter}{Lista de Tabelas}{5}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{6}
+\contentsline {chapter}{\numberline {2}Gerenciamento de Aplica\IeC {\c c}\IeC {\~o}es em Grade}{8}
+\contentsline {section}{\numberline {2.1}Gerenciamento de Recursos}{9}
+\contentsline {section}{\numberline {2.2}Modelo GRAND}{11}
+\contentsline {chapter}{Refer{\^e}ncias}{13}
