@@ -1,3 +1,4 @@
+\addvspace {10\p@ }
 \select@language {brazilian}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -5,5 +6,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura\nobreakspace 2.1:}{\ignorespaces Principais componentes do modelo hier\IeC {\'a}rquico de gerenciamento de tarefas}}{12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.1:}{\ignorespaces Principais componentes do modelo hier\IeC {\'a}rquico de gerenciamento de tarefas}}{16}
 \addvspace {10\p@ }

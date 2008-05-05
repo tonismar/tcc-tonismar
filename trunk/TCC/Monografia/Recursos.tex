@@ -14,11 +14,14 @@ O gerenciamento de recursos de um sistema centralizado possui informação compl
 \item controle online: RMSs precisam suportar negociações para adaptar necessidades de aplicações para recursos disponíveis.
 \end{enumerate}
 
-Sistemas computacionais, na sua grande parte, falham ao tratar dois problemas \cite{Mangan2006}: (1) gerenciamento e controle de um grande número de tarefas; (2) o balanceamento da carga da máquina de submissão e do tráfego da rede.
+Sistemas computacionais, na sua grande parte, falham ao tratar dois problemas \cite{Mangan2006}: 
 
-Uma distribuição dinâmica de dados e tarefas em uma hierarquia de gerenciadores poderia ajudar o gerenciamento de aplicações. Um modelo denominado GRAND (\emph{Grid Robust Application Deployment}) baseado na submissão e controle particionados e hierárquicos foi proposto em \cite{Mangan2006}
+\begin{itemize}
+	\item gerenciamento e controle de um grande número de tarefas; 
+	\item o balanceamento da carga da máquina de submissão e do tráfego da rede.
+\end{itemize}
 
-Pelo fato de que, na atualidade, ambientes grades envolvem principalmente instituições de ensino em aplicações usualmente classificadas como aplicações científicas, o escopo do GRAND é limitado as seguintes itens. 1- heterogeneidade, lembrando que isto afeta diretamente a política de escalonamento por necessitar de saber as características distintas de hardware e software; 2- grande número de submissão de tarefas, referindo-se a aplicações que geram centenas ou milhares de processos; 3- ausência de comunicação por troca de mensagens, pelo fato da necessidade de inúmeros aspectos nas fases de agrupamento e mapeamento serem considerados; 4- interdependência de tarefas, devido ao compartilhamento de arquivos; 5- manipulação de grande número de arquivos pelas tarefas; 6- o uso de arquivos grandes, através de técnicas como \emph{staging} e \emph{caching}, minimizando a perda de desempenho em função da latência de transmissão; 7- segurança, assume-se que exista uma conexão segura entre os nós da grade; 8- descoberta dinâmica de recursos; 9- gerenciador de recursos local em cada nó; 10- uma tarefa é executada em um RMS até sua finalização;
+Uma distribuição dinâmica de dados e tarefas em uma hierarquia de gerenciadores poderia ajudar o gerenciamento de aplicações. O modelo GRAND baseado na submissão e controle particionados e hierárquicos foi proposto em \cite{Mangan2006}. Uma melhor explanação deste modelo será dada no próximo capítulo.
 
 Grande parte das pesquisas sobre escalonamento de tarefas em grades seguem uma organização hierárquica ou centralizada tais como: Globus \cite{Foster1998}, Condor \cite{condor2007}, ISAM \cite{isam} e PBS \cite{Bayucan1998}.
 

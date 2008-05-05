@@ -215,7 +215,7 @@
         \noindent\MakeUppercase{\textbf{Curso de bacharelado em ciência da computação}}\\
         \vspace{75.9mm}
 	{\large\textbf{\MakeUppercase\@title}\par}
-	\vspace{50mm}
+	\vspace{40mm}
                 \MakeUppercase{\@authora}\\
                 \@ifundefined{@authorb}{}{\MakeUppercase{\@authorb}\\}%
                 \@ifundefined{@authorc}{}{\MakeUppercase{\@authorc}\\}%
@@ -296,7 +296,7 @@
 \newcommand{\makeappage}{
 	\noindent
 	\begin{center}
-        \vspace{30mm}
+        \vspace{20mm}
 	{\textbf{\MakeUppercase{Termo de aprovação}}\par}
 	\vspace{30mm}
                 \MakeUppercase{\@authora}\\
@@ -305,7 +305,7 @@
                 \@ifundefined{@authord}{}{\MakeUppercase{\@authord}\\}%
 	\vspace{30mm}
         {\large\textbf{\MakeUppercase\@title}\par}
-	\vspace{40mm}
+	\vspace{20mm}
 	\noindent\singlespacing{Trabalho de conclusão aprovado como requisito parcial para obtenção do grau de Bacharel em Ciência da Computação do Centro Universitário La Salle - Unilasalle, pela seguinte banca examinadora:}
 	\vspace{15mm}
 	\singlespacing{Prof. Me. Marcos Ennes Barreto\\Centro Universitário La Salle - Unilasalle}

@@ -6,7 +6,7 @@ A level-1 auxiliary file: capa-exemplo2.aux
 A level-1 auxiliary file: Introducao.aux
 A level-1 auxiliary file: Gerenciamento.aux
 A level-1 auxiliary file: Bibliografia.aux
-The style file: apalike.bst
+The style file: ieeetr.bst
 Database file #1: biblio.bib
 Warning--entry type for "isam" isn't style-file defined
 --line 4 of file biblio.bib
@@ -15,63 +15,61 @@ Warning--entry type for "Globus" isn't style-file defined
 A bad cross reference---entry "isam"
 refers to entry "Apresentação do ISAM", which doesn't exist
 Warning--I didn't find a database entry for "Apresentação do ISAM"
-Warning--empty journal in Andrade2002
-Warning--empty journal in Bayucan1998
-Warning--empty journal in Bayucan2007
-Warning--empty journal in Thomas1996
-Warning--empty journal in Cirne2002
-Warning--empty journal in Karl1998
 Warning--can't use both author and editor fields in Dantas2005
 Warning--empty publisher in Dantas2005
-Warning--empty journal in Foster1998
-Warning--empty journal in Foster2002
-Warning--empty journal in Kesselman2001
-Warning--empty year in isam
-Warning--empty year in Globus
+Warning--empty journal in Bayucan2007
 Warning--empty journal in Mangan2006
-Warning--empty journal in Rajic2004
-Warning--empty year in Santos
-Warning--empty journal in Santos
 Warning--empty journal in Vargas2003
-You've used 19 entries,
-            1935 wiz_defined-function locations,
-            577 strings with 6670 characters,
-and the built_in function-call counts, 7142 in all, are:
-= -- 660
-> -- 324
-< -- 24
-+ -- 122
-- -- 110
-* -- 523
-:= -- 1247
-add.period$ -- 54
-call.type$ -- 19
-change.case$ -- 149
-chr.to.int$ -- 19
-cite$ -- 37
-duplicate$ -- 322
-empty$ -- 435
-format.name$ -- 133
-if$ -- 1411
-int.to.chr$ -- 1
-int.to.str$ -- 0
+Warning--empty journal in Rajic2004
+Warning--empty journal in Kesselman2001
+Warning--empty journal in Foster2002
+Warning--empty journal in Cirne2002
+Warning--empty journal in Thomas1996
+Warning--empty journal in Karl1998
+Warning--empty journal in Foster1998
+Warning--empty journal in Bayucan1998
+Warning--empty journal in Santos
+Warning--empty year in Santos
+Warning--empty journal in Andrade2002
+You've used 20 entries,
+            1876 wiz_defined-function locations,
+            593 strings with 6712 characters,
+and the built_in function-call counts, 3916 in all, are:
+= -- 320
+> -- 203
+< -- 0
++ -- 77
+- -- 57
+* -- 252
+:= -- 600
+add.period$ -- 21
+call.type$ -- 20
+change.case$ -- 20
+chr.to.int$ -- 0
+cite$ -- 36
+duplicate$ -- 212
+empty$ -- 379
+format.name$ -- 57
+if$ -- 945
+int.to.chr$ -- 0
+int.to.str$ -- 20
 missing$ -- 16
-newline$ -- 95
-num.names$ -- 57
-pop$ -- 183
+newline$ -- 66
+num.names$ -- 20
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 0
 quote$ -- 0
-skip$ -- 259
+skip$ -- 131
 stack$ -- 0
-substring$ -- 298
-swap$ -- 75
-text.length$ -- 14
+substring$ -- 58
+swap$ -- 61
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 112
-warning$ -- 18
-while$ -- 52
-width$ -- 0
-write$ -- 222
+type$ -- 0
+warning$ -- 16
+while$ -- 34
+width$ -- 22
+write$ -- 161
 (There was 1 error message)

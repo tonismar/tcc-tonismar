@@ -1,108 +1,93 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Andrade, 2002]{Andrade2002}
-Andrade, N. (2002).
-\newblock Acesso em grids computacionais: estado da arte e prespectivas.
-\newblock page~16.
+\bibitem{Dantas2005}
+M.~A.~R. Dantas, {\em Computação Distribuída de Alto Desempenho: Redes,
+  Clusters e Grids Computacionais}.
+\newblock 2005.
 
-\bibitem[Bayucan et~al., 1998]{Bayucan1998}
-Bayucan, A., Henderson, R.~L., Lesiak, C., Man, B., Proett, T., and Tweten, D.
-  (1998).
-\newblock Portable batch system - external reference specification.
-\newblock page 281.
-
-\bibitem[Bayucan et~al., 2007]{Bayucan2007}
-Bayucan, A., Henderson, R.~L., Lesiak, C., Mann, B., Proett, T., and Tweten, D.
-  (2007).
-\newblock Numerical aerospace simulation systems division nasa ames research
-  center.
-\newblock page 281.
-
-\bibitem[Casavant and Kuhl, 1996]{Thomas1996}
-Casavant, T.~L. and Kuhl, J.~G. (1996).
-\newblock A taxonomy of scheduling in general-purpose distributed computing
-  systems.
-\newblock page~37.
-
-\bibitem[Cirne, 2002]{Cirne2002}
-Cirne, W. (2002).
-\newblock Grids computacionais: Arquiteturas, tecnologias e aplicações.
-\newblock page~46.
-
-\bibitem[Czajkowski et~al., 1998]{Karl1998}
-Czajkowski, K., Foster, I., Karonis, N., Kesselman, C., Martin, S., Smith, W.,
-  and Tuecke, S. (1998).
-\newblock A resource management architecture for metacomputing systems.
-\newblock page~19.
-
-\bibitem[Dantas, 2005]{Dantas2005}
-Dantas, M. A.~R. (2005).
-\newblock {\em Computação Distribuída de Alto Desempenho: Redes, Clusters e
-  Grids Computacionais}.
-
-\bibitem[Foster and Kesselman, 1998]{Foster1998}
-Foster, I. and Kesselman, C. (1998).
-\newblock The globus project: A status report.
-\newblock page~15.
-
-\bibitem[Foster et~al., 2002]{Foster2002}
-Foster, I., Kesselman, C., Nick, J.~M., and Tuecke, S. (2002).
-\newblock The physiology of the grid: An open grid services architecture for
-  distributed systems integration.
-\newblock page~31.
-
-\bibitem[Foster et~al., 2001]{Kesselman2001}
-Foster, I., Tuecke, S., and Kesselman, C. (2001).
-\newblock The anatomy of the grid enabling scalable virtual organizations.
-\newblock page~25.
-
-\bibitem[High Throughput Computing~(CONDOR), 2007]{condor2007}
-High Throughput Computing~(CONDOR), A. O. o. t. C.~S. (2007).
-\newblock High throughput computing (condor), an overview of the condor system.
+\bibitem{condor2007}
+A.~O. o. t. C.~S. High Throughput Computing~(CONDOR), ``High throughput
+  computing (condor), an overview of the condor system,'' 2007.
 \newblock acessado em Agosto de 2007.
 
-\bibitem[http://www.cs.wisc.edu/condor/overview, ]{isam}
-http://www.cs.wisc.edu/condor/overview.
-\newblock Apresentação do isam.
+\bibitem{Bayucan2007}
+A.~Bayucan, R.~L. Henderson, C.~Lesiak, B.~Mann, T.~Proett, and D.~Tweten,
+  ``Numerical aerospace simulation systems division nasa ames research
+  center,'' p.~281, 2007.
 
-\bibitem[http://www.globus.org/alliance/publications/papers.php, ]{Globus}
-http://www.globus.org/alliance/publications/papers.php.
-\newblock The globus aliance.
+\bibitem{Mangan2006}
+P.~K.~V. Mangan, ``Grand: Um modelo de gerenciamento hierárquico de
+  aplicações em ambiente de computação em grade,'' p.~150, 2006.
 
-\bibitem[León, 2006]{Leon2006}
-León, J. E.~M. (2006).
-\newblock Análisis comparativo gt 2.4 - gt 4.0.
-\newblock {\em Semana de Cómputo Científico - Supercómputo, Visualización y
-  Realidad Virtual}, page~60.
-
-\bibitem[Mangan, 2006]{Mangan2006}
-Mangan, P. K.~V. (2006).
-\newblock Grand: Um modelo de gerenciamento hierárquico de aplicações em
-  ambiente de computação em grade.
-\newblock page 150.
-
-\bibitem[Rajic et~al., 2004]{Rajic2004}
-Rajic, H., Brobst, R., Chan, W., Ferstl, F., Gardine, J., ans Bill~Nitzber,
-  A.~H., and Tollefsrud, J. (2004).
-\newblock Open grid forum documents, distributed resource management
-  application api specification 1.0 (drmaa).
-\newblock page~29.
-
-\bibitem[Roehrig et~al., 2002]{M.2002}
-Roehrig, M., Ziegler, W., and Wieder, P. (2002).
-\newblock Grid scheduling dictionary of terms and keywords.
-
-\bibitem[Santos et~al., ]{Santos}
-Santos, L. A.~S., Rebonatto, M.~T., Vargas, P.~K., and Geyer, C. F.~R.
-\newblock Uma proposta de escalonamento colaborativo de aplicações em um
-  ambiente de computação em grade.
-\newblock page~8.
-
-\bibitem[Vargas et~al., 2003]{Vargas2003}
-Vargas, P.~K., de~Castro~Dutra, I., and Geyer, C. F.~R. (2003).
-\newblock Hierarchical resource management and application control in grid
-  environments.
-\newblock page~8.
+\bibitem{Vargas2003}
+P.~K. Vargas, I.~de~Castro~Dutra, and C.~F.~R. Geyer, ``Hierarchical resource
+  management and application control in grid environments,'' p.~8, 2003.
 \newblock Relatório Técnico ES-608/03, COPPE/Sistemas UFRJ.
+
+\bibitem{Rajic2004}
+H.~Rajic, R.~Brobst, W.~Chan, F.~Ferstl, J.~Gardine, A.~H. ans Bill~Nitzber,
+  and J.~Tollefsrud, ``Open grid forum documents, distributed resource
+  management application api specification 1.0 (drmaa),'' p.~29, Junho 2004.
+
+\bibitem{Troeger2007}
+P.~Tröger and B.~Gietzel, ``Condor drmaa 1.0 implementation - experience
+  report (gfd-103),'' tech. rep., Hasso-Plattner-Institute and University of
+  Wisconsin-Madison, Fevereiro 2007.
+
+\bibitem{M.2002}
+M.~Roehrig, W.~Ziegler, and P.~Wieder, ``Grid scheduling dictionary of terms
+  and keywords,'' November 2002.
+
+\bibitem{Kesselman2001}
+I.~Foster, S.~Tuecke, and C.~Kesselman, ``The anatomy of the grid enabling
+  scalable virtual organizations,'' p.~25, 2001.
+
+\bibitem{Foster2002}
+I.~Foster, C.~Kesselman, J.~M. Nick, and S.~Tuecke, ``The physiology of the
+  grid: An open grid services architecture for distributed systems
+  integration,'' p.~31, Junho 2002.
+
+\bibitem{Cirne2002}
+W.~Cirne, ``Grids computacionais: Arquiteturas, tecnologias e aplicações,''
+  p.~46, 2002.
+
+\bibitem{Thomas1996}
+T.~L. Casavant and J.~G. Kuhl, ``A taxonomy of scheduling in general-purpose
+  distributed computing systems,'' p.~37, 1996.
+
+\bibitem{Karl1998}
+K.~Czajkowski, I.~Foster, N.~Karonis, C.~Kesselman, S.~Martin, W.~Smith, and
+  S.~Tuecke, ``A resource management architecture for metacomputing systems,''
+  p.~19, 1998.
+
+\bibitem{Foster1998}
+I.~Foster and C.~Kesselman, ``The globus project: A status report,'' p.~15,
+  1998.
+
+\bibitem{isam}
+ISAM, ``Apresentação do isam - http://www.inf.ufrgs.br/~isam/.''
+
+\bibitem{Bayucan1998}
+A.~Bayucan, R.~L. Henderson, C.~Lesiak, B.~Man, T.~Proett, and D.~Tweten,
+  ``Portable batch system - external reference specification,'' p.~281, Agosto
+  1998.
+
+\bibitem{Globus}
+T.~G.~A. http://www.globus.org/alliance/publications/papers.php, ``The globus
+  aliance.''
+
+\bibitem{Santos}
+L.~A.~S. Santos, M.~T. Rebonatto, P.~K. Vargas, and C.~F.~R. Geyer, ``Uma
+  proposta de escalonamento colaborativo de aplicações em um ambiente de
+  computação em grade,'' p.~8.
+
+\bibitem{Andrade2002}
+N.~Andrade, ``Acesso em grids computacionais: estado da arte e prespectivas,''
+  p.~16, 2002.
+
+\bibitem{Leon2006}
+J.~E.~M. León, ``Análisis comparativo gt 2.4 - gt 4.0,'' {\em Semana de
+  Cómputo Científico - Supercómputo, Visualización y Realidad Virtual},
+  p.~60, 2006.
 
 \end{thebibliography}
