@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2008.3.30)  12 APR 2008 18:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2008.4.6)  4 MAY 2008 23:57
 entering extended mode
  %&-line parsing enabled.
 **Monografia.tex
@@ -468,7 +468,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
 [0
 
-] [1])
+] [1]) [2
+
+
+]
 \openout2 = `capa-exemplo2.aux'.
 
  (./capa-exemplo2.tex (./Monografia.toc
@@ -505,12 +508,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
  []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
  []  
  []
 
@@ -518,83 +526,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--9
 \tf@toc=\write4
 \openout4 = `Monografia.toc'.
 
- [2
-
-
-
-
-] (./Monografia.lob)
-\tf@lob=\write5
-\openout5 = `Monografia.lob'.
-
  [3
 
-] (./Monografia.lof)
-\tf@lof=\write6
-\openout6 = `Monografia.lof'.
 
- [4
+
+] [4
+
+] (./Monografia.lof)
+\tf@lof=\write5
+\openout5 = `Monografia.lof'.
+
+ [5
 
 ] (./Monografia.lot)
-\tf@lot=\write7
-\openout7 = `Monografia.lot'.
+\tf@lot=\write6
+\openout6 = `Monografia.lot'.
 
-)
-[5
+) [6
 
 ]
 \openout2 = `Introducao.aux'.
 
- (./Introducao.tex [6
+ (./Introducao.tex
+[7
 
 
 
-]) [7]
-\openout2 = `Gerenciamento.aux'.
-
- (./Gerenciamento.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+] [8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
- [8
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
 
-
-
-] (./Recursos.tex
-[9] [10]) (./Grand.tex [11]
-File: ./img/grand.eps Graphic file (type eps)
- <./img/grand.eps>)) [12]
-\openout2 = `Bibliografia.aux'.
-
- (./Bibliografia.tex
-(./Monografia.bbl
-Overfull \hbox (13.98814pt too wide) in paragraph at lines 65--67
-[]\T1/cmr/m/n/12 http://www.cs.wisc.edu/condor/overview.
+Overfull \hbox (54.91182pt too wide) in paragraph at lines 42--43
+[]\T1/cmr/m/n/12 Também fo-ram exe-cu-ta-dos to-dos pro-ce-di-men-tos de ins-ta
+-la-cao do am-bi-ente EXEHDA/ISAM
  []
 
-[13
+[9]) [10]
+\openout2 = `Gerenciamento.aux'.
+
+ (./Gerenciamento.tex [11
 
 
+
+] (./Recursos.tex [12] [13]) (./Grand.tex
+[14] [15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
-[]
- []
+File: ./img/grand.eps Graphic file (type eps)
+ <./img/grand.eps>)) [16]
+\openout2 = `Bibliografia.aux'.
 
-)) [14] AED: lastpage setting LastPage (./Monografia.aux (./comando-abbr.aux)
-(./capa-exemplo1.aux) (./capa-exemplo2.aux) (./Introducao.aux)
-(./Gerenciamento.aux) (./Bibliografia.aux)) ) 
+ (./Bibliografia.tex (./Monografia.bbl
+[17
+
+
+
+])) [18] AED: lastpage setting LastPage (./Monografia.aux
+(./comando-abbr.aux) (./capa-exemplo1.aux) (./capa-exemplo2.aux)
+(./Introducao.aux) (./Gerenciamento.aux) (./Bibliografia.aux)) ) 
 Here is how much of TeX's memory you used:
- 3010 strings out of 93946
- 38828 string characters out of 1162066
+ 3008 strings out of 93946
+ 38811 string characters out of 1162067
  96622 words of memory out of 1500000
- 6150 multiletter control sequences out of 10000+50000
+ 6151 multiletter control sequences out of 10000+50000
  13148 words of font info for 41 fonts, out of 1200000 for 2000
  743 hyphenation exceptions out of 8191
- 43i,6n,42p,1805b,303s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 43i,6n,42p,1805b,301s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on Monografia.dvi (16 pages, 28036 bytes).
+Output written on Monografia.dvi (20 pages, 38388 bytes).
