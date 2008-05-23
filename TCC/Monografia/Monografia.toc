@@ -12,4 +12,8 @@
 \contentsline {chapter}{\numberline {2}Gerenciamento de Aplica\IeC {\c c}\IeC {\~o}es em Grade}{11}
 \contentsline {section}{\numberline {2.1}Gerenciamento de Recursos}{12}
 \contentsline {chapter}{\numberline {3}Modelo GRAND}{15}
-\contentsline {chapter}{Refer{\^e}ncias}{17}
+\contentsline {section}{\numberline {3.1}Caracter\IeC {\'\i }stica das Aplica\IeC {\c c}\IeC {\~o}es}{16}
+\contentsline {section}{\numberline {3.2}Gerenciamento de Dados}{17}
+\contentsline {section}{\numberline {3.3}Particionamento}{17}
+\contentsline {section}{\numberline {3.4}Modelo de Gerenciamento}{17}
+\contentsline {chapter}{Refer{\^e}ncias}{18}

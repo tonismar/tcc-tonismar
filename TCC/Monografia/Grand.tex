@@ -25,3 +25,32 @@ Pelo fato de que, na atualidade, ambientes grades envolvem principalmente instit
 \label{fig:Modelo_Grand}
 \end{center}
 \end{figure}
+
+\section{Característica das Aplicações}
+
+Baseando-se em aplicações típicas para ambientes de grades, comunicando-se via troca de arquivo, conhecimento do número de processo a serem criados e sem troca de mensagens, é proposta a seguinte taxonomia de aplicações \emph{ver as bibliografias que consta na página 23 da tese da kayser}
+
+\begin{itemize}
+	\item tarefas independentes \emph{\textbf{independent tasks}} ou seja, as tarefas não possuem dependência entre si. Muitas vezes chamado de \emph{bag-of-tasks}.
+	\item tarefas fracamente acopladas \emph{\textbf{loosely-coupled tasks}} tarefas com poucos pontos de compartilhamentos, aplicações dividas em fases ou sequência.
+	\item tarefas fortemente acopladas \emph{\textbf{tightly-coupled tasks}} grafos complexos, aplicações em lógica com restrições.
+\end{itemize}
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.5]{./img/TaxonomiaAplicacoes.eps}
+\caption{Categorias de aplicações de grade: (a) \emph{independent tasks}, (b) \emph{loosely-coupled task(phase)}, (c) \emph{loosely-coupled tasks (pipeline)} e (d) \emph{tightly-coupled tasks}}
+\label{fig:Taxonomia_Aplicacoes}
+\end{center}
+\end{figure}
+
+\section{Gerenciamento de Dados}
+
+Ainda há muito o que ser feito nesta questão, até então o tratamento dos dados é resolvido através de soluções distintas. A preocupação principal de vários trabalhos \emph{CITAR GLOBUS E GRIDFTP} é com dados em forma de arquivos.
+
+No GRAND, o gerenciamento de arquivos é apenas com \emph{stage in} e \emph{stage out}, ou seja, enviar os dados para o local de processamento e retorno de resultados. 
+
+
+\section{Particionamento}
+
+\section{Modelo de Gerenciamento}
