@@ -18,17 +18,9 @@ Pelo fato de que, na atualidade, ambientes grades envolvem principalmente instit
     \item uma tarefa é executada em um RMS até sua finalização;
 \end{enumerate}
 
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[scale=0.7]{./img/grand.eps}
-\caption{Principais componentes do modelo hierárquico de gerenciamento de tarefas}
-\label{fig:Modelo_Grand}
-\end{center}
-\end{figure}
-
 \section{Característica das Aplicações}
 
-Baseando-se em aplicações típicas para ambientes de grades, comunicando-se via troca de arquivo, conhecimento do número de processo a serem criados e sem troca de mensagens, é proposta a seguinte taxonomia de aplicações \emph{ver as bibliografias que consta na página 23 da tese da kayser}
+Baseando-se em aplicações típicas para ambientes de grades, comunicando-se via troca de arquivo, conhecimento do número de processo a serem criados e sem troca de mensagens, é proposta a seguinte taxonomia de aplicações \cite{Vargas2003, Vargas2005, Mangan2006}
 
 \begin{itemize}
 	\item tarefas independentes \emph{\textbf{independent tasks}} ou seja, as tarefas não possuem dependência entre si. Muitas vezes chamado de \emph{bag-of-tasks}.
@@ -46,11 +38,45 @@ Baseando-se em aplicações típicas para ambientes de grades, comunicando-se vi
 
 \section{Gerenciamento de Dados}
 
-Ainda há muito o que ser feito nesta questão, até então o tratamento dos dados é resolvido através de soluções distintas. A preocupação principal de vários trabalhos \emph{CITAR GLOBUS E GRIDFTP} é com dados em forma de arquivos.
+Ainda há muito o que ser feito nesta questão, até então o tratamento dos dados é resolvido através de soluções distintas. A preocupação principal de vários trabalhos \cite
+{GridFTP,LegionFS} é com dados em forma de arquivos.
 
 No GRAND, o gerenciamento de arquivos é apenas com \emph{stage in} e \emph{stage out}, ou seja, enviar os dados para o local de processamento e retorno de resultados. 
+
+A máquina de submissão (\emph{submit machine}) é a máquina que o usuário submete um grande número de tarefas. Nesta máquina exige um gerenciador encarregado de submeter tarefas para outros gerenciadores guardando o resultado final das tarefas sem preocupar-se com os detalhes. Esse gerenciador executa ou utiliza gerenciadores do sistema que fazem o escalonamento preocupando-se em privilegiar o local dos dados. O envio para a máquina (\emph{home}) é controlado para evitar um congestionamento.
+
+A liberação de carga da máquina que foi usada para disparar a aplicação é a principal vantagem deste esquema.
 
 
 \section{Particionamento}
 
+O problema tratado no contexto pressupõe que as aplicações submetidas são formadas por tarefas passíveis de dependência na ordem de execução, determinadas pelos dados de entrada e saída, não realizando comunicação por troca de mensagem.
+
+Uma aplicação pode ser representada por um grafo direcionado acíclico (DAG - \emph{Directed Acyclic Graph}) onde o vértice representa uma tarefa e as arestas sua ordem de precedência entre outras tarefas. Este DAG é particionado em sub-grafos para que eles possam ser alocados de forma eficiente em diferentes processadores. O algoritmo DSC (\emph{Dominant Sequence Clustering}) de complexidade \emph{O((v+e) log v)} onde \emph{v} é o número de tarefas e \emph{e} o número de arestas.
+
 \section{Modelo de Gerenciamento}
+
+Três aspectos do gerenciamento de dados são tratados no modelo GRAND:
+
+\begin{itemize}
+	\item transferência dos dados de entrada automaticamente para o local onde o arquivo é necessário;
+	\item envio de resultados de forma controlada, evitando congestionamento, levando em conta o grande volume de dados;
+	\item para evitar transferências desnecessárias de dados transientes, o escalonamento prioriza localidade no disparo de tarefas e degradação do desempenho;
+\end{itemize}
+
+Uma hierarquia de gerenciadores é usada para o disparo e controle das aplicações conforme ilustrado na figura 3.2.
+
+\begin{itemize}
+	\item \textbf{nível 0} aplicação submetida pelo usuário em uma máquina através do \emph{Application Manager}(AP).
+	\item \textbf{nível 1} os APs enviam aos \emph{Submission Managers}(SM).
+	\item \textbf{nível 2} os \emph{Task Managers}(TK) são instanciados sob demanda pelos SMs com o propósito de controlar a submissão de tarefas para escalonadores de domínios específicos da grade.
+	\item \textbf{nível 3} os TKs enviam requisições para os escalonadores e executar de fato as tarefas.
+\end{itemize}
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.7]{./img/grand.eps}
+\caption{Principais componentes do modelo hierárquico de gerenciamento de tarefas}
+\label{fig:Modelo_Grand}
+\end{center}
+\end{figure}
