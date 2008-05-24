@@ -68,9 +68,9 @@ Uma hierarquia de gerenciadores é usada para o disparo e controle das aplicaç�
 
 \begin{itemize}
 	\item \textbf{nível 0} aplicação submetida pelo usuário em uma máquina através do \emph{Application Manager}(AP).
-	\item \textbf{nível 1} os APs enviam aos \emph{Submission Managers}(SM).
+	\item \textbf{nível 1} os APs enviam aos \emph{Submission Managers}(SM) descrições de tarefas.
 	\item \textbf{nível 2} os \emph{Task Managers}(TK) são instanciados sob demanda pelos SMs com o propósito de controlar a submissão de tarefas para escalonadores de domínios específicos da grade.
-	\item \textbf{nível 3} os TKs enviam requisições para os escalonadores e executar de fato as tarefas.
+	\item \textbf{nível 3} os TKs enviam requisições para os escalonadores a executar de fato as tarefas.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -80,3 +80,13 @@ Uma hierarquia de gerenciadores é usada para o disparo e controle das aplicaç�
 \label{fig:Modelo_Grand}
 \end{center}
 \end{figure}
+
+O AP encarrega-se de receber um arquivo de entrada com a descrição da tarefa, particiona as tarefas em sub-grafos para enviá-los para SMs distintos vizando manter a localidade dos dados diminuindo a comunicação entre os SMs e apresenta ao usuário informações do estado da execução da aplicação.
+
+No SM é decidido a localidade dos sub-grafos com base em informações dinâmicas sobre os recursos computacionais, indicação do estado da execução e falhas de comunicação periódicas com o SMs, recuperação de falhas através de um registro persistente (\emph{log}), criação e monitoração dos TKs e verificar a continuação ou não da execução de tarefas em máquinas que forem liberadas ou que houverem falhas.
+
+As responsabilidades dos TKs são comunicar-se com um escalonador de um determinado domínio garantindo a execução remota, garantir a ordem da execução coforme dependência de dados e garantir a disponibilidade dos dados de entrada bem como o recebimento dos dados de saída.
+
+A hierarquia do modelo proposto realiza um balanceamento da carga computacional utilizada para controlar a execução das tarefas, evitando seu sobrecarregamento. Deste modo a perda de dados por congestionamento da rede é evitado. E, também, é permitido que escalonadores já existentes sejam integrados em um único ambiente de escalonamento.
+
+\section{Protótipo AppMan}
