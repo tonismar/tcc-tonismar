@@ -93,7 +93,17 @@ A hierarquia do modelo proposto realiza um balanceamento da carga computacional 
 
 O protótipo possui um \emph{Application Manager} que dispara e monitora as aplicações em máquinas de uma rede local e cada máquina possui um \emph{Submission Manager}. Estes SMs não se comunicam nem reconhecem a localização de outros SMs. Assim sendo, as aplicações só funcionam em situações que o particionamento gere grafos totalmente disjuntos, ou seja, sem dependência entre SMs e cada sub-grafo executa até o final sem falhas.
 
-A especificação da aplicação é feito pela linguagem GRID-ADL(\emph{Grid Application Description Language}), onde o usuário descreve apenas características das tarefas incluindo arquivos manipulados. O \emph{parser} para leitura do arquivo de descrição e a inferência do DAG é implementado na ferramenta JavaCC \cite{javacc}. Assim que obtém-se o DAG a execução é iniciada. Na implementação das fases de submissão e controle da execução usou-se a linguagem Java dentro do ambiente EXEHDA (\emph{Execution Environment for High Distributed Application}) \emph{citar site do exehda}.
+A especificação da aplicação é feito pela linguagem GRID-ADL(\emph{Grid Application Description Language}), onde o usuário descreve apenas características das tarefas incluindo arquivos manipulados. O \emph{parser} para leitura do arquivo de descrição e a inferência do DAG é implementado na ferramenta JavaCC \cite{javacc}. Assim que obtém-se o DAG a execução é iniciada. Na implementação das fases de submissão e controle da execução usou-se a linguagem Java dentro do ambiente EXEHDA (\emph{Execution Environment for High Distributed Application}) \cite{exehda}.
+
+A figura 3.3 é um exemplo de apenas três linhas uma definição de números de tarefas. Neste exemplo é definido um grafo independente com seis tarefas.A aplicação irá executar seis simulações Monte Carlo. Cada uma recebendo um arquivo de entrada diferente.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.7]{./img/grid-adl.eps}
+\caption{Arquivo de entrada para DAG}
+\label{fig:Arquivo_DAG}
+\end{center}
+\end{figure}
 
 EXEHDA é um modelo voltado a aplicações distribuídas, comtemplando mobilidade de hardware e software. As aplicações são baseadas no paradigma de programação do projeto ISAM (Infra-estrutura de Suporte às Aplicações Móveis).
 
@@ -105,7 +115,7 @@ Alguns mecanismos de tolerância à falhas foram implementados. Na transferênci
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[scale=0.15]{./img/AppMan.eps}
+\includegraphics[scale=0.13]{./img/AppMan.eps}
 \caption{AppMan executando principais passos}
 \label{fig:AppMan}
 \end{center}
