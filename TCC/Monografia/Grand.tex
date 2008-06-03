@@ -81,21 +81,29 @@ Uma hierarquia de gerenciadores é usada para o disparo e controle das aplicaç�
 \end{center}
 \end{figure}
 
-O AP encarrega-se de receber um arquivo de entrada com a descrição da tarefa, particiona as tarefas em sub-grafos para enviá-los para SMs distintos vizando manter a localidade dos dados diminuindo a comunicação entre os SMs e apresenta ao usuário informações do estado da execução da aplicação.
+O AP encarrega-se de receber um arquivo de entrada com a descrição da tarefa, particiona as tarefas em sub-grafos para enviá-los para SMs distintos visando manter a localidade dos dados diminuindo a comunicação entre os SMs e apresenta ao usuário informações do estado da execução da aplicação.
 
 No SM é decidido a localidade dos sub-grafos com base em informações dinâmicas sobre os recursos computacionais, indicação do estado da execução e falhas de comunicação periódicas com o SMs, recuperação de falhas através de um registro persistente (\emph{log}), criação e monitoração dos TKs e verificar a continuação ou não da execução de tarefas em máquinas que forem liberadas ou que houverem falhas.
 
-As responsabilidades dos TKs são comunicar-se com um escalonador de um determinado domínio garantindo a execução remota, garantir a ordem da execução coforme dependência de dados e garantir a disponibilidade dos dados de entrada bem como o recebimento dos dados de saída.
+As responsabilidades dos TKs são comunicar-se com um escalonador de um determinado domínio garantindo a execução remota, garantir a ordem da execução conforme dependência de dados e garantir a disponibilidade dos dados de entrada bem como o recebimento dos dados de saída.
 
 A hierarquia do modelo proposto realiza um balanceamento da carga computacional utilizada para controlar a execução das tarefas, evitando seu sobrecarregamento. Deste modo a perda de dados por congestionamento da rede é evitado. E, também, é permitido que escalonadores já existentes sejam integrados em um único ambiente de escalonamento.
 
 \section{Protótipo AppMan}
 
-O protótipo possui um \emph{Application Manager} que dispara e monitora as aplicações em máquinas de uma rede local e cada máquina possui um \emph{Submission Manager}. Estes SMs não se comunicam nem reconhecem a localização de outros SMs. Assim sendo, as aplicações só funcionam em situações que o particionamento gere grafos totalmente disjuntos, ou seja, sem dependência entre SMs e cada sub-grafo executa até o final sem falhas.
+O protótipo possui um \emph{Application Manager} que dispara e monitora as aplicações em máquinas de uma rede local e cada máquina possui um \emph{Submission Manager}. Estes SMs não se comunicam nem reconhecem a localização de outros SMs. Assim sendo, as aplicações só funcionam em situações que o particionamento gere grafos totalmente disjuntos, ou seja, sem dependência entre SMs e cada sub-grafo executa até o final sem falhas. Desenvolvido em Java visando a portabilidade, a figura 3.3 demonstra diagrama UML básico do desenvolvimento do AppMan.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.6]{./img/UML-2.eps}
+\caption{Diagrama UML simplificado do AppMan}
+\label{fig:AppMan-UML}
+\end{center}
+\end{figure}
 
 A especificação da aplicação é feito pela linguagem GRID-ADL(\emph{Grid Application Description Language}), onde o usuário descreve apenas características das tarefas incluindo arquivos manipulados. O \emph{parser} para leitura do arquivo de descrição e a inferência do DAG é implementado na ferramenta JavaCC \cite{javacc}. Assim que obtém-se o DAG a execução é iniciada. Na implementação das fases de submissão e controle da execução usou-se a linguagem Java dentro do ambiente EXEHDA (\emph{Execution Environment for High Distributed Application}) \cite{exehda}.
 
-A figura 3.3 é um exemplo de apenas três linhas uma definição de números de tarefas. Neste exemplo é definido um grafo independente com seis tarefas.A aplicação irá executar seis simulações Monte Carlo. Cada uma recebendo um arquivo de entrada diferente.
+A figura 3.4 é um exemplo de apenas três linhas uma definição de números de tarefas. Neste exemplo é definido um grafo independente com seis tarefas.A aplicação irá executar seis simulações Monte Carlo. Cada uma recebendo um arquivo de entrada diferente.
 
 \begin{figure}[htb]
 \begin{center}
@@ -105,13 +113,13 @@ A figura 3.3 é um exemplo de apenas três linhas uma definição de números de
 \end{center}
 \end{figure}
 
-EXEHDA é um modelo voltado a aplicações distribuídas, comtemplando mobilidade de hardware e software. As aplicações são baseadas no paradigma de programação do projeto ISAM (Infra-estrutura de Suporte às Aplicações Móveis).
+EXEHDA é um modelo voltado a aplicações distribuídas, contemplando mobilidade de hardware e software. As aplicações são baseadas no paradigma de programação do projeto ISAM (Infra-estrutura de Suporte às Aplicações Móveis).
 
-O passo um da figura x representa o usuário submetendo um arquivo de descrição em GRID-ADL. É feito um \emph{parser} no arquivo e o grafo da aplicação é colocado em memória. Um algoritmo de cluster é executado e os sub-grafos são gerados. O AM é inicializado então os AMs instanciam SMs (passo 2), distribuindo alguns sub-grafos para SMs. O arquivo de entrada e o executável são adquiridos pelo \emph{webservice} (passo 3). Um novo SM é instanciado para cada aplicação em cada máquina especificada. Após a criação dos SMs, o AP atribui sub-grafos para cada SM. Os SMs reportam para o AM o progresso das tarefas. Cada SM, independente, verifica a lista de máquinas disponíveis e escolhe onde irá executar, através de um \emph{round-robin} (passo 4).
+O passo um da figura 3.5 representa o usuário submetendo um arquivo de descrição em GRID-ADL. É feito um \emph{parser} no arquivo e o grafo da aplicação é colocado em memória. Um algoritmo de cluster é executado e os sub-grafos são gerados. O AM é inicializado então os AMs instanciam SMs (passo 2), distribuindo alguns sub-grafos para SMs. O arquivo de entrada e o executável são adquiridos pelo \emph{webservice} (passo 3). Um novo SM é instanciado para cada aplicação em cada máquina especificada. Após a criação dos SMs, o AP atribui sub-grafos para cada SM. Os SMs reportam para o AM o progresso das tarefas. Cada SM, independente, verifica a lista de máquinas disponíveis e escolhe onde irá executar, através de um \emph{round-robin} (passo 4).
 
 Um TM é instanciado, o qual cria tarefas remotas e monitora até estarem completas. Antes de inciar a execução de uma tarefa, AppMan transfere todos arquivos de entrada para um diretório temporário na máquina remota onde a tarefa será executada. Cada SM atualiza informação, através do serviço de informação do EXEHDA, do nós disponíveis. 
 
-Alguns mecanismos de tolerância à falhas foram implementados. Na transferência dos arquivos de entrada, não for possível enviar um arquivo, assume-se um falha temporária de comunicaçào e tenta-se novamente a transferência. Se, ao término de uma tarefa, o arquivo de saída não é gerado, a tarefa é submetida novamente. Em ambos casos, o processo é repetido em um determinado número de vezes. Caso este número é excedido, uma falha permanente é assumida e a aplicação é abortada.
+Alguns mecanismos de tolerância à falhas foram implementados. Na transferência dos arquivos de entrada, não for possível enviar um arquivo, assume-se um falha temporária de comunicação e tenta-se novamente a transferência. Se, ao término de uma tarefa, o arquivo de saída não é gerado, a tarefa é submetida novamente. Em ambos casos, o processo é repetido em um determinado número de vezes. Caso este número é excedido, uma falha permanente é assumida e a aplicação é abortada.
 
 \begin{figure}[htb]
 \begin{center}
