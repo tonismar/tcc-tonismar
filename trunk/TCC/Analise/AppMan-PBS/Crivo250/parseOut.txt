@@ -1,0 +1,3 @@
+Parser Time(ms): 462
+InferDAG Time(ms): 317
+Download Time(s): 3115

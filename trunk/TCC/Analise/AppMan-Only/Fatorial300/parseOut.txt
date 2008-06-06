@@ -1,0 +1,5 @@
+Parser Time(ms): 533
+InferDAG Time(ms): 376
+Scheduler Time(ms): 91723.0
+Download Time(s): 2826
+Total Time(s): 5142.638
