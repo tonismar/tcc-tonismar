@@ -1,10 +1,11 @@
-\chapter{A Especificação DRMAA}
+\chapter{Componente de Integração}
 \label{cap:drmaa}
 
-\emph{Distributed Resource Management Application API} (DRMAA) abstrai as diferenças dos RMS fornecendo uma API para programadores de aplicações distribuídas. 
+Poucos trabalhos relacionados a integração de RMS foram encontrados no desenvolvimento da presente monografia, dentre eles podemos citar o Sun HPC ClusterTools \cite{sunhpc} que é um grupo de ferramentas para desenvolvimento paralelo que extende o \emph{Sun Network Computing} para aplicações de alto nível em memória distribuída. Oferece apenas três RMS para integração: \emph{Sun N1 Grid Engine V6}, \emph{Load Sharing Facility} (LSF) HPC V 6.2 e \emph{OpenPBS Portable Batch System} (PBS) 2.3.16. Porém esta integração não é genérica é apenas fornecida para o \emph{Sun HPC}.
 
-O escopo da DRMAA é limitado em submeter, monitorar e controlar as aplicações, recuperando o \emph{status} de término da tarefa.
+Outro trabalho relacionado é o ambiente de programação \emph{Distributed Execution and Communication Kernel} (DECK) \cite{Barreto2000} que tem por objetivo o suporte à execução de aplicações paralelas regulares e irregulares em agregados (\emph{clusters computing}). O DECK visa oferecer recursos para criação remota de \emph{threads}, suporte a múltiplas interfaces de rede, tolerância a falhas e balanceamento de carga através de recursos de comunicação e multiprogramação. Contudo, o escopo do DECK é direcionado para aplicações em agregados onde todos os nós correspondem a computadores, diferentemente de grades que os nós podem ser outro tipo de recurso de hardware, em agregados os nós são homogênios e também a comunicação limita-se a redes \emph{Fast Ethernet} e \emph{Myrinet}. 
 
+Devido as limitações dos trabalhos citados, a \emph{Distributed Resource Management Application API} (DRMAA), que possui inúmeros trabalhos recentes relacionados \cite{Ciesnik2007, Haas2004, Herrera2007, Templeton2006}  possui os atributos necessário para o objetivo deste trabalho.
 A idéia é que a API seja implementada em múltiplas linguagens. Implementada inicialmente em C/C++, tendo como segunda opção linguagens de \emph{scripts} tais como \emph{Perl} e \emph{Python}. O desenvolvimento da \emph{Interface Definition Language} (IDL) soluciona o problema através de uma \emph{interface} que serve para múltiplas linguagens.
 
 Uma biblioteca ideal deveria servir, dinâmica e estaticamente, para todos RMS e suas versões. Porém, é possível implementar múltiplos mas não todos RMSs.
