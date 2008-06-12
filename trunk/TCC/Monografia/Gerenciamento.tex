@@ -23,6 +23,10 @@ Uma definição formal do que um sistema em grade pode prover foi definido por F
 	\item controle distribuído 
 \end{itemize}
 
+Usualmente os usuários usam linguagens de descrição para descreverem a aplicação. A aplicação pode ser representada por um grafo onde cada vértice representa uma tarefa e suas arestas representam a ordem de precedência entre elas. O capítulo seguinte explicará mas aprofundadamente o conceito de representação em grafos utilizado no modelo GRAND. Quando um sistema de gerenciamento de aplicação recebe o grafo da aplicação ele precisa disparar as tarefas na ordem e controlar sua execução. 
+
+A distribuição das tarefas entre recursos é um problema que diminui o desempenho. Uma aplicação distribuída pode ser particionada pelo agrupamento de tarefas relacionadas visando a redução de comunicação. Este particionamento deve ser tal que as dependências entre tarefas e localidade dos dados sejam mantidas \cite{Mangan2006}. 
+
 A grade deve estar preparada para lidar com todo o dinamismo e variabilidade, procurando obter a melhor performance possível adaptando-se ao cenário no momento.
 
 \input{Recursos}
