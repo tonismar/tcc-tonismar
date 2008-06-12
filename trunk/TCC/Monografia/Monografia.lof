@@ -6,7 +6,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\nobreakspace 2.1:}{\ignorespaces Escalonamento em um n\IeC {\'o}}}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura\nobreakspace 3.1:}{\ignorespaces Principais componentes do modelo hier\IeC {\'a}rquico de gerenciamento de tarefas}}{16}
-\contentsline {figure}{\numberline {Figura\nobreakspace 3.2:}{\ignorespaces Categorias de aplica\IeC {\c c}\IeC {\~o}es de grade: (a) \emph {independent tasks}, (b) \emph {loosely-coupled task(phase)}, (c) \emph {loosely-coupled tasks (pipeline)} e (d) \emph {tightly-coupled tasks}}}{17}
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.1:}{\ignorespaces Categorias de aplica\IeC {\c c}\IeC {\~o}es de grade: (a) \emph {independent tasks}, (b) \emph {loosely-coupled task(phase)}, (c) \emph {loosely-coupled tasks (pipeline)} e (d) \emph {tightly-coupled tasks}}}{20}
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.2:}{\ignorespaces Principais componentes do modelo hier\IeC {\'a}rquico de gerenciamento de tarefas}}{22}
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.3:}{\ignorespaces Diagrama UML simplificado do AppMan}}{23}
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.4:}{\ignorespaces Arquivo de entrada para DAG}}{24}
+\contentsline {figure}{\numberline {Figura\nobreakspace 3.5:}{\ignorespaces AppMan executando principais passos}}{25}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura\nobreakspace 5.1:}{\ignorespaces Diagrama de classes do pacote \textbf {appman.rmswrapper.pbs.drmaa}}}{30}
+\contentsline {figure}{\numberline {Figura\nobreakspace 5.2:}{\ignorespaces M\IeC {\'e}todo \emph {execute} da nova classe \emph {appman.GridTaskDrmaa}}}{31}
+\contentsline {figure}{\numberline {Figura\nobreakspace 5.3:}{\ignorespaces Arquivo de configura\IeC {\c c}\IeC {\~a}o \emph {gridnodes.properties}}}{32}
 \addvspace {10\p@ }
