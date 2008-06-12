@@ -1,18 +1,8 @@
 This file was created with JabRef 2.2.
 Encoding: UTF-8
 
-@OTHER{isam,
-  author = {ISAM},
-  crossref = {Apresentação do ISAM},
-  keywords = {http://www.inf.ufrgs.br/~isam/#apresentacao},
-  owner = {tonismar},
-  timestamp = {2007.11.11},
-  title = {Apresentação do ISAM - http://www.inf.ufrgs.br/~isam/},
-  url = {http://www.inf.ufrgs.br/~isam/#apresentacao}
-}
-
 @OTHER{Globus,
-  author = {http://www.globus.org/alliance/publications/papers.php},
+  author = {The Globus Aliance - http://www.globus.org/alliance/publications/papers.php},
   citeseerurl = {http://www.globus.org/alliance/publications/papers.php},
   owner = {tonismar},
   timestamp = {2007.11.11},
@@ -73,6 +63,17 @@ Encoding: UTF-8
   url = {http://www.nas.nasa.gov/Software/PBS/pbsdocs/ers.ps}
 }
 
+@ARTICLE{Bayucan1998a,
+  author = {Albeaus Bayucan and Casimir Lesiak and Bhroam Mann and Robert L.
+	Henderson and Tom Proett and Dave Tweten},
+  title = {PBS - Internal Design Specification},
+  year = {1998},
+  pages = {867},
+  owner = {tonismar},
+  timestamp = {2008.05.28},
+  url = {http://www.nas.nasa.gov/Software/PBS/pbsdocs/ids.ps}
+}
+
 @ARTICLE{Thomas1996,
   author = {Thomas L. Casavant and Jon G. Kuhl},
   title = {A Taxonomy of Scheduling in General-Purpose Distributed Computing
@@ -127,6 +128,15 @@ Encoding: UTF-8
   pages = {278},
   owner = {tonismar},
   timestamp = {2007.11.07}
+}
+
+@OTHER{exehda,
+  author = {EXEHDA},
+  keywords = {http://www.inf.ufrgs.br/~exehda/index.php},
+  owner = {tonismar},
+  timestamp = {2008.05.25},
+  title = {Apresentação do EXEHDA - http://www.inf.ufrgs.br/~exehda/index.php},
+  url = {http://www.inf.ufrgs.br/~exehda/index.php}
 }
 
 @ARTICLE{Foster1998,
@@ -194,6 +204,15 @@ Encoding: UTF-8
   owner = {tonismar},
   timestamp = {2008.04.06},
   url = {http://www.cs.wisc.edu/condor/overview}
+}
+
+@OTHER{isam,
+  author = {ISAM},
+  keywords = {http://www.inf.ufrgs.br/~isam/#apresentacao},
+  owner = {tonismar},
+  timestamp = {2007.11.11},
+  title = {Apresentação do ISAM - http://www.inf.ufrgs.br/~isam/},
+  url = {http://www.inf.ufrgs.br/~isam/#apresentacao}
 }
 
 @MISC{Jr.2002,
@@ -272,6 +291,24 @@ Encoding: UTF-8
   owner = {tonismar},
   timestamp = {2007.11.05},
   url = {http://www.lpds.sztaki.hu/~zsnemeth/pub/ccgrid02.pdf}
+}
+
+@OTHER{drmaa_pbs,
+  author = {DRMAA for PBS},
+  timestamp = {2008.05.27},
+  title = {FedStage DRMAA for PBS - {https://www.fedstage.com/wiki/}},
+  url = {https://www.fedstage.com/wiki/FedStage_DRMAA_Guide}
+}
+
+@ARTICLE{GridFTP,
+  author = {The Globus Project},
+  title = {GridFTP - Universal Data Transfer for the Grid},
+  year = {2000},
+  pages = {10},
+  month = {September},
+  owner = {tonismar},
+  pdf = {www.globus.org/toolkit/dosc/2.4/datagrid/deliverables/C2WPdraft3.pdf},
+  timestamp = {2008.05.23}
 }
 
 @ARTICLE{Rajic2004,
@@ -362,6 +399,19 @@ Encoding: UTF-8
   url = {http://www.ogf.org/documents/GFD.105.pdf}
 }
 
+@ARTICLE{Templeton2003,
+  author = {Daniel Templeton and Peter Tröger and Roger Brobst and Andreas Haas
+	and Hrabri Rajic and John Tollefsrud},
+  title = {Distributed Resource Management Application API JavaTM Language Bindings
+	1.0},
+  year = {2003},
+  pages = {56},
+  owner = {tonismar},
+  pdf = {http://www.ogf.org/pipermail/drmaa-wg/attachments/20070507/fe28e77a/attachment-0001.pdf},
+  timestamp = {2008.05.27},
+  url = {http://www.ogf.org/pipermail/drmaa-wg/attachments/20070507/fe28e77a/attachment-0001.pdf}
+}
+
 @TECHREPORT{Troeger2007,
   author = {Peter Tröger and Becky Gietzel},
   title = {Condor DRMAA 1.0 Implementation - Experience Report (GFD-103)},
@@ -398,15 +448,68 @@ Encoding: UTF-8
   url = {http://www.cos.ufrj.br/~kayser/grand/pdfs/MGC2005-vargas2.pdf}
 }
 
-@comment{jabref-meta: selector_note:}
+@ARTICLE{LegionFS,
+  author = {Brian S. White and Michael Walker and Marty Humphrey and Andrew S.
+	Grimshaw},
+  title = {{LegionFS}: {A} Secure and Scalable File System Supporting Cross-Domain
+	High-Performance Applications},
+  year = {2001},
+  pages = {10},
+  owner = {tonismar},
+  pdf = {www.sc2001.org/papers/pap.pap324.pdf},
+  timestamp = {2008.05.23}
+}
+
+@OTHER{javacc,
+  owner = {tonismar},
+  timestamp = {2008.05.24},
+  title = {JavaCC {https://javacc.dev.java.net/}},
+  url = {https://javacc.dev.java.net/}
+}
+
+@OTHER{jni,
+  owner = {tonismar},
+  timestamp = {2008.06.03},
+  title = {Java Native Interface - JNI {http://java.sun.com/j2se/1.4.2/docs/guide/jni/}},
+  url = {http://java.sun.com/j2se/1.4.2/docs/guide/jni/}
+}
+
+@OTHER{netbeans,
+  owner = {tonismar},
+  timestamp = {2008.06.05},
+  title = {NetBeans IDE {http://www.netbeans.org}},
+  url = {http://www.netbeans.org}
+}
+
+@OTHER{eclipse,
+  owner = {tonismar},
+  timestamp = {2008.06.05},
+  title = {Eclipse {http://www.eclipse.org}},
+  url = {http://www.eclipse.org}
+}
+
+@OTHER{umbrello,
+  owner = {tonismar},
+  timestamp = {2008.06.05},
+  title = {Umbrello UML Modeller {http://uml.sf.net}},
+  url = {http://uml.sf.net}
+}
+
+@OTHER{sunhpc,
+  owner = {tonismar},
+  timestamp = {2008.06.10},
+  title = {Sun HPC ClusterTools {http://docs.sun.com/source/819-4131-10/Introduction.html}},
+  url = {http://docs.sun.com/source/819-4131-10/Introduction.html}
+}
+@comment{jabref-meta: selector_publisher:}
 
 @comment{jabref-meta: selector_Title:}
 
 @comment{jabref-meta: selector_author:}
 
+@comment{jabref-meta: selector_note:}
+
 @comment{jabref-meta: selector_journal:}
 
 @comment{jabref-meta: selector_keywords:}
-
-@comment{jabref-meta: selector_publisher:}
 
