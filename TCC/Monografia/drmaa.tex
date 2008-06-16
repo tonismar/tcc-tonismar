@@ -1,16 +1,16 @@
 \chapter{Componente de Integração}
 \label{cap:drmaa}
 
-Poucos trabalhos relacionados a integração de RMS foram encontrados no desenvolvimento da presente monografia, dentre eles podemos citar o Sun HPC ClusterTools \cite{sunhpc} que é um grupo de ferramentas para desenvolvimento paralelo que extende o \emph{Sun Network Computing} para aplicações de alto nível em memória distribuída. Oferece apenas três RMS para integração: \emph{Sun N1 Grid Engine V6}, \emph{Load Sharing Facility} (LSF) HPC V 6.2 e \emph{OpenPBS Portable Batch System} (PBS) 2.3.16. Porém esta integração não é genérica é apenas fornecida para o \emph{Sun HPC}.
+Alguns trabalhos relacionados a integração de RMS foram encontrados no desenvolvimento da presente monografia, dentre eles podemos citar o Sun HPC ClusterTools \cite{sunhpc} que é um grupo de ferramentas para desenvolvimento paralelo que extende o \emph{Sun Network Computing} para aplicações de alto nível em memória distribuída. Oferece apenas três RMS para integração: \emph{Sun N1 Grid Engine V6}, \emph{Load Sharing Facility} (LSF) HPC V 6.2 e \emph{OpenPBS Portable Batch System} (PBS) 2.3.16. Porém esta integração não é genérica é apenas fornecida para o \emph{Sun HPC}.
 
-Outro trabalho relacionado é o ambiente de programação \emph{Distributed Execution and Communication Kernel} (DECK) \cite{Barreto2000} que tem por objetivo o suporte à execução de aplicações paralelas regulares e irregulares em agregados (\emph{clusters computing}). O DECK visa oferecer recursos para criação remota de \emph{threads}, suporte a múltiplas interfaces de rede, tolerância a falhas e balanceamento de carga através de recursos de comunicação e multiprogramação. Contudo, o escopo do DECK é direcionado para aplicações em agregados onde todos os nós correspondem a computadores, diferentemente de grades que os nós podem ser outro tipo de recurso de hardware, em agregados os nós são homogênios e também a comunicação limita-se a redes \emph{Fast Ethernet} e \emph{Myrinet}. 
+Outro trabalho relacionado é o ambiente de programação \emph{Distributed Execution and Communication Kernel} (DECK) \cite{Barreto2000} que tem por objetivo o suporte à execução de aplicações paralelas regulares e irregulares em agregados (\emph{clusters computing}). O DECK visa oferecer recursos para criação remota de \emph{threads}, suporte a múltiplas interfaces de rede, tolerância a falhas e balanceamento de carga através de recursos de comunicação e multiprogramação. Contudo, o escopo do DECK é direcionado para aplicações em agregados onde todos os nós correspondem a computadores, diferentemente de grades que os nós podem ser heterogênios enquanto que em agregados os nós são homogênios. 
 
 Devido as limitações dos trabalhos citados, a \emph{Distributed Resource Management Application API} (DRMAA), que possui inúmeros trabalhos recentes relacionados \cite{Ciesnik2007, Haas2004, Herrera2007, Templeton2006}  possui os atributos necessário para o objetivo deste trabalho.
 A idéia é que a API seja implementada em múltiplas linguagens. Implementada inicialmente em C/C++, tendo como segunda opção linguagens de \emph{scripts} tais como \emph{Perl} e \emph{Python}. O desenvolvimento da \emph{Interface Definition Language} (IDL) soluciona o problema através de uma \emph{interface} que serve para múltiplas linguagens.
 
 Uma biblioteca ideal deveria servir, dinâmica e estaticamente, para todos RMS e suas versões. Porém, é possível implementar múltiplos mas não todos RMSs.
 
-A idéia da implementação e aplicações distribuídas em larga escala são para um ambiente DRM e suas políticas. Nem sempre isto é possível, então uma solução menos intrusiva com uma "categoria de tarefa" e "especificação nativa", tem sido proposta. As políticas específicas do lugar são abstraídas/agregadas em simples \emph{strings} que são interpretadas pela implementação DRMAA. DRMAA não possui um mecanismo explícito de organização de arquivos  \cite{Rajic2004}. 
+A idéia da implementação e aplicações distribuídas em larga escala são para um ambiente DRM e suas políticas. Nem sempre isto é possível, então uma solução menos intrusiva com uma "categoria de tarefa" e "especificação nativa", tem sido proposta. As políticas específicas do lugar são abstraídas/agregadas em simples \emph{strings} que são interpretadas pela implementação DRMAA. DRMAA não possui um mecanismo explícito de organização de arquivos  \cite{Rajic2004}.
 
 \section{Categorias de Tarefas}
 
@@ -19,6 +19,36 @@ Experiências com integrações em um DRM mostra que mesmo uma aplicação de me
 DRMAA fornece formas distintas para "\emph{job categories}" que encapsulam detalhes das tarefas específicas, escondendo estes detalhes da aplicação. É possível criar uma categoria de tarefa específica para uma aplicação a ser despachada pelo DRMS, o nome associado a categoria deve ser especificado como um atributo de submissão de tarefa. A DRMAA pode, então, usar o nome da categoria para gerenciar recursos específicos do local e requisitos funcionais das tarefas.
 
 Um problema típico que dificulta a escrita para muitos ISVs é o não conhecimento prévio da configuração do DRMS, ainda assim a DRMAA facilita a escrita de aplicações \cite{Rajic2002}.
+
+\section{Submissão, Monitoramento e Controle}
+
+Existem duas versões de rotinas de submissão. Uma versão para submissão individula de tarefas e uma versão para submeter tarefas em volume. 
+
+Monitoramento de tarefas e grupo de controle da API precisa manipular:
+\begin{itemize}
+	\item liberação, cancelamento, recomeço e finalização de tarefas;
+	\item checagem do código de saída de uma tarefa remota finalizada;
+	\item checagem do estado de uma tarefa remota;
+	\item aguardar a tarefa remota até o final da execução;
+	\item aguardar por todas as tarefas, ou seja, subconjunto da sessão corrente de tarefas terminar a execução (mecanismo de sincronização)
+\end{itemize}
+
+Os sinais Unix e Windows são repassados com a rotina de controle de tarefas que possuem diferenças nos sistemas DRM/RMS. O único não tradicional característica é a passagem da \emph{string} DRMAA\underline{ }JOB\underline{ }IDS\underline{ }SESSION\underline{ }ALL como um \emph{job\underline{ }id} para indicar operações em todos os \emph{job\underline{ }ids} no processo corrente.
+
+A tarefa remota pode estar nos seguintes estados:
+\begin{itemize}
+	\item mantido pelo sistema;
+	\item mantido pelo usuário;
+	\item mantido pelo sistema e pelo usuário simultaneamente;
+	\item ativo na fila;
+	\item suspenso pelo sistema;
+	\item suspenso pelo usuário;
+	\item suspenso pelo usuário e sistema simultaneamente;
+	\item em execução;
+	\item completo com/sem sucesso;
+\end{itemize}
+
+Ainda é necessário adicionar nesta lista uma possibilidade da implementação DRMAA não ser capaz de determinar o estado da tarefa remota. Visto que, uma tarefa rejeitada não possui um \emph{job\underline{ }id} e, consequentemente não possui um estado. Existe ainda rotinas necessárias para o rastreamento da execução e a representação textual do erro. Esse rastreamento é especialmente útil em situações onde existem múltiplos processos espalhados em diferentes níveis \cite{Rajic2002}.  
 
 \section{DRMAA para PBS}
 
@@ -30,6 +60,22 @@ A biblioteca cobre aproximadamente toda a especificação DRMAA 1.0 com as exce�
 	\item o estado do término da tarefa, quando realizado pelo PBS, é marcado como "abortado"  e  "marcado" qualquer que seja o estado.
 	\item drmaa-wcoredump() sempre retorna \emph{false}.
 \end{itemize}
+
+A natureza da implementação DRMAA, como uma boa biblioteca, torna-se uma boa candidata para inclusão em um \emph{Web Server} adiquirindo suporte para um Portal DRMS/RMS.
+
+A implementação DRMAA pode ser:
+
+\begin{itemize}
+	\item ligada por uma coleção de \emph{scripts} CGI que são referenciados por páginas \emph{web} residentes;
+	\item ligada em um \emph{Web Server} como um módulo separado;
+	\item feita como um módulo Perl que:
+		\begin{itemize}
+			\item incluído no módulo mod\underline{}perl;
+			\item acessado de scripts CGI Per;
+		\end{itemize}
+\end{itemize}
+
+A questão sobre estado de manutenção, segurança e autenticação/autoriazação necessita que a DRMAA seja vista apenas como um componente de um Portal DRM/RMS. 
 
 \section{A Java \emph{Binding} API}
 
