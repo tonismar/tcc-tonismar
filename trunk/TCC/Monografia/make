@@ -12,6 +12,6 @@ latex Monografia.tex
 
 dvipdft Monografia.dvi
 
-rm -fr *.aux *.bbl *.blg *.dvi *.dvi *.log *.log *.lot *.toc
+rm -fr *.aux *.bbl *.blg *.dvi *.dvi *.log *.log *.lot *.toc *.lof
 
 evince Monografia.pdf & > /dev/null
