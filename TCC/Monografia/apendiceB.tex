@@ -1,0 +1,154 @@
+\chapter{Instalação PBS no Linux}
+\label{anexo:pbs-linux}
+
+\begin{enumerate}
+	\item \textbf{Configurando RSH/SSH}
+	
+		Ssh precisa ser configurado para conexão sem a necessidade de senhas na comunicação entre servidor e os nós. Para isto foi usado o programa \emph{ssh-keygen} que gera duas chaves, uma simétrica e uma assimétrica. 
+		\begin{scriptsize}
+		\begin{verbatim}
+			$ cd ~/.ssh/
+			$ ssh-keygen -b 1024 -t rsa		
+		\end{verbatim}
+		\end{scriptsize}
+		Após geração das chaves enviou-se a chave pública para os nós.
+		\begin{scriptsize}
+		\begin{verbatim}
+			$ scp id_rsa.pub no1@ip_no1:/home/tonismar/.ssh/
+		\end{verbatim}		
+		\end{scriptsize}			
+		O comando acima foi repetido para todos os nós alterando o nome do host e o ip.
+		Após isto, em cada nó que recebeu a chave público executa-se o seguinte comando em cada um dos nós:
+		\begin{scriptsize}
+		\begin{verbatim}
+			$ cat id_rsa.pub > authorized_keys
+		\end{verbatim}
+		\end{scriptsize}
+		Para testar foi feito ssh para um dos nós e comprovado que não foi solicitado senha de autenticação.
+	
+	\item \textbf{Download OpenPBS}
+		O PBS instalado foi a versão 2.3.16 adquirido no site www.openpbs.org.
+		
+	\item \textbf{Descompactação PBS}
+		
+		\begin{scriptsize}
+		\begin{verbatim}
+			# cd path/onde/esta/o/pacote/baixado/
+			# tar -zxvf OpenPBS_2_3_16.tar.gz
+			# cd OpenPBS_2_3_16/
+		\end{verbatim}
+		\end{scriptsize}	
+		
+	\item \textbf{Aplicação do \emph{patch}}
+		
+		Conforme documentação, foi necessário aplicar o \emph{patch} disponível. Ainda no diretório raiz do OpenPBS executar os seguintes comandos:
+		\begin{scriptsize}
+		\begin{verbatim}
+			# cd /path/OpenPBS_2_3_16
+			# patch -p1 -b < pbs.patch
+		\end{verbatim}
+		\end{scriptsize}
+		
+	\item \textbf{Compile PBS}
+		\begin{itemize}
+			\item Nó principal (servidor)
+				\begin{scriptsize}
+				\begin{verbatim}
+					# mkdir /path/OpenPBS_2_3_16/head
+					# cd /path/OpenPBS_2_3_16/head
+					# ../configure --with-scp --disable-gui --set-server-home=/var/spool/PBS \
+					--set-default-server=<nome do host do servidor>
+					# make
+					# make install
+				\end{verbatim}
+				\end{scriptsize}
+				
+			\item Demais nós
+				\begin{scriptsize}
+				\begin{verbatim}
+					# mkdir /path/OpenPBS_2_3_16/compute
+					# cd /path/OpenPBS_2_3_16/compute
+					# ../configure --with-scp --disable-gui --set-server-home=/var/spool/PBS \
+						--disable-server --set-default-server=<nome do host nó> --set-sched=no
+					# make
+					# rsh <nome do host nó>
+				\end{verbatim}
+				\end{scriptsize}
+		\end{itemize}
+		
+	\item \textbf{Configuração}
+		\begin{itemize}
+			\item Arquivo de descrição dos nós. Contém a listas dos nós que devem estar disponíveis.
+				\begin{scriptsize}
+				\begin{verbatim}
+					neo np=2 (np number processor)
+					desktop np=1
+					tonismar-laptop np=1
+				\end{verbatim}
+				\end{scriptsize}
+			\item Arquivo \textbf{\emph{config}} de configuração nos nós. A configuração deste arquivo faz com que todas mensagens (exceto depuração) sejam colocadas no nó \emph{neo}.
+				\begin{scriptsize}
+				\begin{verbatim}
+					$logevent 0x0ff
+					$clienthost neo
+					$restricted neo
+				\end{verbatim}
+				\end{scriptsize}
+			\item Configuração do servidor. Os comandos abaixo criam uma fila de execução chamada \emph{\textbf{workq}} que está ativa e inicializada. Está é a fila padrão do servidor.
+				\begin{scriptsize}
+				\begin{verbatim}
+					# /usr/local/sbin/pbs_server -t create
+					# qmgr
+					
+					>c q workq
+					>s q workq queue_type=execution
+					>s q workq enabled=true
+					>s q workq started=true
+					>s s scheduling=true
+					>s s query_other_jobs=true
+					>s s node_pack=false
+					>s s log_events=511
+					>s s scheduler_iteration=500
+					>s s resources_default.neednodes=3
+					>s s resources_default.nodect=3
+					>s s resources_default.nodes=3
+					>quit
+				\end{verbatim}
+				\end{scriptsize}
+			\item Inicialização do Escalonador. Apenas no servidor é necessário a inicialização do Escalonador, através do comando:
+				\begin{scriptsize}
+				\begin{verbatim}
+					# /usr/local/sbin/pbs_sched
+				\end{verbatim}
+				\end{scriptsize}
+			\item Inicialização do Monitor. Para iniciar o Monitor nos nós e também no servidor usa-se o comando:
+				\begin{scriptsize}
+				\begin{verbatim}
+					# /usr/local/sbin/pbs_mom
+				\end{verbatim}
+				\end{scriptsize}
+		\end{itemize}
+		
+		\item \textbf{Testando PBS}
+		
+			Após o processo de instalação e configuração o teste para verificar o funcionamento pode ser feito através do \emph{script} abaixo:
+			\begin{scriptsize}
+			\begin{verbatim}
+				#!/bin/sh
+				#testpbs
+				echo This is a test
+				echo Today is `date`
+				echo This is `hostname`
+				echo The current working directory is `pwd`
+				ls -alF /home
+				uptime
+			\end{verbatim}
+			\end{scriptsize}
+			e para submissão deste \emph{script} usa-se o comando:
+			\begin{scriptsize}
+			\begin{verbatim}
+				$qsub testpbs
+			\end{verbatim}
+			\end{scriptsize}
+			Após a execução da tarefa a saída é armazenda no mesmo diretório onde foi submetida.
+\end{enumerate}

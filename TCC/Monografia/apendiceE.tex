@@ -1,0 +1,82 @@
+\chapter{Instalação do Servidor LDAP}
+\label{anexo:ldap}
+
+Para a instalação do servidor LDAP em um Linux Ubuntu 7.10 os seguintes passos foram executados.
+
+\begin{scriptsize}
+\begin{verbatim}
+	$ sudo apt-get install slapd ldap-utils db4.2-util
+	$ slappasswd (informar a nova senha solicitada)
+	a saída vai ser algo parecido com isto {SSHA}d2BamRTgBuhC6SxC0vFGWol31ki8iq5m
+	
+	edição do arquivo slapd.conf
+	$ sudo vi /etc/ldap/slapd.conf
+	
+	adicionar a linha
+	include /home/tonismar/Publico/appman/exehda/extra/exehda.schema
+	
+	alterar as seguintes linhas
+	suffix "dc=exehda"
+	rootdn "cn=admin,dc=exehda"
+	rootpw senha criada com o comando ladppasswd
+	
+	edição do arquivo ldap.conf
+	$ sudo vi /etc/ldap/ldap.conf
+	
+	adicionar a linha
+	BASE dc=exehda
+	
+	criação do arquivo init.ldif
+	$ sudo vi init.ldif
+	
+	-------inicio do conteúdo do arquivo------
+	dn: dc=exehda
+	objectClass: dcObject
+	objectClass: organizationalUnit
+	dc: exehda
+	ou: Configuracao para EXEHDA
+	
+	dn: cn=admin,dc=exehda
+	objectClass: simpleSecurityObject
+	objectClass: organizationalRole
+	cn: admin
+	description: LDAP administrator
+	userPassword: {SSHA}d2BamRTgBuhC6SxC0vFGWol31ki8iq5m
+	-------fim do conteúdo do arquivo--------
+	
+	para adicionar as entidades no arquivo acima, pare o daemon LDAP
+	$ sudo /etc/init.d/slapd stop
+	
+	remova o conteúdo que foi automaticamente adicionado na instalação
+	$ sudo rm -rf /var/lib/ldap/*
+	
+	adiciona o novo conteúdo
+	$ sudo slapadd -l init.ldif
+	
+	corrija as permissões no banco de dados
+	$ sudo chown -R openldap:openldap /var/lib/ldap
+	
+	reinicie o daemon LDAP
+	$ sudo /etc/init.d/slapd start
+	
+	para verificar se o conteúdo foi adicionado corretamente
+	$ ldapsearch -xLLL -b "dc=exehda"
+	
+	a saída será algo aproximado ao que segue abaixo
+	
+	dn: dc=exehda
+	objectClass: dcObject
+	objectClass: organizationalUnit
+	dc: exehda
+	ou: Configuracao para EXEHDA
+
+	dn: cn=admin,dc=exehda
+	objectClass: simpleSecurityObject
+	objectClass: organizationalRole
+	cn: admin
+	description: LDAP administrator
+
+\end{verbatim}
+
+
+\end{scriptsize}
