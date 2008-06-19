@@ -1,0 +1,7 @@
+- um dos motivos para o tempo de execução com o PBS pode ser pelo fato da remoção dos diretórios ser feitos apenas por um nó. No caso do appman sendo executado junto em outros nós, eles encarregam de remover o diretório da tarefa. NFS. Para validar esta conclusão, verificar no código onde é feito essa remoção de diretório. (GET_TASK_ID: XX GET_NAME)
+- é possível integrar o appman com PBS através da DRMAA porém é necessário usar uma nova forma de recebimento de arquivo ao invés do NFS.
+
+PENDÊNCIAS:
+- escrever porque usei mais de uma IDE e o que é o UMBRELO.
+- área da pesquisa e tipo de pesquisa.
+
