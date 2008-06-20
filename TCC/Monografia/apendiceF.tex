@@ -1,6 +1,8 @@
 \chapter{Aquisição e Instalação do Protótipo AppMan}
 \label{anexo:appman}
 
+Tutorial para instalação e utilização do AppMan.
+
 \begin{scriptsize}
 \begin{verbatim}
 	Para adquirir os fontes do AppMan é necessário efetuar o checkout no servidor onde encontram-se os fontes.
@@ -11,9 +13,28 @@
 	
 	Os fontes devem estar em todos os nós que deseja-se executadar tarefas.
 	
-	Sobrescreva o arquivo de configuração para o middleware EXEHDA com o arquivo do apêndice A.
+	Sobrescreva o arquivo de configuração para o middleware EXEHDA (exehda-services.xml) com o arquivo do apêndice A.
 	
+	Criar o diretório que guardará as informações de execução.
 	
+	$ mkdir ~/appman/exehda/log
+	
+	Inicializar o EXEHDA a partir do diretório log.
+	
+	Inicialização na máquina base
+	
+	$ cd ~/appman/exehda/log
+	$ ../bin/exehda --profile base
+	
+	Inicialização nos demais nós
+	$ cd ~/appman/exehda/log
+	$ ../bin/exehda --profile nodo1
+	
+	Só após o serviço estar sendo executado em todos os nós, executa-se o AppMan com o arquivo .dag
+	no diretório raiz do protótipo.
+	
+	$ cd ~/appman
+	$ exehda/bin/isam-run appman-console -- /home/tonismar/Publico/appman/exemplos/arquivo.dag
 	
 \end{verbatim}
 \end{scriptsize}

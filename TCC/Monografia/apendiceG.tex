@@ -1,0 +1,25 @@
+\chapter{Instalação e Cofiguração do Servidor NFS}
+\label{anexo:nfs}
+
+Tutorial para instalação do servidor NFS no Linux Ubuntu 7.10.
+
+\begin{scriptsize}
+\begin{verbatim}
+	Instalar os pacotes.
+	
+	$ sudo apt-get install nfs-common nfs-kernel-server
+	
+	Editar e incluir seguinte linha no arquivo exports no nó base.
+	
+	$ sudo vi /etc/exports
+	$ /home/tonismar/Publico/appman/exehda/log *(rw, no_root_squash,sync,subtree_check)
+	$ sudo /etc/init.d/nfs-kernel-server restart
+	$ sudo /etc/init.d/nfs-common restart
+	
+	Nos demais nós.
+	
+	$ sudo mount neo:/home/tonismar/Publico/appman/exehda/log /home/user/Publico/appman/exehda/log
+	
+	Onde neo é o nome do host base.
+\end{verbatim}
+\end{scriptsize}
