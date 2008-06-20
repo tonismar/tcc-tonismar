@@ -21,7 +21,7 @@ Para compilação e alterações nos fontes do protótipo foi usado as IDEs NetB
 
 \section{Componente DRMAA (submissão e monitoração)}
 
-Baseado na implementação desenvolveu-se um modelo definido por um conjunto de classes conforme figura 6.1. Os principais métodos necessários para submissão e monitoração de uma tarefa estão na classe \emph{appman.rmswrapper.pbs.drmaa.SessionImpl} que implementa a \emph{interface} \emph{org.ggf.drmaa.Session}.
+Baseado na implementação desenvolveu-se um modelo definido por um conjunto de classes conforme figura~\ref{fig:UML_DRMAA}. Os principais métodos necessários para submissão e monitoração de uma tarefa estão na classe \emph{appman.rmswrapper.pbs.drmaa.SessionImpl} que implementa a \emph{interface} \emph{org.ggf.drmaa.Session}.
 
 A DRMAA java \emph{binding} foi implementada com a JAVA \emph{Native Interface} (JNI). JNI é uma \emph{interface} de padrão de programação para escrever métodos Java sob uma máquina virtual Java (JVM), fazendo chamadas recebendo chamadas de aplicações nativas. Essas aplicações nativas, são aplicações específicas do sistema operacional. Dentre as linguagens, pode-se fazer chamadas em C++, C e \emph{Assembly} \cite{jni}.
 
@@ -41,6 +41,7 @@ A implementação de DRMAA usada foi a mesma usada na implementação com o Grid
 \includegraphics[scale=0.5]{./img/drmaaUML2.eps}
 \caption{Diagrama de classes do pacote \textbf{appman.rmswrapper.pbs.drmaa}}
 \label{fig:UML_DRMAA}
+Fonte: própria
 \end{center}
 \end{figure}
 
@@ -56,13 +57,14 @@ Conforme análise do código encontrado no repositório, a integração ficou co
 
 \subsection{Classe GridTaskDrmaa}
 
-A nova classe implementa a mesma \emph{interface} que a classe padrão \emph{appman.GridTask}. A maior alteração encontra-se no método \emph{execute} onde são feitas as chamadas ao componente de submissão. O método \emph{execute} figura 5.2, é onde são realizados os passos indicados pela especificação DRMAA na submissão e monitoração de tarefas.
+A nova classe implementa a mesma \emph{interface} que a classe padrão \emph{appman.GridTask}. A maior alteração encontra-se no método \emph{execute} onde são feitas as chamadas ao componente de submissão. O método \emph{execute} figura~\ref{fig:execute}, é onde são realizados os passos indicados pela especificação DRMAA na submissão e monitoração de tarefas.
 
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[scale=0.65]{./img/execute.eps}
 \caption{Método \emph{execute} da nova classe \emph{appman.GridTaskDrmaa}}
-\label{fig:UML_DRMAA}
+\label{fig:execute}
+Fonte: própria
 \end{center}
 \end{figure}
 
@@ -75,7 +77,17 @@ A alteração no arquivo de configuração foi feita para que o nó saiba que co
 \includegraphics[scale=0.5]{./img/gridnodes_properties.eps}
 \caption{Arquivo de configuração \emph{gridnodes.properties}}
 \label{fig:gridonodes_properties}
+Fonte: própria
 \end{center}
 \end{figure}
 
-Para que esta nova configuração fosse reconhecida foi criado o metódo \emph{loadConcreteTaskClassName} na classe \emph{TaskManager} (\textbf{vou colocar uma figura do método}) o qual lê a propriedade no arquivo de configuração e retorna o nome do componente configurado para onde submeter a tarefa. Na implementação atual não foi possível, conforme sugerido, a criação de um \emph{Submission Manager} que submete tarefas via componente DRMAA e um \emph{Submission Manager} usando o componente padrão ao mesmo tempo.
+Para que esta nova configuração fosse reconhecida foi criado o metódo \emph{loadConcreteTaskClassName} na classe \emph{TaskManager} conforme mostra a figura~\ref{fig:Concrete} o qual lê a propriedade no arquivo de configuração e retorna o nome do componente configurado para onde submeter a tarefa. Na implementação atual não foi possível, conforme sugerido, a criação de um \emph{Submission Manager} que submete tarefas via componente DRMAA e um \emph{Submission Manager} usando o componente padrão ao mesmo tempo.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.7]{./img/concrete.eps}
+\caption{Método \emph{loadConcreteTaskClassName}}
+\label{fig:Concrete}
+Fonte: própria
+\end{center}
+\end{figure}

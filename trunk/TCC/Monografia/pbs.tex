@@ -29,7 +29,7 @@ O processo de escalonamento se caracteriza por uma escolha que elege qual tarefa
 
 O PBS fornece um programa separado como um processo de seleção que maximiza a flexibilidade na implementação das políticas locais. O escalonador comunica-se com o servidor via um \emph{socket} IPC. Desta forma é possível possuir escalonador e servidor em diferentes nós.
 
-Para cumprir seu papel de gerenciador de recursos, o escalonador se comunica com outro processo chamado \emph{Machine Oriented Mineserver} (MOM). Assim é possível recuperar informações sobre a carga do sistema do nó. Nestas informações podem conter detalhes do uso de memória, carga de CPU, entre outras. Esta relação entre PBS, o escalonador e o MOM é demostrado na figura 2.1 \cite{Bayucan1998}.
+Para cumprir seu papel de gerenciador de recursos, o escalonador se comunica com outro processo chamado \emph{Machine Oriented Mineserver} (MOM). Assim é possível recuperar informações sobre a carga do sistema do nó. Nestas informações podem conter detalhes do uso de memória, carga de CPU, entre outras. Esta relação entre PBS, o escalonador e o MOM é demostrado na figura~\ref{fig:Pbs_MOM} \cite{Bayucan1998}.
 
 \begin{center}
 	\begin{enumerate}
@@ -49,6 +49,7 @@ Para cumprir seu papel de gerenciador de recursos, o escalonador se comunica com
 \includegraphics[scale=0.9]{./img/PbsMom.eps}
 \caption{Escalonamento em um nó}
 \label{fig:Pbs_MOM}
+Fonte: \cite{Bayucan1998}
 \end{center}
 \end{figure}
 
