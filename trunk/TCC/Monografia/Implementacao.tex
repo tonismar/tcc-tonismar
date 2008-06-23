@@ -11,9 +11,9 @@ Em um primeiro momento foi feita uma análise das versões existentes no reposit
 
 Para o desenvolvimento do trabalho foi necessário a configuração de um servidor LDAP (APENDICE A) pré-requisito para a execução do \emph{middleware} EXEHDA/ISAM onde é executado o AppMan. Alguns problemas foram encontrados na configuração deste servidor. Um dos motivos foi o fato da documentação existente para a instalação e configuração do protótipo estar desatualizada com as versões do LDAP e distribuições do sistema operacional Linux existente atualmente. 
 
-Também foi criado um ambiente computacional com um RMS OpenPBS instalado possuindo três nós para submissão e execução de tarefas. A instalação do OpenPBS (APENDICE B) foi feita em um computador com processador AMD Turion(tm) 64 X2 Mobile Technology TL-50 1.6Ghz e 1.5Gb de memória RAM. Nesta configuração/instalação do OpenPBS foi usado um passo à passo, porém foi necessário a alteração nos parâmetros de configuração (\textbf{--with-scp}) para a compilação do RMS. Essa alteração faz com que o PBS deixe de fazer o \emph{stage-in/stage-out} com o comando padrão \textbf{pbs\underline{ }rcp} para usar o comando \textbf{scp} que é o comando padrão para cópia segura dos sistemas operacionais Linux.
+Também foi criado um ambiente computacional com um RMS PBS instalado possuindo três nós para submissão e execução de tarefas. A instalação do OpenPBS (APENDICE B) foi feita em um computador com processador AMD Turion(tm) 64 X2 Mobile Technology TL-50 1.6Ghz e 1.5Gb de memória RAM. Nesta configuração/instalação do PBS foi usado um passo à passo, porém foi necessário a alteração nos parâmetros de configuração (\textbf{--with-scp}) para a compilação do RMS. Essa alteração faz com que o PBS deixe de fazer o \emph{stage-in/stage-out} com o comando padrão \textbf{pbs\underline{ }rcp} para usar o comando \textbf{scp} que é o comando padrão para cópia segura dos sistemas operacionais Linux.
 
-O Servidor LDAP foi instalado em um computador AMD Athlon(tm) 64 X2 Dual Core Processor 4000+ 2.2Ghz e memória RAM de 2.0Gb. Este computador também está na lista de nós do OpenPBS além de mais dois outros. O primeiro possui processador AMD Sempron(tm) 2500+ 1.8Ghz e memória RAM de 512Mb e o outro possui um processador Intel(R) Celeron(R) 2.00GHz com 512Mb de memória RAM. Em todos os computadores o sistema operacional é Linux Ubuntu 7.10 com Kernel 2.6.22.
+O Servidor LDAP foi instalado em um computador AMD Athlon(tm) 64 X2 Dual Core Processor 4000+ 2.2Ghz e memória RAM de 2.0Gb. Este computador também está na lista de nós do PBS além de mais dois outros. O primeiro possui processador AMD Sempron(tm) 2500+ 1.8Ghz e memória RAM de 512Mb e o outro possui um processador Intel(R) Celeron(R) 2.00GHz com 512Mb de memória RAM. Em todos os computadores o sistema operacional é Linux Ubuntu 7.10 com Kernel 2.6.22.
 
 Outro pré-requisito para o funcionamento do protótipo é a instalação do servidor \emph{Network File System} (NFS), usado para compartilhamento de arquivos no Linux. A versão atual do protótipo necessita que o diretório onde as tarefas são criadas seja compartilhado. Esta é uma necessidade que não faz parte do modelo GRAND.
 
@@ -53,7 +53,7 @@ Onde \textbf{x} é um número gerado pseudo-randomicamente entre 1 e 3 que são 
 
 \section{AppMan com DRMAA}
 
-Conforme análise do código encontrado no repositório, a integração ficou concentrada em duas mudanças. A primeira é a criação de uma classe nova \emph{appman.GridTaskDrmaa} e a outra foi uma alteração no arquivo de configuração que indica em qual componente é responsável para executação da tarefa, ou \emph{middleware} EXEHDA, ou nova implementação. Com isso, o impacto da modificação torna-se relativamente baixo. 
+Conforme análise do código encontrado no repositório, a integração ficou concentrada em duas mudanças. A primeira é a criação de uma classe nova \emph{appman.GridTaskDrmaa} e a outra foi uma alteração no arquivo de configuração que indica em qual componente é responsável para execução da tarefa, ou \emph{middleware} EXEHDA, ou nova implementação. Com isso, o impacto da modificação torna-se relativamente baixo. 
 
 \subsection{Classe GridTaskDrmaa}
 
@@ -81,7 +81,7 @@ Fonte: própria
 \end{center}
 \end{figure}
 
-Para que esta nova configuração fosse reconhecida foi criado o metódo \emph{loadConcreteTaskClassName} na classe \emph{TaskManager} conforme mostra a figura~\ref{fig:Concrete} o qual lê a propriedade no arquivo de configuração e retorna o nome do componente configurado para onde submeter a tarefa. Na implementação atual não foi possível, conforme sugerido, a criação de um \emph{Submission Manager} que submete tarefas via componente DRMAA e um \emph{Submission Manager} usando o componente padrão ao mesmo tempo.
+Para que esta nova configuração fosse reconhecida foi criado o método \emph{loadConcreteTaskClassName} na classe \emph{TaskManager} conforme mostra a figura~\ref{fig:Concrete} o qual lê a propriedade no arquivo de configuração e retorna o nome do componente configurado para onde submeter a tarefa. Na implementação atual não foi possível, conforme sugerido, a criação de um \emph{Submission Manager} que submete tarefas via componente DRMAA e um \emph{Submission Manager} usando o componente padrão ao mesmo tempo.
 
 \begin{figure}[htb]
 \begin{center}
