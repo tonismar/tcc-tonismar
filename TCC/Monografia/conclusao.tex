@@ -1,11 +1,17 @@
 \chapter{Conclusão}
 \label{cap:conclusao}
 
-O principal objetivo deste trabalho foi atingido. Foi possível integrar o AppMan com o sistema gerenciador de recursos PBS, assim sendo, comprovando que a implementação DRMAA fornece subsídios suficientes para essa integração. 
+O presente trabalho permitiu a integração do AppMan com o RMS PBS. Deste modo o principal objetivo deste trabalho foi atingido. Foi possível a integração usando a especificação DRMAA implementada para o GridWay permitindo comprovar que essa implementação fornece subsídios suficientes para que o AppMan futuramente seja integrado a outros RMS. 
 
-\section{Contribuições}
-O projeto GRAND, atualmente, possui uma série de cooperações informais com várias instituições de pesquisa como, UFRGS, UFRJ, UFLA e Universidade do Porto. Além das contribuições já existentes no projeto ao qual esta pesquisa está inserida, a integração do AppMan com PBS através da DRMAA aumenta a perspectiva de novos domínios administrativos integrarem-se na grade ampliando a escalabilidade. Além disso, esta implementação possibilita uma maior quantidade/diversidade de testes para o modelo GRAND. A presente pesquisa também contribui com uma melhora e atualização na instalação do protótipo e o ambiente necessário para executá-lo.
+O projeto GRAND, atualmente, possui uma série de cooperações informais com várias instituições de pesquisa como, UFRGS, UFRJ, UFLA e Universidade do Porto. Além das contribuições já existentes no projeto ao qual esta pesquisa está inserida, a integração do AppMan com PBS através da DRMAA aumenta a perspectiva de novos domínios administrativos integrarem-se na grade ampliando a escalabilidade. Além disso, esta implementação possibilita uma maior quantidade/diversidade de testes para o modelo GRAND. 
 
-\section{Trabalhos Futuros}
-\label{sec:trab_futuros}
-Como principal trabalho futuro destaco, a implementação de um sistema de transferência de arquivo, esta carência no protótipo impossibilitou testes com outros domínios administrativos. Outros trabalhos que trariam benefícios interessantes seria a integração com outros gerenciamento de recursos, bem como uma melhora no algoritmo de escalonamento.
+A presente pesquisa também contribui com uma melhora e atualização na instalação do protótipo e o ambiente necessário para executá-lo. Além de comentários no código, uma série de documentos foram gerados:
+
+\begin{itemize}
+	\item Apêndice ~\ref{anexo:pbs-linux} Instalação do RMS PBS.
+	\item Apêndice ~\ref{anexo:ldap} Instalação do servidor LDAP.
+	\item Apêndice ~\ref{anexo:appman} Instalação e aquisição do protótipo AppMan.
+	\item Apêndice ~\ref{anexo:nfs} Instalação e configuração do servidor NFS.
+\end{itemize}
+
+Como principal trabalho futuro destaca-se, a implementação de um sistema de transferência de arquivo. Esta carência no protótipo impossibilitou testes com outros domínios administrativos em particular com o LNCC. Outros trabalhos que trariam benefícios interessantes seria a integração com outros gerenciamento de recursos principalmente o Condor. Uma melhora no algoritmo de escalonamento também seria desejável, principalmente na detecção de termino de execução de uma tarefa.
