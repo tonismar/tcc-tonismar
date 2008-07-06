@@ -1,4 +1,4 @@
-\chapter{Integração do AppMan com a especificação DRMAA}
+\chapter{Integração do AppMan com a especificação {DRMAA}}
 \label{cap:implementacao}
 
 O protótipo AppMan ainda está em desenvolvimento, portanto nem todos os requisitos descritos no modelo GRAND constam no protótipo e, seu funcionamento ainda apresenta alguns comportamentos inesperados. 
@@ -21,7 +21,7 @@ Para compilação e alterações nos fontes do protótipo foi usado as IDEs NetB
 
 \section{Componente DRMAA (submissão e monitoração)}
 
-Baseado na implementação desenvolveu-se um modelo definido por um conjunto de classes conforme figura~\ref{fig:UML_DRMAA}. Os principais métodos necessários para submissão e monitoração de uma tarefa estão na classe \emph{appman.rmswrapper.pbs.drmaa.SessionImpl} que implementa a \emph{interface} \emph{org.ggf.drmaa.Session}.
+Baseado na implementação desenvolveu-se um modelo definido por um conjunto de classes conforme Figura~\ref{fig:UML_DRMAA}. Os principais métodos necessários para submissão e monitoração de uma tarefa estão na classe \emph{appman.rmswrapper.pbs.drmaa.SessionImpl} que implementa a \emph{interface} \emph{org.ggf.drmaa.Session}.
 
 A DRMAA java \emph{binding} foi implementada com a JAVA \emph{Native Interface} (JNI). JNI é uma \emph{interface} de padrão de programação para escrever métodos Java sob uma máquina virtual Java (JVM), fazendo chamadas recebendo chamadas de aplicações nativas. Essas aplicações nativas, são aplicações específicas do sistema operacional. Dentre as linguagens, pode-se fazer chamadas em C++, C e \emph{Assembly} \cite{jni}.
 
@@ -41,7 +41,7 @@ A implementação de DRMAA usada foi a mesma usada na implementação com o Grid
 \includegraphics[scale=0.5]{./img/drmaaUML2.eps}
 \caption{Diagrama de classes do pacote \textbf{appman.rmswrapper.pbs.drmaa}}
 \label{fig:UML_DRMAA}
-Fonte: própria
+Fonte: Autoria Própria
 \end{center}
 \end{figure}
 
@@ -49,7 +49,7 @@ Apesar de, não tão relevante quanto os métodos citados acima, o método \emph
 
 \textbf{\#PBS -l nodes=x}
 
-Onde \textbf{x} é um número gerado pseudo-randomicamente entre 1 e 3 que são os nós disponíveis.
+Onde \textbf{x} é um número gerado pseudo-aleatóriamente entre 1 e 3 que são os nós disponíveis.
 
 \section{AppMan com DRMAA}
 
@@ -57,14 +57,14 @@ Conforme análise do código encontrado no repositório, a integração ficou co
 
 \subsection{Classe GridTaskDrmaa}
 
-A nova classe implementa a mesma \emph{interface} que a classe padrão \emph{appman.GridTask}. A maior alteração encontra-se no método \emph{execute} onde são feitas as chamadas ao componente de submissão. O método \emph{execute} figura~\ref{fig:execute}, é onde são realizados os passos indicados pela especificação DRMAA na submissão e monitoração de tarefas.
+A nova classe implementa a mesma \emph{interface} que a classe padrão \emph{appman.GridTask}. A maior alteração encontra-se no método \emph{execute} onde são feitas as chamadas ao componente de submissão. O método \emph{execute} Figura~\ref{fig:execute}, é onde são realizados os passos indicados pela especificação DRMAA na submissão e monitoração de tarefas.
 
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[scale=0.65]{./img/execute.eps}
 \caption{Método \emph{execute} da nova classe \emph{appman.GridTaskDrmaa}}
 \label{fig:execute}
-Fonte: própria
+Fonte: Autoria Própria
 \end{center}
 \end{figure}
 
@@ -77,7 +77,7 @@ A alteração no arquivo de configuração foi feita para que o nó saiba que co
 \includegraphics[scale=0.5]{./img/gridnodes_properties.eps}
 \caption{Arquivo de configuração \emph{gridnodes.properties}}
 \label{fig:gridonodes_properties}
-Fonte: própria
+Fonte: Autoria Própria
 \end{center}
 \end{figure}
 
@@ -88,6 +88,6 @@ Para que esta nova configuração fosse reconhecida foi criado o método \emph{l
 \includegraphics[scale=0.7]{./img/concrete.eps}
 \caption{Método \emph{loadConcreteTaskClassName}}
 \label{fig:Concrete}
-Fonte: própria
+Fonte: Autoria Própria
 \end{center}
 \end{figure}

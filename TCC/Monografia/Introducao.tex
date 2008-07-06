@@ -1,9 +1,11 @@
 \chapter{Introdução}
 \label{cap:introducao}
 
-Grades computacionais (computational grid) é uma das formas mais recentes de ambiente para processamento geograficamente distribuído, que conta com uma grande infra-estrutura de redes e pode ser empregada em troca de programas, dados e serviços. Segundo Dantas \cite{Dantas2005}, pode-se dizer, também, que Computação em Grade (Grid Computing) representa uma forma estendida dos serviços Web permitindo que recursos computacionais possam ser compartilhados. Podemos definir grades como uma plataforma computacional heterogênea distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma \cite{Dantas2005}. 
+Grades computacionais (\emph{computational grid}) é uma das formas mais recentes de ambiente para processamento geograficamente distribuído, que conta com uma grande infra-estrutura de redes e pode ser empregada em troca de programas, dados e serviços. Segundo Dantas \cite{Dantas2005}, pode-se dizer, também, que Computação em Grade (\emph{Grid Computing}) representa uma forma estendida dos serviços Web permitindo que recursos computacionais possam ser compartilhados. Podemos definir grades como uma plataforma computacional heterogênea distribuída geograficamente fornecendo serviços e recursos às organizações participantes da plataforma \cite{Dantas2005}. 
        
-Um sistema de gerenciamento de recursos (\emph{Resource Management System} - RMS) é a parte central de um sistema distribuído fornecendo um mecanismo de enfileiramento de tarefas, políticas de escalonamento, esquemas de prioridades e monitoramento de recursos proporcionando controles adicionais sobre inicialização, escalonamento e execução de tarefas. Também coordena a distribuição dessas tarefas entre as diferentes máquinas em uma rede \cite{condor2007, Bayucan2007, Mangan2006}. Devido a heterogeneidade das grades alguns problemas são apresentados, tais como, a alocação dos nós para um grande número de tarefas, gerenciamento de dados e sobrecarga em nós de submissão. O modelo de gerenciamento de aplicações denominado GRAND (\emph{Grid Robust Application Deployment}) \cite{Mangan2006} visa permitir um particionamento flexível e utilizar uma hierarquia de gerenciadores que realizam a submissão das tarefas. Baseado nesse modelo um protótipo, AppMan (\emph{Application Manager}) \cite{Vargas2003}, foi implementado objetivando garantir o escalonamento das tarefas bem como a autorização e autenticação para tarefas executadas. Ele foi avaliado apresentando bons resultados referente ao gerenciamento de dados e serviços. Esse protótipo consiste em um gerenciador de aplicações que dispara e controla cada aplicação nos nós baseando-se nas informações indicadas pelo gerenciador de submissão que tem como função, além da já citada, criar e monitorar os gerenciadores de tarefas. Os gerenciadores de tarefas são responsáveis pela comunicação com o escalonador de um determinado domínio garantindo a execução remota e ordem das tarefas de acordo com a dependência de dados \cite{Mangan2006}.
+Um sistema de gerenciamento de recursos (\emph{Resource Management System} - RMS) é a parte central de um sistema distribuído fornecendo um mecanismo de enfileiramento de tarefas, políticas de escalonamento, esquemas de prioridades e monitoramento de recursos proporcionando controles adicionais sobre inicialização, escalonamento e execução de tarefas. Também coordena a distribuição dessas tarefas entre as diferentes máquinas em uma rede \cite{condor2007, Bayucan2007, Mangan2006}. Devido a heterogeneidade das grades alguns problemas são apresentados, tais como, a alocação dos nós para um grande número de tarefas, gerenciamento de dados e sobrecarga em nós de submissão. 
+
+O modelo de gerenciamento de aplicações denominado GRAND (\emph{Grid Robust Application Deployment}) \cite{Mangan2006} visa permitir um particionamento flexível e utilizar uma hierarquia de gerenciadores que realizam a submissão das tarefas. Baseado nesse modelo um protótipo, AppMan (\emph{Application Manager}) \cite{Vargas2003}, foi implementado objetivando garantir o escalonamento das tarefas bem como a autorização e autenticação para tarefas executadas. Ele foi avaliado apresentando bons resultados referente ao gerenciamento de dados e serviços. Esse protótipo consiste em um gerenciador de aplicações que dispara e controla cada aplicação nos nós baseando-se nas informações indicadas pelo gerenciador de submissão que tem como função, além da já citada, criar e monitorar os gerenciadores de tarefas. Os gerenciadores de tarefas são responsáveis pela comunicação com o escalonador de um determinado domínio garantindo a execução remota e ordem das tarefas de acordo com a dependência de dados \cite{Mangan2006}.
 
 O modelo GRAND permitiria que qualquer sistema gerenciador de recurso fosse usado nos nós, porém o AppMan funciona unicamente com seu próprio sistema de gerenciamento de recursos. Nenhum estudo mais detalhado foi realizado até o momento de como possibilitar que o protótipo suporte a integração com diferentes RMSs.
 
@@ -12,39 +14,40 @@ Uma interface de aplicação (\emph{Application Program Interface} - API) denomi
 Este trabalho pretende avaliar se a especificação DRMAA atende as necessidades do AppMan bem como realizar a integração do AppMan ao menos com um RMS.
 
 \section{Motivação}
-Gerenciar aplicações consiste em preparar, submeter e monitorar o progresso de execução de todas as tarefas as quais compõem uma aplicação. Cada nó da grade possui seu gerenciador de recursos, os quais podem possuir inúmeros atributos. No modelo estudado foram considerados como atributos o controle exclusivo e a dependência de trabalhos \cite{Mangan2006}. Verificando esses atributos, determinadas ações podem ser agendadas para as aplicações. O GRAND respeita as políticas bem como as especificações administrativas do domínio escolhido considerando que a maioria dos clusters acadêmicos ou redes locais estarão prontos para serem integrados em uma grade, já possuindo usuários locais, submissão local de tarefas e um administrador de sistema, assim sendo o menos intrusivo possível nos diferentes RMSs existentes em uma grade \cite{Mangan2006}.
+Gerenciar aplicações consiste em preparar, submeter e monitorar o progresso de execução de todas as tarefas as quais compõem uma aplicação. Cada nó da grade possui seu gerenciador de recursos, os quais podem possuir inúmeros atributos. No modelo estudado foram considerados como atributos o controle exclusivo e a dependência de trabalhos \cite{Mangan2006}. Verificando esses atributos, determinadas ações podem ser agendadas para as aplicações. O GRAND respeita as políticas bem como as especificações administrativas do domínio escolhido considerando que a maioria dos \emph{clusters} acadêmicos ou redes locais estarão prontos para serem integrados em uma grade, já possuindo usuários locais, submissão local de tarefas e um administrador de sistema, assim sendo o menos intrusivo possível nos diferentes RMSs existentes em uma grade \cite{Mangan2006}.
 
-A especificação DRMAA tem por objetivo facilitar a interface entre aplicações de RMSs com aplicações de diferentes desenvolvedores abstraindo as relações fundamentais da tarefa do RMS provendo um modelo fácil de usar (easy-to-use) para desenvolvedores tanto de aplicações como de RMSs encorajando, desse modo, adoção dos mesmos \cite{Rajic2004}.
+A especificação DRMAA tem por objetivo facilitar a interface entre aplicações de RMSs com aplicações de diferentes desenvolvedores abstraindo as relações fundamentais da tarefa do RMS provendo um modelo fácil de usar (\emph{easy-to-use}) para desenvolvedores tanto de aplicações como de RMSs encorajando, desse modo, adoção dos mesmos \cite{Rajic2004}.
 
 Como já dito anteriormente, qualquer RMS pode ser usado nos nós da grade de acordo com o modelo GRAND, porém o protótipo AppMan funciona apenas com seu próprio gerenciador de recursos \cite{Mangan2006}.
 
-Considerando as vantagens do DRMAA \cite{Troeger2007} e as questões citadas, acredita-se motivador o estudo e desenvolvimento de uma integração com ao menos um RMS. Maiores detalhes serão esclarecidos no capítulo seguinte.
+Considerando as vantagens da DRMAA \cite{Troeger2007} e as questões citadas, acredita-se motivador o estudo e desenvolvimento de uma integração com ao menos um RMS, a fim de verificar a viabilidade do uso deste padrão. Maiores detalhes serão esclarecidos no capítulo seguinte.
 
-\section{Objetivo}
+\section{Objetivos}
 
-\subsection{Gerais}
-Permitir que o AppMan exporte tarefas para nós da grade gerenciadas por diferentes RMSs e através disso proporcionar a sua integração e conseqüente utilização de recursos em outras instituições científicas.
+O objetivo geral deste trabalho é permitir que o AppMan exporte tarefas para nós da grade gerenciadas por diferentes RMSs e através disso proporcionar a sua integração e conseqüente utilização de recursos em outras instituições científicas.
 
-\subsection{Específicos}
+Como objetivos específicos, destaca-se:
     \begin{itemize}
         \item Verificar se a especificação DRMAA atende todas necessidades esperadas pelo AppMan assim como confirmar a aptidão do AppMan na integração com a DRMAA;
-        \item Integrar AppMan com pelo menos um RMS;
-        \item Avaliar o sobrecusto (overhead) da solução implementada através da verificação do desempenho da integração comparando com o escalonador atual;
+        \item Integrar o AppMan com pelo menos um RMS;
+        \item Avaliar o sobrecusto (\emph{overhead}) da solução implementada através da verificação do desempenho da integração comparando com o escalonador atual.
     \end{itemize}
     
 \section{Metodologia de Pesquisa}    
-Com o propósito de verificar a viabilidade da exportação de tarefas do AppMan para RMS diferentes, foi realizado um estudo da especificação DRMAA para o desenvolvimento desta integração. Também foi feito um estudo aprofundado no modelo GRAND onde foi desenvolvido o protótipo, bem como da implementação atual do AppMan.
+Com o propósito de verificar a viabilidade da exportação de tarefas do AppMan para RMS diferentes, foi realizado um estudo da especificação DRMAA para o desenvolvimento desta integração. Também foi feito um estudo aprofundado no modelo GRAND que serviu de base para o protótipo, bem como da implementação atual do AppMan.
 
-O desenvolvimento feito na linguagem Java que foi também a linguagem desenvolvida o AppMan facilitando a portabilidade. A métrica de avaliação usada na verificação das vantagens de um RMS diferente comparado com o escalonador do próprio AppMan foi a escalabilidade,  tendo como base um estudo teórico aprofundado incluindo os itens citados na bibliografia presente neste trabalho.
+O método de pesquisa utilizado está ente um experimento, baseado no fato de que o mode GRAND espera a integração com qualquer RMS, e também em um estudo de caso em função da análise da implementação proposta. 
+
+O desenvolvimento foi feito na linguagem Java que foi também a linguagem utilizada no AppMan, facilitando a portabilidade. A métrica de avaliação usada na verificação das vantagens de um RMS diferente comparado com o escalonador do próprio AppMan foi a escalabilidade,  tendo como base um estudo teórico aprofundado incluindo os itens citados na bibliografia presente neste trabalho.
 
 Outros trabalhos que proporcionam integração entre diferentes RMSs foram estudados para averiguação das soluções adotadas. 
 
-Também foram executados todos procedimentos de instalação do ambiente EXEHDA - ISAM e do AppMan. Alguns problemas foram encontrados com o servidor Lightweight Directory Access Protocol (LDAP) necessário para o funcionamento do EXEHDA. Uma engenharia reversa das classes do projeto AppMan gerando o diagrama UML foi feita para facilitar o estudo da integração com a DRMAA.
+Também foram executados todos os procedimentos de instalação do ambiente EXEHDA - ISAM e do AppMan. Alguns problemas foram encontrados com o servidor Lightweight Directory Access Protocol (LDAP) necessário para o funcionamento do EXEHDA. Uma engenharia reversa das classes do projeto AppMan gerando o diagrama UML foi feita para facilitar o estudo da integração com a DRMAA.
 
-Todo acompanhamento foi feito em companhia do professor orientador através de reuniões periódicas previamente estabelecidas conforme o cronograma previsto (colocar o cronograma?).
+Todo acompanhamento foi feito em companhia do professor orientador através de reuniões periódicas previamente estabelecidas conforme o cronograma previsto.
 
 \section{Estrutura do Trabalho}
-A estrutura deste trabalho é dividida em Xs capítulos e esta Introdução. Os capítulos são estruturados da seguinte forma:
+A estrutura deste trabalho é dividida em 7s capítulos e esta Introdução. Os capítulos são estruturados da seguinte forma:
 
 CAPÍTULO 2: \emph{Gerenciamento de Aplicações em Grade}. Este capítulo apresenta uma descrição dos conceitos de Grades Computacionais e também de Sistemas Gerenciadores de Recursos.
 
@@ -52,8 +55,8 @@ CAPÍTULO 3: \emph{O Modelo GRAND}. O capítulo 3 explica as características do
 
 CAPÍTULO 4: \emph{O Componente de Integração}. Neste capítulo será explanado os conceitos da especificação DRMAA, experiências de implementações e suas vantagens.
 
-CAPÍTULO 5: \emph{Integração do AppMan com a Especificação DRMAA}. O capítulo 5 explica a metodologia mais detalhada, os motivos da escolha das tecnologias e como foi efetivamente implementado o trabalho.
+CAPÍTULO 5: \emph{Integração do AppMan com a Especificação DRMAA}. O capítulo 5 explica a metodologia de forma mais detalhada, os motivos da escolha das tecnologias e como foi efetivamente implementado o trabalho.
 
-CAPÍTULO 6: \emph{Resultados Experimentais}. O presente capítulo explicará de que forma foram feitos os testes e avaliações dos resultados.
+CAPÍTULO 6: \emph{Resultados Experimentais}. O capítulo 6 explicará de que forma foram feitos os testes e avaliações dos resultados.
 
 CAPÍTULO 7: \emph{Conclusão}. Finalmente serão apresentadas as conclusões e propostos trabalhos futuros.

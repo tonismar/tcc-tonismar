@@ -1,7 +1,7 @@
 \chapter{Resultados Experimentais}
 \label{cap:resultados}
 
-Usando o ambiente computacional descrito no capítulo~\ref{cap:implementacao}, foram realizados testes para validar a viabilidade da implementação realizada. Através da criação de dois tipos distintos de aplicações, foi feita uma comparação entre o protótipo na versão sem integração com o PBS (AppMan-RR) com o protótipo integrado ao PBS (AppMan-PBS). As informações de estatísticas foram adquiridas através dos arquivos de saídas {\bf parserOut.txt} e {\bf task-execution-appman.trace}, anexos ~\ref{anexo:parser} e ~\ref{anexo:trace}, repectivamente. O primeiro arquivo contém informações sintéticas, tais como, o tempo total da execução, já no segundo, são informações analíticas para cada tarefa. Foram realizadas três execuções para um conjunto definido de tarefas, computando uma média aritmética entre essas três execuções. O motivo para não realização de um maior número de execuções para cada conjunto de tarefas foi devido a pouca variação de resultados entre uma execução e outra e, também, a inúmeras tentativas necessárias para chegar a uma execução completa, principalmente quando o número de tarefas era relativamente alto (acima de 200 tarefas). Essa limitação está fortemente ligada a instabilidades do \emph{middleware} EXEHDA.
+Usando o ambiente computacional descrito no Capítulo~\ref{cap:implementacao}, foram realizados testes para avaliar a viabilidade da implementação realizada. Através da criação de dois tipos distintos de aplicações, foi feita uma comparação entre o protótipo na versão sem integração com o PBS (AppMan-RR) com o protótipo integrado ao PBS (AppMan-PBS). As informações de estatísticas foram adquiridas através dos arquivos de saídas {\bf parserOut.txt} e {\bf task-execution-appman.trace}, anexos ~\ref{anexo:parser} e ~\ref{anexo:trace}, repectivamente. O primeiro arquivo contém informações sintéticas, tais como, o tempo total da execução, já no segundo, são informações analíticas para cada tarefa. Foram realizadas três execuções para um conjunto definido de tarefas, computando uma média aritmética entre essas três execuções. O motivo para não realização de um maior número de execuções para cada conjunto de tarefas foi devido a pouca variação de resultados entre uma execução e outra e, também, a inúmeras tentativas necessárias para chegar a uma execução completa, principalmente quando o número de tarefas era relativamente alto (acima de 200 tarefas). Essa limitação está fortemente ligada a instabilidades do \emph{middleware} EXEHDA.
 
 \section{Aplicações}
 
@@ -28,9 +28,9 @@ O Fatorial é uma função matemática mais conhecida. Podemos calcular o produt
 
 No programa principal existe um laço que faz o cálculo do fatorial de 8 repetir 10000 vezes acumulando esse resultado. Esse laço força o uso de cpu de modo a realizar repetidos cálculos um número de vezes controlado. Essa aplicação pode ser considerada como sintética pois emula uma classe de aplicação sem ser de fato uma aplicação real.
 
-Ambos algoritmos foram desenvolvidos na linguagem \textbf{C}.
+Ambos algoritmos foram desenvolvidos na linguagem \textbf{C}. A decisão por esta linguagem deve-se a facilitar o uso em experimentos futuros com o Condor.
 
-Como já existia o algoritmo fatorial nos arquivos do repositório do AppMan, a realização dos testes com o fatorial ocorreu sem problemas. Já com a aplicação crivo, que foi implementada junto com este trabalho, após submeter as tarefas para o protótipo, este demostrou grande quantidade de erros que impossibilitou a execução. Após uma comparação com o código fonte da aplicação fatorial, notou-se que o programa do crivo estava sem o \emph{status} de saída padrão (\textbf{exit(0)}). Após adicionar a saída padrão do programa crivo o funcionamento com o AppMan ocorreu de forma normal.
+Como já existia o algoritmo fatorial nos arquivos do repositório do AppMan, a realização dos testes com o fatorial ocorreu sem problemas. Já com a aplicação crivo, que foi implementada junto com este trabalho, após submeter as tarefas para o protótipo, este demostrou grande quantidade de erros que impossibilitou a execução. Após uma comparação com o código fonte da aplicação fatorial, notou-se que o programa do crivo estava sem o \emph{status} de saída padrão (\textbf{exit(0)}). Após adicionar a saída padrão do programa crivo o funcionamento com o AppMan ocorreu de forma normal. Deste modo, fica aqui o registro da obrigatoriedade da aplicação retornar ao sistema operacional o código de sucesso, pois, caso contrário, o AppMan assumirá término com erro.
 
 A métrica utilizada nos testes foi a escalabilidade. Tentou-se submeter o maior número possível de tarefas em ambas as versões do protótipo. A Tabela~\ref{tab:num_max_tarefas} apresenta os números atingidos na submissão das tarefas. No AppMan, para a aplicação Fatorial, foi possível submeter um número máximo 300 tarefas enquanto que no Crivo o número de tarefas submetidas chegou a 250. Já para AppMan-PBS com a aplicação Fatorial o número de tarefas ficou em 200 e com Crivo foi possível submeter 500 tarefas.
 
@@ -51,7 +51,7 @@ A métrica utilizada nos testes foi a escalabilidade. Tentou-se submeter o maior
 \end{center}
 \end{table}
 
-Como dito anteriormente (capitulo~\ref{cap:implementacao}), o AppMan ainda é um protótipo e seu funcionamento nem sempre é o esperado. Foram necessárias algumas tentativas para chegar ao número máximo de tarefas para cada tipo de aplicação. Erros inesperados ocorreram com certa frequência tornando necessário o reinício de toda a submissão. 
+Como dito anteriormente (Capítulo~\ref{cap:implementacao}), o AppMan ainda é um protótipo e seu funcionamento nem sempre é o esperado, isto é, algumas vezes ele se mostra instável. Foram necessárias algumas tentativas para chegar ao número máximo de tarefas para cada tipo de aplicação. Erros inesperados ocorreram com certa frequência tornando necessário o reinício de toda a submissão. Alguns erros tinham relação com o EXEHDA, muitas vezes era necessário recriar a base LDAP com as configurações iniciais para o EXEHDA funcionar e, só assim os erros terminavam.
 
 Foi possível atingir números além dos transcritos na tabela~\ref{tab:num_max_tarefas}, porém ao analisar os arquivos de saída notou-se que alguns erros, arquivos necessários para análises não foram gerados completamente. Devido a esse fato essas submissões não foram utilizadas para fins de estatísticas. A maioria dos erros reportados são de conexão \emph{socket}, ocorridas devido ao \emph{middleware} EXEHDA. Possivelmente versões mais atuais do EXEHDA sejam mais estáveis, mas para evitar alterações fora do escopo do trabalho, optou-se por manter a atual. Além disso, testes usando esta versão permitiram comparar dados de escalabilidade das outras versões do AppMan reportadas na literatura \cite{Mangan2006}.
 
@@ -89,8 +89,28 @@ Fonte: Autoria Própria
 
 \begin{table}[hbtp]
 \begin{center}
+\caption{Tamanho do Arquivo de Resultado}
+\label{tab:tam_arquivo}
+\begin{center}
+Fonte: Autoria Própria
+\end{center}
+\begin{tabular}{c|p{3cm}|p{3cm}}
+	\hline
+		{\bf Aplicação } & {\bf Tamanho Arq. Entrada (Kb)} & {\bf Tamanho Arq. Saída (Kb) }\\
+	\hline
+	Fatorial & 4,9 & 2,0\\ \hline
+	Crivo & 1,6 & 525,8\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[hbtp]
+\begin{center}
 \caption{Tempo de Total de Execução}
 \label{tab:tempo_total}
+\begin{center}
+Fonte: Autoria Própria
+\end{center}
 \begin{tabular}{c|r|r|r|r}
 	\hline
 		{\bf Nro. Tarefas } & {\bf Crivo (PBS)} & {\bf Fatorial (PBS)} & {\bf Crivo (RR)} & {\bf Fatorial (RR)}\\
@@ -107,30 +127,13 @@ Fonte: Autoria Própria
 	{\bf 500} & 28239,04 & -- & -- & --\\ \hline
 \end{tabular}
 \end{center}
-\begin{center}
-Fonte: Autoria Própria
-\end{center}
 \end{table}
 	
 Nota-se também que os resultados entre os gráficos (Figuras ~\ref{fig:fatorial_total} e ~\ref{fig:crivo_total}) se divergem. Na aplicação Fatorial foi possível submeter mais tarefas com o AppMan-RR enquanto que, na tarefa Crivo, o AppMan-PBS conseguiu muito mais tarefas. O motivo principal dessa inversão é o tamanho do arquivo de retorno (Tabela~\ref{tab:tam_arquivo}), no Crivo o tamanho é consideravelmente maior que no Fatorial. Os resultados da tarefa Crivo demoram mais para serem enviadas, essa demora auxilia na ausência de sincronia entre o protótipo com o PBS, visto que, o nó que está recebendo os resultados tem um tempo maior de intervalo entre o recebimento de um arquivo e outro. 
-Já nos resultados provenientes da tarefa Fatorial, como os arquivos são menores, o envio é de forma muito mais rápida causando problemas com o protótipo quando enviado via PBS. Nesse caso, a sincronia entre AppMans facilita o processamento das tarefas.
 
-\begin{table}[hbtp]
-\begin{center}
-\caption{Tamanho do Arquivo de Resultado}
-\label{tab:tam_arquivo}
-\begin{tabular}{c|c|c}
-	\hline
-		{\bf Aplicação } & {\bf Tamanho Arq. Entrada (Kb)} & {\bf Tamanho Arq. Saída (Kb) }\\
-	\hline
-	Fatorial & 4,9 & 2,0\\ \hline
-	Crivo & 1,6 & 525,8\\ \hline
-\end{tabular}
-\end{center}
-\begin{center}
-Fonte: Autoria Própria
-\end{center}
-\end{table}
+Já nos resultados provenientes da tarefa Fatorial, como os arquivos são menores, o envio é de forma muito mais rápida causando problemas com o protótipo quando submete tarefas para o PBS. Nesse caso, a sincronia entre SMs facilita o processamento das tarefas.
+
+%tabela pequena estava aki
 
 \section{Tempo de Preparo}
 
@@ -166,6 +169,9 @@ Fonte: Autoria Própria
 \begin{center}
 \caption{Tempo de Preparo}
 \label{tab:tempo_preparo}
+\begin{center}
+Fonte: Autoria Própria
+\end{center}
 \begin{tabular}{c|r|r|r|r}
 	\hline
 		{\bf Nro. Tarefas } & {\bf Crivo (PBS)} & {\bf Fatorial (PBS)} & {\bf Crivo} & {\bf Fatorial}\\
@@ -182,15 +188,15 @@ Fonte: Autoria Própria
 	{\bf 500} & 3,27 & -- & -- & --\\ \hline
 \end{tabular}
 \end{center}
-\begin{center}
-Fonte: Autoria Própria
-\end{center}
 \end{table}
 
 \begin{table}[hbtp]
 \begin{center}
 \caption{Número de Tentativas}
 \label{tab:tentativas}
+\begin{center}
+Fonte: Autoria Própria
+\end{center}
 \begin{tabular}{c|c|c}
 	\hline
 		{\bf Nro. Tarefas } & {\bf Crivo } & {\bf Fatorial }\\
@@ -206,18 +212,13 @@ Fonte: Autoria Própria
 	500 & 54 & --\\ \hline
 \end{tabular}
 \end{center}
-\begin{center}
-Fonte: Autoria Própria
-\end{center}
 \end{table}
 
 Nas execuções realizadas foi observado que não existe nenhuma relação entre a quantidade de tarefas e o número de tentativas. O erro ao tentar executar uma tarefa é causado devido a fatores como a sobrecarga da rede ou de CPU.
 
-\pagebreak
-
 \section{Limitações e Dificuldades Encontradas}
 
-Como o AppMan é um sistema em desenvolvimento, já citado algumas vezes no texto, sua execução nem sempre era o que esperávamos. A instalação do ambiente EXEHDA demandou um tempo não contabilizado no cronograma. A dependência do \emph{middleware} EXEHDA também causou problemas. Inúmeros erros encontrados no momento dos teste foi devido ao EXEHDA junto com o servidor LDAP. Em particular a necessidade de um servidor LDAP funcionando de acordo com o esperado foi bastante difícil de obter. Isso deve-se ao fato do \emph{middleware ser relativamente antigo se comparado com as versões de OpenLDAP disponíveis.
+O AppMan é um sistema em desenvolvimento como já citado algumas vezes no texto e por isso sua execução nem sempre era o que esperávamos. A instalação do ambiente EXEHDA demandou um tempo não contabilizado no cronograma. A dependência do \emph{middleware} EXEHDA também causou problemas. Inúmeros erros encontrados no momento dos teste foi devido ao EXEHDA junto com o servidor LDAP. Em particular a necessidade de um servidor LDAP funcionando de acordo com o esperado foi bastante difícil de obter. Isso deve-se ao fato do \emph{middleware} ser relativamente antigo se comparado com as versões de OpenLDAP disponíveis.
 
 A grande carência de documentação do protótipo dificultou bastante na implementação da integração, assim como o pouco conhecimento na linguagem a qual o AppMan foi implementado. Havia alguns arquivos com informações que reportavam apenas parte das informações necessárias. Deste modo, uma das contribuições adicionais neste trabalho são as documentações geradas e disponíveis nos Apêncides deste texto.
 

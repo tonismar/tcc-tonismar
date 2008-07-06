@@ -1,30 +1,29 @@
 \chapter{Componente de Integração}
 \label{cap:drmaa}
 
-Alguns trabalhos relacionados a integração de RMS foram encontrados no desenvolvimento da presente monografia, dentre eles podemos citar o Sun HPC ClusterTools \cite{sunhpc} que é um grupo de ferramentas para desenvolvimento paralelo que extende o \emph{Sun Network Computing} para aplicações de alto nível em memória distribuída. Oferece apenas três RMS para integração: \emph{Sun N1 Grid Engine V6}, \emph{Load Sharing Facility} (LSF) HPC V 6.2 e \emph{OpenPBS Portable Batch System} (PBS) 2.3.16. Porém esta integração não é genérica é apenas fornecida para o \emph{Sun HPC}.
+Alguns trabalhos relacionados a integração de RMS foram encontrados no desenvolvimento da presente monografia, dentre eles podemos citar o Sun HPC ClusterTools \cite{sunhpc} que é um grupo de ferramentas para desenvolvimento paralelo que extende o \emph{Sun Network Computing} para aplicações de alto nível em memória distribuída. Oferece apenas três RMS para integração: \emph{Sun N1 Grid Engine V6}, \emph{Load Sharing Facility} (LSF) HPC V 6.2 e \emph{OpenPBS Portable Batch System} (PBS) 2.3.16. Porém, esta integração não é genérica, sendo fornecida apenas fornecida para o \emph{Sun HPC}.
 
-Outro trabalho relacionado é o ambiente de programação \emph{Distributed Execution and Communication Kernel} (DECK) \cite{Barreto2000} que tem por objetivo o suporte à execução de aplicações paralelas regulares e irregulares em agregados (\emph{clusters computing}). O DECK visa oferecer recursos para criação remota de \emph{threads}, suporte a múltiplas interfaces de rede, tolerância a falhas e balanceamento de carga através de recursos de comunicação e multiprogramação. Contudo, o escopo do DECK é direcionado para aplicações em agregados onde todos os nós correspondem a computadores, diferentemente de grades que os nós podem ser heterogênios enquanto que em agregados os nós são homogênios. 
+Outro trabalho relacionado é o ambiente de programação \emph{Distributed Execution and Communication Kernel} (DECK) \cite{Barreto2000} que tem por objetivo o suporte à execução de aplicações paralelas regulares e irregulares em agregados (\emph{clusters computing}). O DECK visa oferecer recursos para criação remota de \emph{threads}, suporte a múltiplas interfaces de rede, tolerância a falhas e balanceamento de carga através de recursos de comunicação e multiprogramação. Contudo, o escopo do DECK é direcionado para aplicações em agregados onde todos os nós correspondem a computadores, diferentemente de grades em que os nós podem ser heterogêneos enquanto que em agregados os nós são homogêneos. 
 
-Devido as limitações dos trabalhos citados, a \emph{Distributed Resource Management Application API} (DRMAA), que possui inúmeros trabalhos recentes relacionados \cite{Ciesnik2007, Haas2004, Herrera2007, Templeton2006}  possui os atributos necessário para o objetivo deste trabalho.
-A idéia é que a API seja implementada em múltiplas linguagens. Implementada inicialmente em C/C++, tendo como segunda opção linguagens de \emph{scripts} tais como \emph{Perl} e \emph{Python}. O desenvolvimento da \emph{Interface Definition Language} (IDL) soluciona o problema através de uma \emph{interface} que serve para múltiplas linguagens.
+Devido as limitações dos trabalhos citados, a \emph{Distributed Resource Management Application API} (DRMAA), que possui inúmeros trabalhos recentes relacionados \cite{Ciesnik2007, Haas2004, Herrera2007, Templeton2006}  possui os atributos necessário para o objetivo deste trabalho. A idéia da DRMAA é propor uma API que possa ser implementada em múltiplas linguagens. Inicialmente , foi  implementada em C/C++, tendo como segunda opção linguagens de scripts tais como \emph{Perl} e \emph{Python}. O desenvolvimento da \emph{Interface Definition Language} (IDL) soluciona o problema através de uma \emph{interface} que serve para múltiplas linguagens.
 
-Uma biblioteca ideal deveria servir, dinâmica e estaticamente, para todos RMS e suas versões. Porém, é possível implementar múltiplos mas não todos RMSs.
+Uma biblioteca ideal deveria servir, dinâmica e estaticamente, para todos RMS e suas versões. Embora seja possível implementar para vários RMSs, nem todos são contemplados. O PBS e o Condor são exemplos de RMSs suportados por esta API.
 
-A idéia da implementação e aplicações distribuídas em larga escala são para um ambiente DRM e suas políticas. Nem sempre isto é possível, então uma solução menos intrusiva com uma "categoria de tarefa" e "especificação nativa", tem sido proposta. As políticas específicas do lugar são abstraídas/agregadas em simples \emph{strings} que são interpretadas pela implementação DRMAA. DRMAA não possui um mecanismo explícito de organização de arquivos  \cite{Rajic2004}.
+O objetivo da implementação e aplicações distribuídas em larga escala são para um ambiente DRM e suas políticas. Nem sempre isto é possível, então uma solução menos intrusiva com uma {\bf categoria de tarefa} e {\bf especificação nativa}, tem sido proposta. As políticas específicas do lugar são abstraídas/agregadas em simples \emph{strings} que são interpretadas pela implementação DRMAA. Também cabe salientar que DRMAA não possui um mecanismo explícito de organização de arquivos \cite{Rajic2004}.
 
 \section{Categorias de Tarefas}
 
-Experiências com integrações em um DRM mostra que mesmo uma aplicação de mesmo \emph{Independent Software Vendor} (ISV) possuem políticas diferenciadas através de usuários. Essas políticas afetam atributos específicos tais como os recursos usados pela tarefa, preferência de localidade da execução da tarefa e onde a tarefa irá ser escalonada com relação a outras tarefas.
+Experiências com integrações em um DRM/RMS mostram que, mesmo uma aplicação de mesmo \emph{Independent Software Vendor} (ISV), possuem políticas diferenciadas através de usuários. Essas políticas afetam atributos específicos tais como os recursos usados pela tarefa, preferência de localidade da execução da tarefa e onde a tarefa irá ser escalonada com relação a outras tarefas.
 
-DRMAA fornece formas distintas para "\emph{job categories}" que encapsulam detalhes das tarefas específicas, escondendo estes detalhes da aplicação. É possível criar uma categoria de tarefa específica para uma aplicação a ser despachada pelo DRMS, o nome associado a categoria deve ser especificado como um atributo de submissão de tarefa. A DRMAA pode, então, usar o nome da categoria para gerenciar recursos específicos do local e requisitos funcionais das tarefas.
+A DRMAA fornece formas distintas para \emph{job categories} que encapsulam detalhes das tarefas específicas, escondendo estes detalhes da aplicação. É possível criar uma categoria de tarefa específica para uma aplicação a ser despachada pelo RMS, o nome associado a categoria deve ser especificado como um atributo de submissão de tarefa. A DRMAA pode, então, usar o nome da categoria para gerenciar recursos específicos do local e requisitos funcionais das tarefas.
 
-Um problema típico que dificulta a escrita para muitos ISVs é o não conhecimento prévio da configuração do DRMS, ainda assim a DRMAA facilita a escrita de aplicações \cite{Rajic2002}.
+Um problema típico que dificulta a escrita para muitos ISVs é o não conhecimento prévio da configuração do RMS, ainda assim a DRMAA facilita a escrita de aplicações \cite{Rajic2002}.
 
 \section{Submissão, Monitoramento e Controle}
 
-Existem duas versões de rotinas de submissão. Uma versão para submissão individula de tarefas e uma versão para submeter tarefas em volume. 
+Existem duas versões de rotinas de submissão. Uma versão para submissão individual de tarefas e uma versão para submeter tarefas em volume. 
 
-Monitoramento de tarefas e grupo de controle da API precisa manipular:
+Monitoramento de tarefas e grupo de controle da API precisam manipular:
 \begin{itemize}
 	\item liberação, cancelamento, recomeço e finalização de tarefas;
 	\item checagem do código de saída de uma tarefa remota finalizada;
@@ -33,7 +32,7 @@ Monitoramento de tarefas e grupo de controle da API precisa manipular:
 	\item aguardar por todas as tarefas, ou seja, subconjunto da sessão corrente de tarefas terminar a execução (mecanismo de sincronização)
 \end{itemize}
 
-Os sinais Unix e Windows são repassados com a rotina de controle de tarefas que possuem diferenças nos sistemas DRM/RMS. O único não tradicional característica é a passagem da \emph{string} DRMAA\underline{ }JOB\underline{ }IDS\underline{ }SESSION\underline{ }ALL como um \emph{job\underline{ }id} para indicar operações em todos os \emph{job\underline{ }ids} no processo corrente.
+Os sinais Unix e Windows são repassados com a rotina de controle de tarefas que possuem diferenças nos sistemas RMS. A único não tradicional característica é a passagem da \emph{string} DRMAA\underline{ }JOB\underline{ }IDS\underline{ }SESSION\underline{ }ALL como um \emph{job\underline{ }id} para indicar operações em todos os \emph{job\underline{ }ids} no processo corrente.
 
 A tarefa remota pode estar nos seguintes estados:
 \begin{itemize}
@@ -45,23 +44,23 @@ A tarefa remota pode estar nos seguintes estados:
 	\item suspenso pelo usuário;
 	\item suspenso pelo usuário e sistema simultaneamente;
 	\item em execução;
-	\item completo com/sem sucesso;
+	\item completo com/sem sucesso.
 \end{itemize}
 
 Ainda é necessário adicionar nesta lista uma possibilidade da implementação DRMAA não ser capaz de determinar o estado da tarefa remota. Visto que, uma tarefa rejeitada não possui um \emph{job\underline{ }id} e, consequentemente não possui um estado. Existe ainda rotinas necessárias para o rastreamento da execução e a representação textual do erro. Esse rastreamento é especialmente útil em situações onde existem múltiplos processos espalhados em diferentes níveis \cite{Rajic2002}.  
 
 \section{DRMAA para PBS}
 
-A biblioteca cobre aproximadamente toda a especificação DRMAA 1.0 com as exceções listadas \cite{drmaa_pbs}. Ela passou no teste oficial da \emph{suite} DRMAA com exceção dos testes que requerem \emph{status} de término de tarefa. Todos os obrigatórios e alguns atributos opcionais de tarefas são implementados.
+A biblioteca cobre aproximadamente toda a especificação DRMAA 1.0 com as exceções listadas em \cite{drmaa_pbs}. Ela passou no teste oficial da \emph{suite} DRMAA com exceção dos testes que requerem \emph{status} de término de tarefa. Todos os obrigatórios e alguns atributos opcionais de tarefas são implementados.
 
 \begin{itemize}
 	\item com PBS, recuperar o \emph{status} de uma tarefa terminada é impossível. Por isso tarefas terminadas são marcadas como completas com código de retorno 0 desde que não tenham terminadas através da biblioteca.
 	\item apenas são aceitas tarefas submetidas sob a sessão corrente (especificação diz que devem ser aceitas tarefas identificadas da sessão anterior).
-	\item o estado do término da tarefa, quando realizado pelo PBS, é marcado como "abortado"  e  "marcado" qualquer que seja o estado.
+	\item o estado do término da tarefa, quando realizado pelo PBS, é marcado como "abortado"  e  "assinalado"  qualquer que seja o estado.
 	\item drmaa-wcoredump() sempre retorna \emph{false}.
 \end{itemize}
 
-A natureza da implementação DRMAA, como uma boa biblioteca, torna-se uma boa candidata para inclusão em um \emph{Web Server} adiquirindo suporte para um Portal DRMS/RMS.
+A natureza da implementação DRMAA, como uma boa biblioteca, torna-se uma forte candidata para inclusão em um \emph{Web Server} adiquirindo suporte para um Portal DRMS/RMS.
 
 A implementação DRMAA pode ser:
 
@@ -79,7 +78,7 @@ A questão sobre estado de manutenção, segurança e autenticação/autoriazaç
 
 \section{A Java \emph{Binding} API}
 
-Apesar da especificação GFD.022 ter uma tendência para linguagem C, há uma liberdade para melhorar o ajuste com uma linguagem orientada a objetos como o Java. Alguns métodos sugerido na especificação não constam nos \emph{bindings} de linguagens orientadas a objetos. Os métodos drmaa\underline{ }get\underline{ }attribute(), drmaa\underline{ }set\underline{ }attribute(), drmaa\underline{ }get\underline{ }vector\underline{ }attribute(), drmaa\underline{ }set\underline{ }vector\underline{ }attribute() e drmaa\underline{ }get\underline{ }vector\underline{ } attribute \underline{ }names() não são necessários pois a especificação do \emph{binding} Java especifica uma propriedade \emph{\textbf{getter}} e \emph{\textbf{setter}} para cada atributo DRMAA. Um \emph{getter} é um método para recuperar valores e um método \emph{setter} para atribuir valores. Essas propriedades permitem, em tempo de compilação, checar os atributos DRMAA permitindo especial tratamento dos atributos que são melhores representados como algo diferente de uma \emph{String} \cite{Templeton2003}.
+Apesar da especificação GFD.022 ter uma tendência para linguagem C, há uma liberdade para melhorar o ajuste com uma linguagem orientada a objetos como o Java. Alguns métodos sugeridos na especificação não constam nos \emph{bindings} de linguagens orientadas a objetos. Os métodos drmaa\underline{ }get\underline{ }attribute(), drmaa\underline{ }set\underline{ }attribute(), drmaa\underline{ }get\underline{ }vector\underline{ }attribute(), drmaa\underline{ }set\underline{ }vector\underline{ }attribute() e drmaa\underline{ }get\underline{ }vector\underline{ } attribute \underline{ }names() não são necessários pois a especificação do \emph{binding} Java especifica uma propriedade \emph{\textbf{getter}} e \emph{\textbf{setter}} para cada atributo DRMAA. Um \emph{getter} é um método para recuperar valores e um método \emph{setter} para atribuir valores. Essas propriedades permitem, em tempo de compilação, checar os atributos DRMAA permitindo especial tratamento dos atributos que são melhores representados como algo diferente de uma \emph{String} \cite{Templeton2003}.
 
 Alguns estudos realizados \cite{Herrera2007, Templeton2006} a fim de validar a especificação DRMAA constatam total viabilidade em usá-la. Mostrando-se totalmente flexível e útil, torna-se uma ferramenta viável para desenvolvimento tanto de ISV como para aplicações de usuários final.
 
