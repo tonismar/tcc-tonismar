@@ -5,24 +5,23 @@ Programa usado nas avaliações realizadas. É importante no código o \emph{sta
 
 \begin{scriptsize}
 \begin{verbatim}
-	#include <stdio.h>
+#include <stdio.h>
 	
-	int fat (int n) {
-		if (n==1)
-			return 1;
-		else
-			return n*fat(n-1);
-	}
-	
-	int main() {
-		int i=0;
-		int result;
-		for (i=0; i<10000; i++) {
-			result = fat(8);
-		}
-		printf("Hello %d!\n", result);
-		exit(0);
-	}
-	
+int fat (int n) {
+    if (n==1)
+        return 1;
+    else
+        return n*fat(n-1);
+}
+
+int main() {
+    int i=0;
+    int result;
+    for (i=0; i<10000; i++) {
+        result = fat(8);
+    }
+    printf("Hello %d!\n", result);
+    exit(0);
+}
 \end{verbatim}
 \end{scriptsize}

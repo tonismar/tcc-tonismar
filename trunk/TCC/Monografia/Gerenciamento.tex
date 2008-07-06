@@ -1,32 +1,32 @@
 \chapter{Gerenciamento de Aplicações em Grade}
 \label{cap:gerenciamento}
 
-A idéia de computação em grade para processamento de aplicações em paralelo veio, por consequência, dos inúmeros avanços no desempenho de redes de computadores.
+A idéia de computação em grade para processamento de aplicações em paralelo veio como consequência dos inúmeros avanços no desempenho de redes de computadores.
 
-Atualmente o uso dessas redes tem aumentado exponencialmente. Muitas dessas redes são distribuídas de forma geograficamente separadas precisando de uma complexa infra-estrutura de software e hardware para gerenciá-las e conectá-las. Dentre as diversas soluções existentes a grade computacional (grid computing) possui características que viabiliza essa conexão.
+Atualmente, o uso dessas redes tem aumentado exponencialmente. Muitas dessas redes são distribuídas de forma geograficamente separadas precisando de uma complexa infra-estrutura de software e hardware para gerenciá-las e conectá-las. Dentre as diversas soluções existentes a grade computacional (\emph{grid computing}) possui características que viabiliza essa conexão.
 
-O Open Grid Forum (OGF) uma comunidade fórum com milhares de indivíduos representando mais de 400 organizações em mais de 50 países criou e documentou \cite{M.2002} especificações técnicas e experiências de usuários. O OGF definiu grades computacionais como um ambiente persistente o qual habilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Desde lá esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} define um sistema em grade propondo um \emph{checklist} de três pontos.
+O Open Grid Forum (OGF) uma comunidade fórum, com milhares de indivíduos representando mais de 400 organizações em mais de 50 países, criou e documentou \cite{M.2002} especificações técnicas e experiências de usuários. O OGF definiu grades computacionais como um ambiente persistente o qual habilita aplicações para integrar instrumentos, disponibilizar informações em locações difusas. Mas esta não é a única e precisa definição para o conceito de grades. Foster \cite{Kesselman2001} define um sistema em grade propondo um \emph{checklist} de três pontos.
 
 \begin{enumerate}
-	\item coordenar recursos os quais não são direcionados para um controle central.
-	\item usar protocolos e interfaces padronizados, abertos para propósitos gerais.
+	\item coordenar recursos os quais não são direcionados para um controle central;
+	\item usar protocolos e interfaces padronizados, abertos e para propósitos gerais;
 	\item oferecer QoS (qualidade de serviço) não triviais tais como: autenticação, escalonamento de tarefas, disponibilidade.
 \end{enumerate}
 
-Uma definição formal do que um sistema em grade pode prover foi definido por Foster et al. em \cite{Foster2002}. Focando na sua semântica, mostrando que grades não são apenas uma modificação de um sistema distribuído convencional. Podem apresentar recursos heterogênicos como sensores e detectores e não apenas nós computacionais. Abaixo uma lista de aspectos que evidenciam uma grade computacional \cite{Cirne2002}:
+Uma definição formal do que um sistema em grade pode prover foi definido por Foster \emph{et al.} em \cite{Foster2002}, focando na sua semântica, mostrando que grades não são apenas uma modificação de um sistema distribuído convencional. Podem apresentar recursos heterogêneos como sensores e detectores e não apenas nós computacionais. A seguir uma lista de aspectos que evidenciam uma grade computacional \cite{Cirne2002}:
 
 \begin{itemize}
-	\item heterogeneidade
-	\item alta dispersão geográfica
-	\item compartilhamento (não pode ser dedicado a uma única aplicação)
-	\item múltiplos domínios administrativos (recursos de várias instituições)
-	\item controle distribuído 
+	\item heterogeneidade;
+	\item alta dispersão geográfica;
+	\item compartilhamento (não pode ser dedicado a uma única aplicação);
+	\item múltiplos domínios administrativos (recursos de várias instituições);
+	\item controle distribuído.
 \end{itemize}
 
-Usualmente os usuários usam linguagens de descrição para descreverem a aplicação. A aplicação pode ser representada por um grafo onde cada vértice representa uma tarefa e suas arestas representam a ordem de precedência entre elas. O capítulo seguinte explicará mas aprofundadamente o conceito de representação em grafos utilizado no modelo GRAND. Quando um sistema de gerenciamento de aplicação recebe o grafo da aplicação ele precisa disparar as tarefas na ordem e controlar sua execução. 
+Usualmente os usuários usam linguagens de descrição para descreverem a aplicação. A aplicação pode ser representada por um grafo onde cada vértice representa uma tarefa e suas arestas representam a ordem de precedência entre elas. Quando um sistema de gerenciamento de aplicação recebe o grafo da aplicação ele precisa disparar as tarefas na ordem e controlar sua execução. 
 
 A distribuição das tarefas entre recursos é um problema que diminui o desempenho. Uma aplicação distribuída pode ser particionada pelo agrupamento de tarefas relacionadas visando a redução de comunicação. Este particionamento deve ser tal que as dependências entre tarefas e localidade dos dados sejam mantidas \cite{Mangan2006}. 
 
-A grade deve estar preparada para lidar com todo o dinamismo e variabilidade, procurando obter a melhor performance possível adaptando-se ao cenário no momento.
+A grade deve estar preparada para lidar com todo o dinamismo e variabilidade, procurando obter o melhor desempenho possível, adaptando-se ao cenário atual.
 
 \input{Recursos}
