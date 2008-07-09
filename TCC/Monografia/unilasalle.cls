@@ -308,11 +308,11 @@
 	\vspace{20mm}
 	\noindent\singlespacing{Trabalho de conclusão aprovado como requisito parcial para obtenção do grau de Bacharel em Ciência da Computação do Centro Universitário La Salle - Unilasalle, pela seguinte banca examinadora:}
 	\vspace{15mm}
-	\singlespacing{Prof. Me. Marcos Ennes Barreto\\Centro Universitário La Salle - Unilasalle}
+	\singlespacing{Prof. MSc. Marcos Ennes Barreto\\Centro Universitário La Salle - Unilasalle}
 	\vspace{15mm}
-	\singlespacing{Prof. Me. Mozart Lemos de Siqueira\\Centro Universitário La Salle - Unilasalle}
+	\singlespacing{Prof. MSc. Mozart Lemos de Siqueira\\Centro Universitário La Salle - Unilasalle}
 	\vspace{15mm}
-      \singlespacing{Prof. Dsc. Patrícia Kayser Vargas Mangan\\Centro Universitário La Salle - Unilasalle}
+      \singlespacing{Prof. DSc. Patrícia Kayser Vargas Mangan\\Centro Universitário La Salle - Unilasalle}
 	\end{center}
 	\vfill
         \centerline{\@city, \ii@date}
